@@ -26,6 +26,7 @@ const index = () => {
                 <meta property="og:title" content="Mine Treasure" />
                 <meta property="og:description" content="Mine treasure is a Minecraft datapack which aims to enhance the mining experience." />
                 <meta property="og:image" content="/images/Mine_Treasure.png" />
+                <link rel="apple-touch-icon" href="/images/Mine_Treasure.png" />
             </Head>
             <div className="bg-white py-6 h-screen relative">
                 <div className="lg:px-24">
