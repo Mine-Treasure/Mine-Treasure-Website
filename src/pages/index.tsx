@@ -57,7 +57,7 @@ const index = () => {
                 <h1 className="text-center text-3xl font-bold" ref={whySectionRef} id="why">Why this datapack?</h1>
                 <section className="w-[90%] md:w-[70%] xl:w-[60%] mx-auto pt-5 grid grid-cols-1 xl:grid-cols-2 gap-5 xl:gap-0">
                     <div className="2xl:h-64 bg-gray-300 hidden xl:flex items-center">
-                        <img className="mx-auto block 2xl:w-full max-h-full" src="/images/treeasure-tiers.gif" alt="treasure tiers gif"></img>
+                        <Image className="mx-auto block 2xl:w-full max-h-full" src="/images/treeasure-tiers.gif" alt="treasure tiers gif" width={500} height={300}></Image>
                     </div>
                     <div className="p-5 bg-gray-300 h-72 2xl:h-64 flex items-center">
                         <div>
@@ -72,10 +72,10 @@ const index = () => {
                         </div>
                     </div>
                     <div className="h-72 2xl:h-64 bg-gray-300 hidden xl:flex items-center">
-                        <img className="mx-auto block 2xl:w-full max-h-full" src="/images/biomes.jpg" alt="biomes"></img>
+                        <Image className="mx-auto block 2xl:w-full max-h-full" src="/images/biomes.jpg" alt="biomes" width={500} height={300}></Image>
                     </div>
                     <div className="h-72 2xl:h-64 bg-gray-300 hidden xl:flex items-center">
-                        <img className="mx-auto block 2xl:w-full max-h-full" src="/images/items.png" alt="treasure items"></img>
+                        <Image className="mx-auto block 2xl:w-full max-h-full" src="/images/items.png" alt="treasure items" width={500} height={300}></Image>
                     </div>
                     <div className="p-5 bg-gray-300 h-72 2xl:h-64 flex items-center">
                         <div>
@@ -90,7 +90,7 @@ const index = () => {
                         </div>
                     </div>
                     <div className="h-72 2xl:h-64 bg-gray-300 hidden xl:flex items-center">
-                        <img className="mx-auto block 2xl:w-full max-h-full" src="/images/advancements.png" alt="advancements"></img>
+                        <Image className="mx-auto block 2xl:w-full max-h-full" src="/images/advancements.png" alt="advancements" width={500} height={300}></Image>
                     </div>
                 </section>
 
