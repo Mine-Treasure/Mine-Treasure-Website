@@ -37,6 +37,10 @@ const Wiki = ({ sidebarData }) => {
       <Head>
         <title>Mine Treasure | Wiki | {pageId}</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="theme-color" content="#f78e05" />
+        <link rel="apple-touch-icon" href="/images/mine_treasure_apple.png" />
+        <meta name="description" content={markdownData.slice(1, Math.min(markdownData.length, 200))} key="desc" />
+        <meta property="og:description" content={markdownData.slice(1, Math.min(markdownData.length, 200))} />
       </Head>
       {markdownData === '{"message":"Not found"}' && <ErrorPage statusCode={404} />}
       {markdownData !== '{"message":"Not found"}' &&
