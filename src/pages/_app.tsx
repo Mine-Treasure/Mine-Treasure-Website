@@ -2,6 +2,7 @@ import React from 'react'
 import { AppProps } from 'next/app'
 import Script from "next/script";
 import '../styles/index.css'
+import Head from 'next/head';
 
 function MyApp({ Component, pageProps }: AppProps) {
 
@@ -17,6 +18,12 @@ function MyApp({ Component, pageProps }: AppProps) {
                     });
                 `}
         </Script>
+        <Head>
+            <link rel="apple-touch-icon" href="/images/apple-57.png" />
+            <link rel="apple-touch-icon" sizes="72x72" href="/images/apple-72.png" />
+            <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-114.png" />
+            <meta name="theme-color" content="#f78e05" />
+        </Head>
         <Component {...pageProps} />
     </>
 }

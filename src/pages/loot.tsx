@@ -94,9 +94,6 @@ const IndexPage = () => {
         <meta name="description" content="These are the loot tables of the datapack. They are the items that can appear in the treasure barrels" key="desc" />
         <meta property="og:title" content="Loot table | Mine Treasure" />
         <meta property="og:description" content="These are the loot tables of the datapack. They are the items that can appear in the treasure barrels" />
-        <meta name="theme-color" content="#f78e05" />
-        <link rel="apple-touch-icon" href="/images/mine_treasure_apple.png" />
-
       </Head>
       <div className="bg-white px-6 lg:px-24 py-12">
         <Navbar />
