@@ -39,10 +39,10 @@ const index = () => {
                                     <p className="max-w-[90%] sm:max-w-[60%] pt-3">Ever gotten tired of mining endlessly with no goal in mind? No motivation to go strip-mining? No means to go on this repetitive task for ores? Well, this data pack aims to change exactly that.</p>
                                     <button className="cursor-pointer mt-2" onClick={() => scrollTo({ id: 'why', ref: whySectionRef, duration: 2000 })}><em>Read more...</em></button>
                                     <br />
-                                    <Link href="/download" className="mt-5 md:mt-10 inline-block px-10 text-white py-3 rounded-full bg-blue-500">Start playing <FontAwesomeIcon icon={faArrowRight} className="align-middle" /></Link>
+                                    <Link href="/download" className="mt-5 md:mt-10 inline-block px-10 text-white py-3 rounded-full bg-blue-500">Start playing <FontAwesomeIcon height={20} icon={faArrowRight} className="inline-block align-middle" /></Link>
                                 </div>
                             </section>
-                            <section className="hidden xl:flex items-center"><Image src="/images/treasure.svg" alt="header" width={500} height={500}></Image></section>
+                            <section className="hidden xl:flex items-center"><Image src="/images/treasure.svg" alt="header" width={500} height={500} priority></Image></section>
                         </div>
                     </main>
                 </div>
@@ -118,44 +118,44 @@ const index = () => {
                         <tbody>
                             <tr className="bg-white border-b">
                                 <td className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap">Realms</td>
-                                <td className="py-4 px-6 text-center"><FontAwesomeIcon icon={faCircleExclamation} className="text-yellow-400 text-xl" /></td>
+                                <td className="py-4 px-6 text-center"><FontAwesomeIcon height={30} icon={faCircleExclamation} className="text-yellow-400 text-xl mx-auto" /></td>
                                 <td className="py-4 px-6">If you have the data pack on realms you may notice that the overworld treasure are not working sometimes. The reason for this is quite peculiar. I first discovered this Realms bug when I asked the bug reporters to show me the files of Mine Treasure. It turns out Realms is programmed to rename every folder that has the name "World" in it to correspond with the Realms' name, which also includes data pack folders. Meaning the overworld folder Mine Treasure uses is renamed to over(REALMS NAME), hopefully this bug gets patched by Mojang in an upcoming version.</td>
                             </tr>
                             <tr className="bg-white border-b">
                                 <td className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap">Spigot</td>
-                                <td className="py-4 px-6 text-center"><FontAwesomeIcon icon={faCircleExclamation} className="text-yellow-400 text-xl" /></td>
+                                <td className="py-4 px-6 text-center"><FontAwesomeIcon height={30} icon={faCircleExclamation} className="text-yellow-400 text-xl mx-auto" /></td>
                                 <td className="py-4 px-6">Though not something I would recommend for having multiple data packs, it has been tested with Mine Treasure and there were only one inconsistency. Due to Spigots blocking of NBT placement, it blocks containers with NBTs in them such as a chest with loot in it, meaning if you were to place one down, it will not contain loot. If there are other problems which does arise, please join our Discord so we can further discuss the problem.</td>
                             </tr>
                             <tr className="bg-white border-b">
                                 <td className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap">PaperMC</td>
-                                <td className="py-4 px-6 text-center"><FontAwesomeIcon icon={faCircleCheck} className="text-green-400 text-xl" /></td>
+                                <td className="py-4 px-6 text-center"><FontAwesomeIcon height={30} icon={faCircleCheck} className="text-green-400 text-xl mx-auto" /></td>
                                 <td className="py-4 px-6">No inconsistencies as of yet. However, if there are, please report it on our Discord.</td>
                             </tr>
                             <tr className="bg-white border-b">
                                 <td className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap">Fabric</td>
-                                <td className="py-4 px-6 text-center"><FontAwesomeIcon icon={faCircleCheck} className="text-green-400 text-xl" /></td>
+                                <td className="py-4 px-6 text-center"><FontAwesomeIcon height={30} icon={faCircleCheck} className="text-green-400 text-xl mx-auto" /></td>
                                 <td className="py-4 px-6">I personally recommend the use of Fabric for data packs as it performs very similar to Vanilla. However, if there appear to be issues, report it as always.</td>
                             </tr>
                             <tr className="bg-white border-b">
                                 <td className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap">Forge</td>
-                                <td className="py-4 px-6 text-center"><FontAwesomeIcon icon={faCircleCheck} className="text-green-400 text-xl" /></td>
+                                <td className="py-4 px-6 text-center"><FontAwesomeIcon height={30} icon={faCircleCheck} className="text-green-400 text-xl mx-auto" /></td>
                                 <td className="py-4 px-6">Barely tested this mod loader, but there seems to be no issue whatsoever.</td>
                             </tr>
                             <tr className="bg-white border-b">
                                 <td className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap">Quilt</td>
-                                <td className="py-4 px-6 text-center"><FontAwesomeIcon icon={faCircleCheck} className="text-green-400 text-xl" /></td>
+                                <td className="py-4 px-6 text-center"><FontAwesomeIcon height={30} icon={faCircleCheck} className="text-green-400 text-xl mx-auto" /></td>
                                 <td className="py-4 px-6">Very similar to Fabric. There has been no testing with this mod loader. However, since it is built like Fabric I am going to assume there are no issues here.</td>
                             </tr>
                             <tr className="bg-white border-b">
                                 <td className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap">Other</td>
-                                <td className="py-4 px-6 text-center"><FontAwesomeIcon icon={faCircleMinus} className="text-red-400 text-xl" /></td>
+                                <td className="py-4 px-6 text-center"><FontAwesomeIcon height={30} icon={faCircleMinus} className="text-red-400 text-xl mx-auto" /></td>
                                 <td className="py-4 px-6">If there are any other plug-ins/mod-related issues which is incompatible with Mine Treasure, please report it on our Discord so it may be resolved in a future update.</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
                 {/* className="p-1 md:p-3 text-center md:text-left md:px-10 bg-blue-500 rounded-full" */}
-                <Link href="/download" className="block w-52 mt-5 px-10 p-3 text-center text-white mx-auto bg-blue-500 rounded-full">Start playing <FontAwesomeIcon icon={faArrowRight} className="align-middle" /></Link>
+                <Link href="/download" className="block w-52 mt-5 px-10 p-3 text-center text-white mx-auto bg-blue-500 rounded-full">Start playing <FontAwesomeIcon height={20} icon={faArrowRight} className="inline-block align-middle" /></Link>
             </div>
             <Footer />
         </>

@@ -19,7 +19,7 @@ const StatsModal = ({ item, setModal }: { item: MT_ITEM, setModal: Function }) =
         <>
             <div className='fixed top-0 left-0 h-screen w-screen modal-background' onClick={handleModalClick} style={{ backgroundColor: 'rgb(0, 0, 0, 0.7)' }}>
                 <div className="relative w-[80vw] h-[80vh] rounded-xl bg-gray-200 opacity-100 mx-[10vw] my-[10vh] p-5 overflow-x-auto scrollbar-thumb-gray-400 scrollbar-thumb-rounded-lg scrollbar-thin" onClick={handleModalClick}>
-                    <FontAwesomeIcon className="absolute top-5 left-5 text-2xl transition-all duration-100 hover:text-4xl" icon={faXmark} onClick={() => setModal(false)} />
+                    <FontAwesomeIcon height={20} className="inline-block absolute top-5 left-5 text-2xl transition-all duration-100 hover:text-4xl" icon={faXmark} onClick={() => setModal(false)} />
                     {/* Grid */}
                     <div className="w-full h-full grid grid-cols-1 lg:grid-cols-3 gap-10 md:gap-3">
                         <section className="text-center">
@@ -31,14 +31,14 @@ const StatsModal = ({ item, setModal }: { item: MT_ITEM, setModal: Function }) =
                             </section>
                         </section>
                         <section className="text-center">
-                            <h1 className="text-xl md:text-4xl font-bold mb-5"><FontAwesomeIcon icon={faTag} /> Attributes</h1>
+                            <h1 className="text-xl md:text-4xl font-bold mb-5"><FontAwesomeIcon className="inline-block" height={30} icon={faTag} /> Attributes</h1>
                             <div className="grid grid-cols-1 gap-3">
                                 {item.attributes && item.attributes.map((attribute, idx) => <Attribute key={idx} attribute={attribute}></Attribute>)}
                                 {!item.attributes && <p className="text-center"><i>No attributes</i></p>}
                             </div>
                         </section>
                         <section className="text-center pb-5 md:pb-0">
-                            <h1 className="text-xl md:text-4xl font-bold mb-5"><FontAwesomeIcon icon={faBook} /> Enchantments</h1>
+                            <h1 className="text-xl md:text-4xl font-bold mb-5"><FontAwesomeIcon className="inline-block" height={30} icon={faBook} /> Enchantments</h1>
                             <div className="grid grid-cols-1 gap-3">
                                 {item.unbreakable && <UnbreakableEnchantment />}
                                 {item.enchantWithLevel && <LevelEnchantment level={item.enchantWithLevel} />}

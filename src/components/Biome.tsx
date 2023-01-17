@@ -26,7 +26,7 @@ const Biome = ({ name }) => {
         <header className="text-center" id={name} ref={ref}>
             <Image src={"/items/" + biomeIcons[name] + ".png"} width={48} height={48} alt={name} className="inline-block"></Image>
             <p className="font-mono text-3xl md:inline-block md:ml-5 align-middle">{capitalizeFirst(name.replace(/_/g, ' '), true)}</p>
-            <FontAwesomeIcon icon={faHashtag} onClick={() => writeHref()} className="pl-3 cursor-pointer" style={{ lineHeight: 'inherit' }} />
+            <FontAwesomeIcon height={20} icon={faHashtag} onClick={() => writeHref()} className="pl-3 cursor-pointer inline-block" style={{ lineHeight: 'inherit' }} />
         </header>
     )
 }

@@ -27,6 +27,7 @@ const download = () => {
                 <meta name="description" content="Download the Mine-Treasure datapack here. Available for the most recent versions of Minecraft" key="desc" />
                 <meta property="og:title" content="Download | Mine Treasure" />
                 <meta property="og:description" content="Download the Mine-Treasure datapack here. Available for the most recent versions of Minecraft" />
+                <meta name="theme-color" content="#f78e05" />
                 <link rel="apple-touch-icon" href="/images/Mine_Treasure.png" />
 
             </Head>
