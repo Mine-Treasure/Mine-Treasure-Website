@@ -3860,7 +3860,7 @@
                     ]
                 },
                 "lore": [
-                    "This pie gives Instant Health I  and ",
+                    "This pie gives Instant Health I and ",
                     "Regeneration II for 10 seconds. "
                 ]
             },
@@ -5964,7 +5964,7 @@
         ],
         "epic": [
             {
-                "type": "diamond_block"
+                "type": "diamond"
             },
             {
                 "type": "netherite_pickaxe",
@@ -9012,10 +9012,10 @@
                 "type": "ender_pearl"
             },
             {
-                "type": "diamond_block"
+                "type": "diamond"
             },
             {
-                "type": "emerald_block"
+                "type": "emerald"
             },
             {
                 "type": "wither_rose"
@@ -9092,6 +9092,39 @@
             },
             {
                 "type": "diamond_block"
+            },
+            {
+                "type": "spawner",
+                "name": "Spawner",
+                "nbt": {
+                    "display": {
+                        "Name": "{\"text\":\"Spawner\",\"color\":\"gold\",\"italic\":false}"
+                    },
+                    "BlockEntityTag": {
+                        "SpawnCount": 5,
+                        "SpawnRange": 5,
+                        "Delay": 100,
+                        "MinSpawnDelay": 5,
+                        "MaxSpawnDelay": 20,
+                        "MaxNearbyEntities": 9999,
+                        "RequiredPlayerRange": 20
+                    }
+                }
+            },
+            {
+                "type": "witch_spawn_egg",
+                "name": "Witch Egg",
+                "lore": [
+                    "Hint, use this on a spawner."
+                ],
+                "nbt": {
+                    "display": {
+                        "Name": "{\"text\":\"Witch Egg\",\"color\":\"gold\",\"italic\":false}",
+                        "Lore": [
+                            "{\"text\":\"Hint, use this on a spawner.\",\"color\":\"gray\",\"italic\":false}"
+                        ]
+                    }
+                }
             },
             {
                 "type": "bookshelf"
@@ -9733,10 +9766,10 @@
                 "type": "ender_pearl"
             },
             {
-                "type": "diamond_block"
+                "type": "diamond"
             },
             {
-                "type": "emerald_block"
+                "type": "emerald"
             },
             {
                 "type": "arrow"
