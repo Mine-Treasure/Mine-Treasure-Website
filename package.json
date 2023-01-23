@@ -21,7 +21,7 @@
     "react-hash-scroll": "^1.4.7",
     "react-markdown": "^8.0.4",
     "react-syntax-highlighter": "^15.5.0",
-    "react-tooltip": "^4.5.0",
+    "react-tooltip": "^5.5.2",
     "recharts": "^2.1.16",
     "rehype-slug": "^5.1.0",
     "remark-gfm": "^3.0.1",

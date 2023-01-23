@@ -18,7 +18,7 @@ const Item = ({ item }: { item: MT_ITEM }) => {
 
     return (
         <div>
-            <div onClick={() => { setShowModal(true) }} className={hasModal && "cursor-pointer"} data-tip data-for={id} >
+            <div onClick={() => { setShowModal(true) }} className={"inline-block " + (hasModal && "cursor-pointer")} id={id}  >
                 <Image className="inline-block" src={"/items/" + item.type + ".png"} alt={item.type} height={24} width={24} />
                 <span style={{ color: item.name ? rarityColors.legendary : 'black' }} className={"ml-5 align-middle"}>{item.name ?? item.type.replace(/_/g, ' ')}</span>
                 {hasModal && <FontAwesomeIcon height={15} className="align-middle inline-block ml-1 text-gray-500" icon={faArrowUpRightFromSquare} />}

@@ -3,6 +3,8 @@ import { AppProps } from 'next/app'
 import Script from "next/script";
 import '../styles/index.css'
 import Head from 'next/head';
+import 'react-tooltip/dist/react-tooltip.css'
+
 
 function MyApp({ Component, pageProps }: AppProps) {
 
