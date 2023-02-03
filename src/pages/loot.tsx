@@ -27,6 +27,7 @@ const IndexPage = () => {
   const [selectedRarities, setSelectedRarities] = useState([]);
   const [customItemsOnly, setCustomItemsOnly] = useState(false);
 
+  const [decimalPlaces, setDecimalPlaces] = useState(3);
   const [commonChance, setCommonChance] = useState(0);
   const [rareChance, setRareChance] = useState(0);
   const [epicChance, setEpicChance] = useState(0);
@@ -114,6 +115,14 @@ const IndexPage = () => {
                 </div>
                 <input type="text" id="search" value={queryString} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5" onChange={(e) => setQueryString(e.target.value)}></input>
               </div>
+              <div className="grid grid-cols-2 md:grid-cols-4 mt-2 gap-4">
+                <div>
+                  <label htmlFor="decimalPlaces">
+                    Decimal places
+                  </label>
+                  <input type="number" id="decimalPlaces" value={decimalPlaces} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-5 p-2.5" onChange={(e) => setDecimalPlaces(parseInt(e.target.value))} />
+                </div>
+              </div>
               <p className="font-medium mt-4 inline-block">Output values</p>
               <Tooltip name="outputvalues" content="Input a number to determine a range of output values. The higher the number, the lower the chance or vice versa." />
               <div className="grid grid-cols-2 md:grid-cols-4 mt-2 gap-4">
@@ -164,7 +173,7 @@ const IndexPage = () => {
               <p className="font-mono text-3xl md:inline-block md:ml-5 align-middle">Rarities</p>
             </header>
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-2 mt-5 max-h-96 scrollbar-thumb-gray-400 scrollbar-thumb-rounded-lg scrollbar-thin overflow-y-scroll">
-              {Object.keys(rarityData).map((ore, idx) => <ChanceSection key={idx} ore={ore} chance={rarityData[ore]} rarityValues={{ common: commonChance, rare: rareChance, epic: epicChance, legendary: legendaryChance }} />)}
+              {Object.keys(rarityData).map((ore, idx) => <ChanceSection key={idx} ore={ore} chance={rarityData[ore]} rarityValues={{ common: commonChance, rare: rareChance, epic: epicChance, legendary: legendaryChance }} decimalPlaces={decimalPlaces} />)}
             </div>
           </Section>
         </>

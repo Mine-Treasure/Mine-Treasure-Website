@@ -4,12 +4,12 @@ import { MT_CHANCE } from '../interfaces'
 import capitalizeFirst from '../utils/capitalizeFirst'
 import { rarityColors } from '../utils/rarity-colors'
 
-const ChanceSection = ({ ore, chance, rarityValues }: { ore: string, chance: MT_CHANCE, rarityValues: { common: number, rare: number, epic: number, legendary: number } }) => {
+const ChanceSection = ({ ore, chance, rarityValues, decimalPlaces }: { ore: string, chance: MT_CHANCE, rarityValues: { common: number, rare: number, epic: number, legendary: number }, decimalPlaces: number }) => {
 
-    const commonPercent = Math.round((chance["common"] / rarityValues["common"]) * 100000) / 1000;
-    const rarePercent = Math.round((chance["rare"] / rarityValues["rare"]) * 100000) / 1000;
-    const epicPercent = Math.round((chance["epic"] / rarityValues["epic"]) * 100000) / 1000;
-    const legendaryPercent = Math.round((chance["legendary"] / rarityValues["legendary"]) * 100000) / 1000;
+    const commonPercent = Math.round(((chance["common"] / rarityValues["common"]) * 100) * Math.pow(10, decimalPlaces)) / Math.pow(10, decimalPlaces);
+    const rarePercent = Math.round(((chance["rare"] / rarityValues["rare"]) * 100) * Math.pow(10, decimalPlaces)) / Math.pow(10, decimalPlaces);
+    const epicPercent = Math.round(((chance["epic"] / rarityValues["epic"]) * 100) * Math.pow(10, decimalPlaces)) / Math.pow(10, decimalPlaces);
+    const legendaryPercent = Math.round(((chance["legendary"] / rarityValues["legendary"]) * 100) * Math.pow(10, decimalPlaces)) / Math.pow(10, decimalPlaces);
 
     return (
         <div className="p-5">
