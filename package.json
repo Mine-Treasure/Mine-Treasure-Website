@@ -22,7 +22,7 @@
     "react-markdown": "^8.0.4",
     "react-syntax-highlighter": "^15.5.0",
     "react-tooltip": "^5.5.2",
-    "recharts": "^2.1.16",
+    "recharts": "^2.4.1",
     "rehype-slug": "^5.1.0",
     "remark-gfm": "^3.0.1",
     "remark-hint": "^1.0.10",
