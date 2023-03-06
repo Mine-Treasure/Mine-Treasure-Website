@@ -23,6 +23,11 @@ module.exports = {
                 source: '/download',
                 destination: 'https://modrinth.com/datapack/mine-treasure',
                 permanent: true
+            },
+            {
+                source: '/wiki',
+                destination: '/wiki/Introduction',
+                permanent: false
             }
         ]
     }
