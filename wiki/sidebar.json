@@ -7,21 +7,17 @@
             {
                 "name": "Biome information",
                 "link": "/Biome-Information"
-            },
-            {
-                "name": "Some other page",
-                "link": "/Some-Other-Page"
             }
         ]
     },
     {
-        "title": "Finding treasure",
+        "title": "Treasures",
         "icon": "toolbox",
         "collapsable": true,
         "children": [
             {
-                "name": "Some section",
-                "link": "/some location"
+                "name": "Modifying chances",
+                "link": "/Modifying-chances"
             }
         ]
     }

@@ -44,7 +44,7 @@ const Wiki = ({ sidebarData }) => {
       </Head>
       {markdownData === '{"message":"Not found"}' && <ErrorPage statusCode={404} />}
       {markdownData !== '{"message":"Not found"}' &&
-        <div className="bg-white px-6 lg:px-24 py-6 h-screen">
+        <div className="bg-white px-6 lg:px-24 py-12">
           <Header />
           <WikiSidebar sidebarData={sidebarData} activePage={"/" + pageId} />
 
@@ -85,7 +85,7 @@ const WikiSidebarSection = ({ sidebarSectionData, activePage }) => {
         <ul className="py-2 space-y-2">
           {sidebarSectionData.children.map((child, idx) => (
             <li key={idx}>
-              <Link href={"/wiki" + (child.link.startsWith('/') ? '' : '/') + child.link} className={"flex items-center p-2 pl-11 w-full text-base font-normalrounded-lg transition text-gray-900 duration-75 group hover:bg-gray-100" + (activePage === child.link ? " font-bold" : "")}>{child.name}</Link>
+              <Link href={"/wiki" + (child.link.startsWith('/') ? '' : '/') + child.link} className={"flex items-center p-2 pl-11 w-full text-sm font-normal rounded-lg transition text-gray-900 duration-75 group hover:bg-gray-100" + (activePage === child.link ? " font-bold" : "")}>{child.name}</Link>
             </li>
           ))}
         </ul>
