@@ -18,6 +18,11 @@ module.exports = {
                 source: '/discord',
                 destination: 'https://discord.gg/ASB67acx2Y',
                 permanent: true
+            },
+            {
+                source: '/download',
+                destination: 'https://modrinth.com/datapack/mine-treasure',
+                permanent: true
             }
         ]
     }
