@@ -98,6 +98,10 @@ const IndexPage = () => {
       </Head>
       <div className="bg-white px-6 lg:px-24 py-12">
         <Navbar />
+        <Section className="bg-red-500">
+          <h1 className="text-white text-center text-3xl font-bold">Important!</h1>
+          <p className="text-lg font-medium text-center text-white">These loot tables are for Mine-Treasure v1.16! We are working on an update for the most recent version but due to major changes this has not been finished yet. Please come back later if you are using the latest version.</p>
+        </Section>
         {(!loadedRarityData || !loadedLootData || !loadedBiomeData || !loadedAdvancementData || !loadedInitialChanceData) &&
           <Section>
             <div className="text-center">
