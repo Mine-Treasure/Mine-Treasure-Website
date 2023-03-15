@@ -13,6 +13,12 @@ export type MT_ITEM = {
   nbt?: object;
   enchantments?: MT_ENCHANTMENT[];
   attributes?: MT_ATTRIBUTE[]
+  conditions: {
+    stoneMined?: {
+      min?: number;
+      max?: number;
+    }
+  }
 }
 
 export type MT_ATTRIBUTE = {

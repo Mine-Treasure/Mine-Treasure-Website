@@ -13,25 +13,32 @@ import Head from 'next/head'
 import Navbar from '../components/layout/Navbar'
 import MultiSelect from '../components/form/MultiSelect'
 import Toggle from '../components/form/Toggle'
-import TooltipIcon from '../components/icons/TooltipIcon'
-import ReactTooltip from 'react-tooltip'
 import Tooltip from '../components/Tooltip';
+import formatNumber from '../utils/formatNumber'
 
 const IndexPage = () => {
 
   // Filters
-  const [customData, setCustomData] = useState<undefined | MT_DATA>();
+  const [customData, setCustomData] = useState<MT_DATA>({});
 
   const [queryString, setQueryString] = useState("");
   const [selectedTreasures, setSelectedTreasures] = useState([]);
   const [selectedRarities, setSelectedRarities] = useState([]);
   const [customItemsOnly, setCustomItemsOnly] = useState(false);
+  const [blocksMined, setBlocksMined] = useState(0);
 
   const [decimalPlaces, setDecimalPlaces] = useState(3);
   const [commonChance, setCommonChance] = useState(0);
   const [rareChance, setRareChance] = useState(0);
   const [epicChance, setEpicChance] = useState(0);
   const [legendaryChance, setLegendaryChance] = useState(0);
+
+  // Rarity data
+  const [rarityData, loadedRarityData] = useRequest('/api/rarityData');
+  const [lootData, loadedLootData] = useRequest('/api/treasureData');
+  const [biomeData, loadedBiomeData] = useRequest('/api/biomeData');
+  const [advancementData, loadedAdvancementData] = useRequest('/api/advancements');
+  const [initialChanceData, loadedInitialChanceData] = useRequest('/api/initialChances');
 
   const filterData = (query) => {
     if (!loadedLootData) return;
@@ -53,6 +60,19 @@ const IndexPage = () => {
         }
         filteredData[biome][rarity] = lootData[biome][rarity].filter((value) => (value.name?.toLowerCase() ?? value.type.replace(/_/g, ' ').toLowerCase()).includes(query.toLowerCase()));
         if (customItemsOnly) filteredData[biome][rarity] = filteredData[biome][rarity].filter((value) => value.name !== undefined);
+
+        // Min / Max conditions
+        console.log(filteredData[biome][rarity].length + " before")
+        filteredData[biome][rarity] = filteredData[biome][rarity].filter((value) => {
+          const minValue = value.conditions.stoneMined?.min;
+          const maxValue = value.conditions.stoneMined?.max;
+
+          if (blocksMined < minValue || blocksMined > maxValue) {
+            return false;
+          };
+          return true;
+        });
+        console.log(filteredData[biome][rarity].length + " after");
       }
     }
 
@@ -61,7 +81,7 @@ const IndexPage = () => {
 
   useEffect(() => {
     filterData(queryString);
-  }, [selectedTreasures, selectedRarities, queryString, customItemsOnly])
+  }, [selectedTreasures, selectedRarities, queryString, customItemsOnly, loadedLootData, blocksMined])
 
   const clearFilters = () => {
     setSelectedTreasures([]);
@@ -70,12 +90,6 @@ const IndexPage = () => {
     setQueryString("");
   }
 
-  // Rarity data
-  const [rarityData, loadedRarityData] = useRequest('/api/rarityData');
-  const [lootData, loadedLootData] = useRequest('/api/treasureData');
-  const [biomeData, loadedBiomeData] = useRequest('/api/biomeData');
-  const [advancementData, loadedAdvancementData] = useRequest('/api/advancements');
-  const [initialChanceData, loadedInitialChanceData] = useRequest('/api/initialChances');
 
   useEffect(() => {
     if (initialChanceData) {
@@ -100,7 +114,7 @@ const IndexPage = () => {
         <Navbar />
         <Section className="bg-red-500">
           <h1 className="text-white text-center text-3xl font-bold">Important!</h1>
-          <p className="text-lg font-medium text-center text-white">These loot tables are for Mine-Treasure v1.16! We are working on an update for the most recent version but due to major changes this has not been finished yet. Please come back later if you are using the latest version.</p>
+          <p className="text-lg font-medium text-center text-white">The rarities shown below are still for the old version of Mine Treasure (v1.16). However, the loot table has been updated already! Use the slider to indicate how many blocks you've mined, this will update the loot list with the relevant loot for you!</p>
         </Section>
         {(!loadedRarityData || !loadedLootData || !loadedBiomeData || !loadedAdvancementData || !loadedInitialChanceData) &&
           <Section>
@@ -180,13 +194,27 @@ const IndexPage = () => {
               {Object.keys(rarityData).map((ore, idx) => <ChanceSection key={idx} ore={ore} chance={rarityData[ore]} rarityValues={{ common: commonChance, rare: rareChance, epic: epicChance, legendary: legendaryChance }} decimalPlaces={decimalPlaces} />)}
             </div>
           </Section>
+          <Section>
+            <header className="text-center">
+              <Image src={"/items/diamond_pickaxe.png"} width={48} height={48} alt={"Diamond pickaxe"} className="inline-block"></Image>
+              <p className="font-mono text-3xl md:inline-block md:ml-5 align-middle">Blocks mined</p>
+            </header>
+            <div className="relative">
+              <span className="absolute left-0 font-bold font-mono">0</span>
+              <span className="absolute right-0 font-bold font-mono">{formatNumber(500000)}</span>
+              <p className="font-bold font-mono text-center">Current: {formatNumber(blocksMined)}</p>
+
+              <input type="range" min="0" max="500000" onClickCapture={(e) => setBlocksMined((e.target as any).value)} className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer"></input>
+            </div>
+          </Section>
         </>
         }
-        {loadedRarityData && loadedLootData && loadedBiomeData && loadedAdvancementData && Object.keys(customData ?? lootData).map((biome, idx) => {
-          const commonData = (customData ?? lootData)[biome]["common"];
-          const rareData = (customData ?? lootData)[biome]["rare"];
-          const epicData = (customData ?? lootData)[biome]["epic"];
-          const legendaryData = (customData ?? lootData)[biome]["legendary"];
+
+        {loadedRarityData && loadedLootData && loadedBiomeData && loadedAdvancementData && Object.keys(customData).map((biome, idx) => {
+          const commonData = (customData)[biome]["common"];
+          const rareData = (customData)[biome]["rare"];
+          const epicData = (customData)[biome]["epic"];
+          const legendaryData = (customData)[biome]["legendary"];
 
           if (!commonData.length && !rareData.length && !epicData.length && !legendaryData.length) return "";
 
@@ -195,10 +223,10 @@ const IndexPage = () => {
               <Biome name={biome}></Biome>
               <Locations biomes={biomeData[biome]} />
               <Grid>
-                <ItemsCard advancement={advancementData[biome]?.["common"]} rarity={"common"} loot={(customData ?? lootData)[biome]["common"]} />
-                <ItemsCard advancement={advancementData[biome]?.["rare"]} rarity={"rare"} loot={(customData ?? lootData)[biome]["rare"]} />
-                <ItemsCard advancement={advancementData[biome]?.["epic"]} rarity={"epic"} loot={(customData ?? lootData)[biome]["epic"]} />
-                <ItemsCard advancement={advancementData[biome]?.["legendary"]} rarity={"legendary"} loot={(customData ?? lootData)[biome]["legendary"]} />
+                <ItemsCard advancement={advancementData[biome]?.["common"]} rarity={"common"} loot={(customData)[biome]["common"]} />
+                <ItemsCard advancement={advancementData[biome]?.["rare"]} rarity={"rare"} loot={(customData)[biome]["rare"]} />
+                <ItemsCard advancement={advancementData[biome]?.["epic"]} rarity={"epic"} loot={(customData)[biome]["epic"]} />
+                <ItemsCard advancement={advancementData[biome]?.["legendary"]} rarity={"legendary"} loot={(customData)[biome]["legendary"]} />
               </Grid>
             </Section>
           )
