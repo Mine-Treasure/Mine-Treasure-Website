@@ -46,6 +46,21 @@ const StatsModal = ({ item, setModal }: { item: MT_ITEM, setModal: Function }) =
                                 {!item.unbreakable && !item.enchantments && !item.enchantWithLevel && <p className="text-center"><i>No enchantments</i></p>}
                             </div>
                         </section>
+                        {item.conditions.stoneMined && (
+                            <section className="lg:col-span-3">
+                                <h1 className="text-xl md:text-4xl font-bold mb-5 text-center">Conditions</h1>
+                                <div className="flex flex-col gap-3 items-center">
+                                    {/* Stone mined */}
+                                    {item.conditions.stoneMined && (
+                                        <div className="flex flex-col gap-3 bg-gray-300 border border-gray-400 p-2 rounded-lg">
+                                            <h2 className="text-lg font-bold">Blocks mined</h2>
+                                            {item.conditions.stoneMined.min && <span>Min: {item.conditions.stoneMined.min}</span>}
+                                            {item.conditions.stoneMined.max && <span>Max: {item.conditions.stoneMined.max}</span>}
+                                        </div>
+                                    )}
+                                </div>
+                            </section>
+                        )}
                         {item.nbt && (
                             <section className="lg:col-span-3">
                                 <NBTBlock nbt={item.nbt}></NBTBlock>

@@ -202,8 +202,9 @@ const IndexPage = () => {
             <div className="relative">
               <span className="absolute left-0 font-bold font-mono">0</span>
               <span className="absolute right-0 font-bold font-mono">{formatNumber(500000)}</span>
-              <p className="font-bold font-mono text-center">Current: {formatNumber(blocksMined)}</p>
-
+              <p className="font-bold font-mono text-center">
+                Current: {formatNumber(blocksMined)}
+              </p>
               <input type="range" min="0" max="500000" onClickCapture={(e) => setBlocksMined((e.target as any).value)} className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer"></input>
             </div>
           </Section>
