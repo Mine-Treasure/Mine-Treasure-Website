@@ -1852,9 +1852,9 @@ react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "https://registry.npmjs.org/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz"
 
-react-markdown@^8.0.4:
-  version "8.0.5"
-  resolved "https://registry.npmjs.org/react-markdown/-/react-markdown-8.0.5.tgz"
+react-markdown@^8.0.6:
+  version "8.0.6"
+  resolved "https://registry.yarnpkg.com/react-markdown/-/react-markdown-8.0.6.tgz#3e939018f8bfce800ffdf22cf50aba3cdded7ad1"
   dependencies:
     "@types/hast" "^2.0.0"
     "@types/prop-types" "^15.0.0"
