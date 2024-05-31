@@ -35,6 +35,24 @@
             "description": "Find your first Rare Basalt Deltas Treasure!"
         }
     },
+    "crimson_treasure": {
+        "common": {
+            "title": "Crim-Soon",
+            "description": "Find your first Common Crimson Forest Treasure!"
+        },
+        "epic": {
+            "title": "Crimson Crime",
+            "description": "Find your first Epic Crimson Forest Treasure!"
+        },
+        "legendary": {
+            "title": "Hyph-yay, Crimson Slay!",
+            "description": "Find your first Legendary Crimson Forest Treasure!"
+        },
+        "rare": {
+            "title": "Crimson Prism",
+            "description": "Find your first Rare Crimson Forest Treasure!"
+        }
+    },
     "dark_forest_treasure": {
         "common": {
             "title": "Enjoying The Shade?",
@@ -357,6 +375,24 @@
         "rare": {
             "title": "What Did The Fox Say?",
             "description": "Find your first Rare Taiga Treasure!"
+        }
+    },
+    "warped_treasure": {
+        "common": {
+            "title": "Warping...",
+            "description": "Find your first Common Warped Forest Treasure!"
+        },
+        "epic": {
+            "title": "Warped Wrap",
+            "description": "Find your first Epic Warped Forest Treasure!"
+        },
+        "legendary": {
+            "title": "Blink Blink, Instant Wink",
+            "description": "Find your first Legendary Warped Forest Treasure!"
+        },
+        "rare": {
+            "title": "Wrap That Trap",
+            "description": "Find your first Rare Warped Forest Treasure!"
         }
     },
     "wind_treasure": {
