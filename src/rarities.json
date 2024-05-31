@@ -179,17 +179,17 @@
         "epic": 17,
         "legendary": 17
     },
+    "nether_quartz_ore": {
+        "common": 17,
+        "rare": 17,
+        "epic": 17,
+        "legendary": 17
+    },
     "orange_terracotta": {
         "common": 11,
         "rare": 11,
         "epic": 11,
         "legendary": 11
-    },
-    "undefined": {
-        "common": 17,
-        "rare": 17,
-        "epic": 17,
-        "legendary": 17
     },
     "redstone_ore": {
         "common": 17,

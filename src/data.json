@@ -2679,7 +2679,7 @@
             {
                 "type": "stick",
                 "conditions": {},
-                "name": "Pillager Outpost Horn",
+                "name": "Pillager Outpost Wand",
                 "lore": [
                     "  ",
                     "Spawn a Pillager Outpost right in ",
@@ -12675,7 +12675,7 @@
                         "min": 310000
                     }
                 },
-                "name": "Lucky Cow Horn",
+                "name": "Lucky Cow Wand",
                 "lore": [
                     "  ",
                     "Calls the Lucky cow which one can ",
@@ -12771,7 +12771,7 @@
                         "min": 350000
                     }
                 },
-                "name": "Saturation Cow Horn",
+                "name": "Saturation Cow Wand",
                 "lore": [
                     "  ",
                     "Calls the Saturation cow ",
@@ -14697,7 +14697,7 @@
                         "max": 499999
                     }
                 },
-                "name": "Donkey Horn",
+                "name": "Donkey Wand",
                 "lore": ["  ", "Spawns a speedy donkey. "],
                 "components": {
                     "minecraft:custom_data": {
@@ -15305,7 +15305,7 @@
             {
                 "type": "stick",
                 "conditions": {},
-                "name": "Horse Horn",
+                "name": "Horse Wand",
                 "lore": ["  ", "Spawns a decent horse. "],
                 "components": {
                     "minecraft:custom_data": {
