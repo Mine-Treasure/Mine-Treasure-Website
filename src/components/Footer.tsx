@@ -20,7 +20,7 @@ const Footer = () => {
                     . All Rights Reserved.
                 </span>
                 {loaded && (
-                    <span className='text-sm ml-10'>
+                    <span className='text-sm ml-10 text-gray-500 sm:text-center'>
                         <Link
                             href={`https://github.com/${data.repo_owner}/${data.repo_name}`}
                         >
@@ -28,6 +28,7 @@ const Footer = () => {
                         </Link>{' '}
                         {data.commit_ref}@
                         <Link
+                            className='ml-3'
                             href={`https://github.com/${data.repo_owner}/${data.repo_name}/tree/${data.commit_sha}`}
                         >
                             {data.commit_sha.slice(0, 7)}
