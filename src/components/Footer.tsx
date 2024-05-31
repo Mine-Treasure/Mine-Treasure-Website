@@ -4,7 +4,7 @@ import Link from 'next/link';
 import useRequest from '../hooks/useRequest';
 
 const Footer = () => {
-    const [data, loading] = useRequest('/api/github');
+    const [data, loaded] = useRequest('/api/github');
 
     return (
         <footer className='p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 mt-10'>
@@ -19,7 +19,7 @@ const Footer = () => {
                     </a>
                     . All Rights Reserved.
                 </span>
-                {!loading && (
+                {loaded && (
                     <span className='text-sm ml-10'>
                         <Link
                             href={`https://github.com/${data.repo_owner}/${data.repo_name}`}
