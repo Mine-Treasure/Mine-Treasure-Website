@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image';
 import React from 'react';
 import Link from 'next/link';
@@ -7,93 +9,119 @@ const Footer = () => {
     const [data, loaded] = useRequest('/api/github');
 
     return (
-        <footer className='p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 mt-10'>
-            <div>
-                <span className='text-sm text-gray-500 sm:text-center'>
-                    © {new Date().getFullYear()}{' '}
-                    <a
-                        href='https://github.com/mine-treasure/'
-                        className='hover:underline'
-                    >
-                        Mine Treasure
-                    </a>
-                    . All Rights Reserved.
-                </span>
-                {loaded && (
-                    <span className='text-sm ml-10 text-gray-500 sm:text-center'>
-                        <Link
-                            href={`https://github.com/${data.repo_owner}/${data.repo_name}`}
-                        >
-                            {data.repo_owner}/{data.repo_name}
-                        </Link>{' '}
-                        {data.commit_ref}@
-                        <Link
-                            className='ml-3'
-                            href={`https://github.com/${data.repo_owner}/${data.repo_name}/tree/${data.commit_sha}`}
-                        >
-                            {data.commit_sha.slice(0, 7)}
-                        </Link>{' '}
-                    </span>
-                )}
+        <footer className="border-t border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900">
+            <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div className="space-y-4">
+                        <h3 className="text-sm font-semibold text-zinc-900 dark:text-white">Mine Treasure</h3>
+                        <p className="text-sm text-zinc-600 dark:text-zinc-400">
+                            Discover hidden treasures across Minecraft&apos;s vast biomes.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 className="text-sm font-semibold text-zinc-900 dark:text-white mb-4">Resources</h3>
+                        <ul className="space-y-3">
+                            <li>
+                                <a
+                                    href="/download"
+                                    className="text-sm text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors"
+                                >
+                                    Download Datapack
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://github.com/mine-treasure/mine-treasure"
+                                    className="text-sm text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors"
+                                >
+                                    Datapack Source
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://github.com/prodbyeagle/minetreasure"
+                                    className="text-sm text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors"
+                                >
+                                    Website Source
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 className="text-sm font-semibold text-zinc-900 dark:text-white mb-4">Support</h3>
+                        <ul className="space-y-3">
+                            <li>
+                                <Link
+                                    href="https://ko-fi.com/frozytime"
+                                    target="_blank"
+                                    className="flex items-center gap-2 text-sm text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors"
+                                >
+                                    Support Datapack Author
+                                    <Image
+                                        src="/images/kofi.webp"
+                                        alt="Ko-fi"
+                                        height={30}
+                                        width={30}
+                                        className="rounded"
+                                    />
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    href="https://ko-fi.com/supercrafter100"
+                                    target="_blank"
+                                    className="flex items-center gap-2 text-sm text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors"
+                                >
+                                    Support Website Author
+                                    <Image
+                                        src="/images/kofi.webp"
+                                        alt="Ko-fi"
+                                        height={30}
+                                        width={30}
+                                        className="rounded"
+                                    />
+                                </Link>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 className="text-sm font-semibold text-zinc-900 dark:text-white mb-4">Version</h3>
+                        {loaded && data && (
+                            <div className="space-y-2">
+                                <p className="text-sm text-zinc-600 dark:text-zinc-400">
+                                    <Link
+                                        href={`https://github.com/prodbyeagle/minetreasure`}
+                                        className="hover:text-zinc-900 dark:hover:text-white transition-colors"
+                                    >
+                                        {data.repo_owner}/{data.repo_name}
+                                    </Link>
+                                </p>
+                                <p className="text-sm text-zinc-600 dark:text-zinc-400">
+                                    <Link
+                                        href={`https://github.com/${data.repo_owner}/${data.repo_name}/tree/${data.commit_sha}`}
+                                        className="hover:text-zinc-900 dark:hover:text-white transition-colors"
+                                        title={data.commit_msg}
+                                    >
+                                        Commit: {data.commit_ref}@{data.commit_sha.slice(0, 7)}
+                                    </Link>
+                                </p>
+                            </div>
+                        )}
+                    </div>
+                </div>
+
+                <div className="mt-8 pt-8 border-t border-zinc-200 dark:border-zinc-800">
+                    <p className="text-sm text-zinc-600 dark:text-zinc-400 text-center">
+                        {new Date().getFullYear()} Mine Treasure. All rights reserved.
+                    </p>
+                    <p className="text-sm text-zinc-600 dark:text-zinc-400 text-center">
+                        made by @prodbyeagle | Original Page by: @supercrafter100
+                    </p>
+                </div>
             </div>
-            <ul className='flex flex-wrap items-center mt-3 text-sm text-gray-500 sm:mt-0'>
-                <li>
-                    <a
-                        href='https://modrinth.com/datapack/mine-treasure'
-                        className='mr-4 hover:underline md:mr-6'
-                    >
-                        Datapack
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href='https://github.com/mine-treasure/mine-treasure'
-                        className='mr-4 md:mr-6'
-                    >
-                        Pack github
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href='https://github.com/Mine-Treasure/Mine-Treasure-Website'
-                        className='mr-4 md:mr-6'
-                    >
-                        Site github
-                    </a>
-                </li>
-                <li className='hover:bg-gray-100 rounded-lg'>
-                    <Link
-                        className='mr-4 md:mr-6'
-                        href='https://ko-fi.com/frozytime'
-                        target='_blank'
-                    >
-                        <Image
-                            src='/images/kofi.webp'
-                            className='inline-block'
-                            alt='Ko-fi'
-                            height={48}
-                            width={48}
-                        />
-                        <span className='ml-2'>Support datapack author</span>
-                    </Link>
-                </li>
-                <li className='hover:bg-gray-100 rounded-lg'>
-                    <Link
-                        href='https://ko-fi.com/supercrafter100'
-                        className='mr-4 md:mr-6'
-                        target='_blank'
-                    >
-                        <Image
-                            src='/images/kofi.webp'
-                            className='inline-block'
-                            alt='Ko-fi'
-                            height={48}
-                            width={48}
-                        />
-                        <span className='ml-2'>Support website author</span>
-                    </Link>
-                </li>
-            </ul>
         </footer>
     );
 };
