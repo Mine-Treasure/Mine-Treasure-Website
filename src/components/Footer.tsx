@@ -57,7 +57,7 @@ const Footer = () => {
                             </li>
                             <li>
                                 <a
-                                    href="https://github.com/prodbyeagle/minetreasure"
+                                    href="https://github.com/Mine-Treasure/Mine-Treasure-Website"
                                     className="text-sm text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors"
                                 >
                                     Website Source
