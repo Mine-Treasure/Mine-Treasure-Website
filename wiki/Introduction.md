@@ -1,1 +1,0 @@
-Mine Treasure is a data pack with lots of content that is too much to fit into one single post. It is therefore decided that I will dedicate a wiki towards Mine Treasure for those who are interested in every single aspect. 
