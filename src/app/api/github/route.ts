@@ -3,15 +3,13 @@ import { NextResponse } from 'next/server';
 
 export async function GET() {
     try {
-        const response = await fetch('https://mine-treasure.com/api/github', {
-            next: { revalidate: 3600 },
-        });
-
-        if (!response.ok) {
-            throw new Error(`Error: ${response.status} ${response.statusText}`);
-        }
-
-        const data = await response.json();
+        const data = {
+            repo_owner: process.env.VERCEL_GIT_REPO_OWNER,
+            repo_name: process.env.VERCEL_GIT_REPO_SLUG,
+            commit_ref: process.env.VERCEL_GIT_COMMIT_REF,
+            commit_sha: process.env.VERCEL_GIT_COMMIT_SHA,
+            commit_msg: process.env.VERCEL_GIT_COMMIT_MESSAGE,
+        };
         return NextResponse.json(data);
     } catch (error) {
         return NextResponse.json(
