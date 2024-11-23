@@ -12,6 +12,7 @@ const Review = ({ text, username }: ReviewProps) => {
                     src={`http://cravatar.eu/helmavatar/${username}.png`} 
                     alt={username} 
                     className="rounded-full" 
+                    unoptimized
                 />
                 <span className="text-sm font-medium text-zinc-900 dark:text-white">@{username}</span>
             </div>

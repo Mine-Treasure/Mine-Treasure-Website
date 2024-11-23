@@ -41,6 +41,7 @@ export const getBiomeIcon = (biome: string) => {
             width={30}
             height={30}
             className="pixelated"
+            unoptimized
         />
     );
 };

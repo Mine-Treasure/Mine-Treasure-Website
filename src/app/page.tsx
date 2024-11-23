@@ -52,6 +52,7 @@ export default function Home() {
                   width={500}
                   height={500}
                   priority
+                  unoptimized
                   className="w-full max-w-[500px] h-auto xl:max-w-[600px] 2xl:max-w-[700px]"
                 />
               </div>
@@ -73,6 +74,7 @@ export default function Home() {
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-cover"
+                    unoptimized
                   />
                 </div>
                 <h3 className="text-xl font-semibold mb-4">Custom treasures</h3>
@@ -91,6 +93,7 @@ export default function Home() {
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-cover"
+                    unoptimized
                   />
                 </div>
                 <h3 className="text-xl font-semibold mb-4">Biome specific</h3>
@@ -108,6 +111,7 @@ export default function Home() {
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-cover"
+                    unoptimized
                   />
                 </div>
                 <h3 className="text-xl font-semibold mb-4">Custom items</h3>
@@ -126,6 +130,7 @@ export default function Home() {
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-cover"
+                    unoptimized
                   />
                 </div>
                 <h3 className="text-xl font-semibold mb-4">Advancements</h3>

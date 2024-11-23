@@ -22,6 +22,7 @@ export default function ItemCard({ item, getItemImage, onClick }: ItemCardProps)
                     width={24}
                     height={24}
                     className="pixelated"
+                    unoptimized
                 />
             </div>
             <div className="min-w-0 flex-1">

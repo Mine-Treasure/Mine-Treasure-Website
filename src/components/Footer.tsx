@@ -82,6 +82,7 @@ const Footer = () => {
                                         height={30}
                                         width={30}
                                         className="rounded"
+                                        unoptimized
                                     />
                                 </Link>
                             </li>
@@ -98,6 +99,7 @@ const Footer = () => {
                                         height={30}
                                         width={30}
                                         className="rounded"
+                                        unoptimized
                                     />
                                 </Link>
                             </li>

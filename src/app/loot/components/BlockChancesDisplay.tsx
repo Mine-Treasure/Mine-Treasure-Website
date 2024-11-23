@@ -30,6 +30,7 @@ export default function BlockChancesDisplay() {
                                     height={32}
                                     alt={blockName}
                                     className="rounded-sm"
+                                    unoptimized
                                 />
                                 <h3 className="font-medium">
                                     {blockName.split('_').map((word: string) => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}
