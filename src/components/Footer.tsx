@@ -1,12 +1,29 @@
 'use client'
 
 import Image from 'next/image';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import useRequest from '../hooks/useRequest';
+import type { GitHubData } from '@/types/types';
 
 const Footer = () => {
-    const [data, loaded] = useRequest('/api/github');
+    const [data, setData] = useState<GitHubData | null>(null);
+    const [loaded, setLoaded] = useState(false);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch('/api/github');
+                const githubData = await response.json();
+                setData(githubData);
+            } catch (error) {
+                console.error('Error fetching GitHub data:', error);
+            } finally {
+                setLoaded(true);
+            }
+        };
+
+        fetchData();
+    }, []);
 
     return (
         <footer className="border-t border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900">
@@ -93,21 +110,23 @@ const Footer = () => {
                             <div className="space-y-2">
                                 <p className="text-sm text-zinc-600 dark:text-zinc-400">
                                     <Link
-                                        href={`https://github.com/prodbyeagle/minetreasure`}
+                                        href={`https://github.com/${data.repo_owner}/${data.repo_name}`}
                                         className="hover:text-zinc-900 dark:hover:text-white transition-colors"
                                     >
                                         {data.repo_owner}/{data.repo_name}
                                     </Link>
                                 </p>
-                                <p className="text-sm text-zinc-600 dark:text-zinc-400">
-                                    <Link
-                                        href={`https://github.com/${data.repo_owner}/${data.repo_name}/tree/${data.commit_sha}`}
-                                        className="hover:text-zinc-900 dark:hover:text-white transition-colors"
-                                        title={data.commit_msg}
-                                    >
-                                        Commit: {data.commit_ref}@{data.commit_sha.slice(0, 7)}
-                                    </Link>
-                                </p>
+                                {data.commit_sha !== 'development' && (
+                                    <p className="text-sm text-zinc-600 dark:text-zinc-400">
+                                        <Link
+                                            href={`https://github.com/${data.repo_owner}/${data.repo_name}/tree/${data.commit_sha}`}
+                                            className="hover:text-zinc-900 dark:hover:text-white transition-colors"
+                                            title={data.commit_msg}
+                                        >
+                                            Commit: {data.commit_ref}@{data.commit_sha.slice(0, 7)}
+                                        </Link>
+                                    </p>
+                                )}
                             </div>
                         )}
                     </div>
