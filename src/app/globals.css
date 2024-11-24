@@ -50,7 +50,7 @@
 .eagle-text {
   background-clip: text;
   -webkit-background-clip: text;
-  animation: shine 2s linear infinite;
+  animation: shine 7s linear infinite;
   color: #d683ff;
   mask-image: linear-gradient(
     -75deg,
