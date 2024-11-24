@@ -64,6 +64,5 @@
     #fff 50%,
     rgba(255, 255, 255, 0.6) 70%
   );
-  -webkit-mask-size: 200%;
   mask-size: 200%;
 }
