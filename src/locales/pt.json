@@ -1,0 +1,162 @@
+{
+    "home": {
+        "hero": {
+            "title": "Torne a mineração agradável novamente",
+            "description": "Já se cansou de minerar sem fim e sem objetivo? Sem motivação para fazer mineração em tiras? Sem vontade de continuar essa tarefa repetitiva por minérios? Bem, este pacote de dados visa mudar exatamente isso.",
+            "readMore": "Leia mais...",
+            "startPlaying": "Comece a jogar"
+        },
+        "why": {
+            "title": "Por que este datapack?",
+            "features": {
+                "treasures": {
+                    "title": "Tesouros personalizados",
+                    "description": "Este pacote de dados introduz uma forma totalmente nova de abordar a mineração com um enorme sistema de recompensas. Os tesouros têm chance de aparecer ao minerar um bloco relacionado à pedra. Esses tesouros são divididos em vários níveis diferentes: Comum, Raro, Épico e Lendário."
+                },
+                "biomes": {
+                    "title": "Específico para biomas",
+                    "description": "Existem tesouros específicos para biomas, dependendo do bioma em que o jogador está, o que também motiva a construção de bases diferentes em biomas diferentes."
+                },
+                "items": {
+                    "title": "Itens personalizados",
+                    "description": "Este pacote de dados inclui mais de 80 tabelas de saque com armaduras personalizadas, armas personalizadas, comida personalizada, avanços personalizados e itens utilitários personalizados com estatísticas aleatórias, tornando muitos itens únicos."
+                },
+                "advancements": {
+                    "title": "Avanços",
+                    "description": "Há um sistema de avanços personalizado com 201 novos avanços! Este pacote de dados introduz uma adição insana de novas conquistas projetadas em torno dos novos recursos personalizados que este pacote de dados oferece."
+                }
+            }
+        },
+        "reviews": {
+            "title": "O que os jogadores dizem",
+            "testimonials": {
+                "1": {
+                    "text": "Tanto conteúdo, dá para perceber que muito trabalho foi investido nisso, muito impressionante!",
+                    "author": "Kefaku"
+                },
+                "2": {
+                    "text": "Eu amo tanto este pacote. Minerar é uma daquelas coisas maçantes no Minecraft que eu costumava odiar, mas agora tem um charme tão grande!",
+                    "author": "ThatwitchyPlayr"
+                },
+                "3": {
+                    "text": "Os tesouros específicos dos biomas são incríveis! Me dá um motivo para explorar e construir bases em diferentes biomas. O melhor pacote de mineração de todos os tempos!",
+                    "author": "prodbyeagle"
+                },
+                "4": {
+                    "text": "Os itens personalizados e avanços adicionam tanta profundidade ao jogo. Cada sessão de mineração agora parece uma caça ao tesouro!",
+                    "author": "Technoblade"
+                }
+            }
+        },
+        "statistics": {
+            "title": "Nossas estatísticas diárias"
+        },
+        "compatibility": {
+            "title": "Compatibilidade",
+            "table": {
+                "headers": {
+                    "software": "Software",
+                    "compatible": "Compatível",
+                    "extra": "Extra"
+                },
+                "entries": {
+                    "realms": {
+                        "name": "Realms",
+                        "description": "Se você tem o pacote de dados no Realms, pode notar que os tesouros do mundo superior às vezes não funcionam. Isso ocorre porque o Realms renomeia todas as pastas contendo \"World\" para corresponder ao nome do Realm, afetando as pastas do pacote de dados. A pasta do mundo superior é renomeada para over(NOME DO REALM). Esperamos que a Mojang corrija isso em uma atualização futura."
+                    },
+                    "spigot": {
+                        "name": "Spigot",
+                        "description": "Não recomendado para múltiplos pacotes de dados. Devido ao bloqueio de colocação de NBT do Spigot, contêineres com NBTs (como baús com saques) não conterão saques quando colocados. Para outros problemas, por favor, junte-se ao nosso Discord."
+                    },
+                    "papermc": {
+                        "name": "PaperMC",
+                        "description": "Nenhuma inconsistência até o momento. No entanto, se houver, por favor, relate em nosso Discord."
+                    },
+                    "fabric": {
+                        "name": "Fabric",
+                        "description": "Pessoalmente recomendado para pacotes de dados, pois tem desempenho muito semelhante ao Vanilla. Relate quaisquer problemas em nosso Discord."
+                    },
+                    "forge": {
+                        "name": "Forge",
+                        "description": "Testes limitados realizados, mas nenhum problema descoberto até agora."
+                    },
+                    "quilt": {
+                        "name": "Quilt",
+                        "description": "Similar ao Fabric. Testes limitados, mas devido à arquitetura semelhante ao Fabric, esperamos boa compatibilidade."
+                    },
+                    "other": {
+                        "name": "Outros",
+                        "description": "Para quaisquer outros problemas de compatibilidade relacionados a plugins/mods, por favor, relate-os em nosso Discord para possível resolução em atualizações futuras."
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "navbar": {
+            "home": "Início",
+            "loot": "Saques",
+            "download": "Download",
+            "discord": "Discord",
+            "title": "Mine Treasure"
+        },
+        "footer": {
+            "title": "Mine Treasure",
+            "description": "Descubra tesouros escondidos pelos vastos biomas do Minecraft.",
+            "resources": {
+                "title": "Recursos",
+                "download": "Baixar Datapack",
+                "github": "Repositório GitHub"
+            },
+            "community": {
+                "title": "Comunidade",
+                "discord": "Junte-se ao Discord",
+                "issues": "Relatar Problemas"
+            },
+            "legal": {
+                "title": "Legal",
+                "terms": "Termos de Serviço",
+                "privacy": "Política de Privacidade"
+            }
+        }
+    },
+    "download": {
+        "title": "Baixe o Mine Treasure",
+        "subtitle": "Escolha sua plataforma preferida para baixar o Mine Treasure. Certifique-se de ler as instruções de instalação para sua plataforma específica.",
+        "modrinth": {
+            "title": "Modrinth",
+            "description": "Baixe do Modrinth, um repositório de mods do Minecraft dirigido pela comunidade.",
+            "button": "Baixar do Modrinth"
+        },
+        "installation": {
+            "title": "Instruções de Instalação",
+            "steps": [
+                {
+                    "title": "Baixe o Datapack",
+                    "description": "Clique no botão de download acima para obter a versão mais recente do Modrinth."
+                },
+                {
+                    "title": "Localize a Pasta do Seu Mundo",
+                    "description": "Navegue até a pasta do seu mundo do Minecraft:\n- Windows: %appdata%/.minecraft/saves/[nome do mundo]\n- macOS: ~/Library/Application Support/minecraft/saves/[nome do mundo]\n- Linux: ~/.minecraft/saves/[nome do mundo]"
+                },
+                {
+                    "title": "Instale o Datapack",
+                    "description": "Encontre a pasta \"datapacks\" na pasta do seu mundo. Se ela não existir, crie-a. Em seguida, arraste e solte o arquivo .zip baixado nesta pasta."
+                },
+                {
+                    "title": "Carregue o Datapack",
+                    "description": "Se você estiver instalando isso em um mundo existente, digite /reload no jogo. Para um novo mundo, o datapack será carregado automaticamente quando você criar o mundo."
+                },
+                {
+                    "title": "Verifique a Instalação",
+                    "description": "Digite /datapack list para confirmar que \"Mine Treasure\" está listado e ativado."
+                }
+            ]
+        },
+        "needHelp": {
+            "title": "Precisa de Ajuda?",
+            "description": "Está tendo problemas com a instalação ou encontrou um bug? Junte-se à nossa comunidade no Discord para obter suporte!",
+            "button": "Junte-se ao Discord"
+        }
+    }
+}

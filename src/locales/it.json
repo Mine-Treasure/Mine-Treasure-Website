@@ -1,0 +1,162 @@
+{
+    "home": {
+        "hero": {
+            "title": "Rendi di nuovo divertente il mining",
+            "description": "Ti sei mai stancato di scavare senza fine senza uno scopo preciso? Nessuna motivazione per fare strip-mining? Nessuna voglia di ripetere questa attività noiosa per ottenere minerali? Bene, questo datapack mira a cambiare esattamente questo.",
+            "readMore": "Leggi di più...",
+            "startPlaying": "Inizia a giocare"
+        },
+        "why": {
+            "title": "Perché questo datapack?",
+            "features": {
+                "treasures": {
+                    "title": "Tesori personalizzati",
+                    "description": "Questo datapack introduce un modo completamente nuovo di approcciarsi al mining con un enorme sistema di ricompense. I tesori hanno una possibilità di apparire quando si scava un blocco di pietra. Questi tesori sono divisi in diversi livelli: Comune, Raro, Epico e Leggendario."
+                },
+                "biomes": {
+                    "title": "Specifico per bioma",
+                    "description": "Ci sono tesori specifici per bioma a seconda del bioma in cui si trova il giocatore, il che motiva anche la costruzione di basi in diversi biomi."
+                },
+                "items": {
+                    "title": "Oggetti personalizzati",
+                    "description": "Questo datapack include oltre 80+ tabelle di bottino con armature personalizzate, armi personalizzate, cibo personalizzato, progressi personalizzati e oggetti di utilità personalizzati con statistiche casuali, rendendo molti oggetti unici."
+                },
+                "advancements": {
+                    "title": "Progressi",
+                    "description": "C'è un sistema di progressi personalizzato con 201 nuovi progressi! Questo datapack introduce un'incredibile aggiunta di nuovi obiettivi progettati attorno alle nuove funzionalità personalizzate che questo datapack fornisce."
+                }
+            }
+        },
+        "reviews": {
+            "title": "Cosa dicono i giocatori",
+            "testimonials": {
+                "1": {
+                    "text": "Così tanto contenuto, si vede che c'è stato molto lavoro dietro, davvero impressionante!",
+                    "author": "Kefaku"
+                },
+                "2": {
+                    "text": "Amo così tanto questo pack. Il mining era una di quelle cose noiose in minecraft che odiavo tanto, ma ora ha un fascino tutto suo!",
+                    "author": "ThatwitchyPlayr"
+                },
+                "3": {
+                    "text": "I tesori specifici per bioma sono fantastici! Mi dà una ragione per esplorare e costruire basi in diversi biomi. Il miglior pack per il mining di sempre!",
+                    "author": "prodbyeagle"
+                },
+                "4": {
+                    "text": "Gli oggetti personalizzati e i progressi aggiungono così tanta profondità al gioco. Ogni sessione di mining ora sembra una caccia al tesoro!",
+                    "author": "Technoblade"
+                }
+            }
+        },
+        "statistics": {
+            "title": "Le nostre statistiche giornaliere"
+        },
+        "compatibility": {
+            "title": "Compatibilità",
+            "table": {
+                "headers": {
+                    "software": "Software",
+                    "compatible": "Compatibile",
+                    "extra": "Extra"
+                },
+                "entries": {
+                    "realms": {
+                        "name": "Realms",
+                        "description": "Se hai il datapack su Realms potresti notare che i tesori del mondo normale a volte non funzionano. Questo è dovuto al fatto che Realms rinomina ogni cartella contenente \"World\" per far corrispondere il nome del Realm, influenzando le cartelle del datapack. La cartella del mondo normale viene rinominata in over(NOME DEL REALM). Speriamo che Mojang risolva questo problema in un futuro aggiornamento."
+                    },
+                    "spigot": {
+                        "name": "Spigot",
+                        "description": "Non raccomandato per datapack multipli. A causa del blocco del posizionamento NBT di Spigot, i contenitori con NBT (come le casse con bottino) non conterranno bottino quando posizionati. Per altri problemi, unisciti al nostro Discord."
+                    },
+                    "papermc": {
+                        "name": "PaperMC",
+                        "description": "Nessuna inconsistenza al momento. Tuttavia, se ce ne fossero, per favore segnalale sul nostro Discord."
+                    },
+                    "fabric": {
+                        "name": "Fabric",
+                        "description": "Personalmente raccomandato per i datapack in quanto si comporta in modo molto simile alla Vanilla. Segnala eventuali problemi sul nostro Discord."
+                    },
+                    "forge": {
+                        "name": "Forge",
+                        "description": "Test limitati effettuati, ma nessun problema scoperto finora."
+                    },
+                    "quilt": {
+                        "name": "Quilt",
+                        "description": "Simile a Fabric. Test limitati, ma grazie all'architettura simile a Fabric, ci aspettiamo una buona compatibilità."
+                    },
+                    "other": {
+                        "name": "Altro",
+                        "description": "Per qualsiasi altro problema di compatibilità relativo a plugin/mod, per favore segnalalo sul nostro Discord per una potenziale risoluzione in futuri aggiornamenti."
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "navbar": {
+            "home": "Home",
+            "loot": "Bottino",
+            "download": "Scarica",
+            "discord": "Discord",
+            "title": "Mine Treasure"
+        },
+        "footer": {
+            "title": "Mine Treasure",
+            "description": "Scopri tesori nascosti in tutti i vasti biomi di Minecraft.",
+            "resources": {
+                "title": "Risorse",
+                "download": "Scarica Datapack",
+                "github": "Repository GitHub"
+            },
+            "community": {
+                "title": "Comunità",
+                "discord": "Unisciti a Discord",
+                "issues": "Segnala Problemi"
+            },
+            "legal": {
+                "title": "Legale",
+                "terms": "Termini di Servizio",
+                "privacy": "Politica sulla Privacy"
+            }
+        }
+    },
+    "download": {
+        "title": "Scarica Mine Treasure",
+        "subtitle": "Scegli la tua piattaforma preferita per scaricare Mine Treasure. Assicurati di leggere le istruzioni di installazione per la tua piattaforma specifica.",
+        "modrinth": {
+            "title": "Modrinth",
+            "description": "Scarica da Modrinth, un repository di mod per Minecraft gestito dalla comunità.",
+            "button": "Scarica da Modrinth"
+        },
+        "installation": {
+            "title": "Istruzioni di Installazione",
+            "steps": [
+                {
+                    "title": "Scarica il Datapack",
+                    "description": "Clicca il pulsante di download sopra per ottenere l'ultima versione da Modrinth."
+                },
+                {
+                    "title": "Trova la Cartella del tuo Mondo",
+                    "description": "Naviga alla cartella del tuo mondo di Minecraft:\n- Windows: %appdata%/.minecraft/saves/[nome del mondo]\n- macOS: ~/Library/Application Support/minecraft/saves/[nome del mondo]\n- Linux: ~/.minecraft/saves/[nome del mondo]"
+                },
+                {
+                    "title": "Installa il Datapack",
+                    "description": "Trova la cartella \"datapacks\" nella cartella del tuo mondo. Se non esiste, creala. Poi, trascina e rilascia il file .zip scaricato in questa cartella."
+                },
+                {
+                    "title": "Carica il Datapack",
+                    "description": "Se stai installando questo su un mondo esistente, digita /reload nel gioco. Per un nuovo mondo, il datapack si caricherà automaticamente quando crei il mondo."
+                },
+                {
+                    "title": "Verifica l'Installazione",
+                    "description": "Digita /datapack list per confermare che \"Mine Treasure\" sia elencato e abilitato."
+                }
+            ]
+        },
+        "needHelp": {
+            "title": "Hai bisogno di aiuto?",
+            "description": "Hai problemi con l'installazione o hai incontrato un bug? Unisciti alla nostra comunità Discord per supporto!",
+            "button": "Unisciti a Discord"
+        }
+    }
+}

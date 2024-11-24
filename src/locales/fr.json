@@ -1,0 +1,157 @@
+{
+    "home": {
+        "hero": {
+            "title": "Rendez le minage agréable à nouveau",
+            "description": "En avez-vous assez de miner sans fin sans objectif en tête ? Pas de motivation pour faire du strip-mining ? Pas envie de cette tâche répétitive pour les minerais ? Eh bien, ce pack de données vise à changer exactement cela.",
+            "readMore": "En savoir plus...",
+            "startPlaying": "Commencer à jouer"
+        },
+        "why": {
+            "title": "Pourquoi ce pack de données ?",
+            "features": {
+                "treasures": {
+                    "title": "Trésors personnalisés",
+                    "description": "Ce pack de données introduit une toute nouvelle façon d'aborder le minage avec un énorme système de récompenses. Les trésors ont une chance d'apparaître lors du minage d'un bloc lié à la pierre. Ces trésors sont divisés en plusieurs niveaux différents : Commun, Rare, Épique et Légendaire."
+                },
+                "biomes": {
+                    "title": "Spécifique aux biomes",
+                    "description": "Il y a des trésors spécifiques selon le biome dans lequel se trouve le joueur, ce qui motive également la construction de bases dans différents biomes."
+                },
+                "items": {
+                    "title": "Objets personnalisés",
+                    "description": "Ce pack de données comprend plus de 80 tables de butin avec des armures personnalisées, des armes personnalisées, de la nourriture personnalisée, des progrès personnalisés et des objets utilitaires personnalisés avec des statistiques aléatoires, rendant de nombreux objets uniques."
+                },
+                "advancements": {
+                    "title": "Progrès",
+                    "description": "Il y a un système de progrès personnalisé avec 201 nouveaux succès ! Ce pack de données introduit un ajout incroyable de nouveaux succès conçus autour des nouvelles fonctionnalités personnalisées que ce pack de données fournit."
+                }
+            }
+        },
+        "reviews": {
+            "title": "Ce que disent les joueurs",
+            "testimonials": {
+                "1": {
+                    "text": "Tellement de contenu, on peut voir que beaucoup de travail y a été consacré, très impressionnant !",
+                    "author": "Kefaku"
+                },
+                "2": {
+                    "text": "J'aime tellement ce pack. Le minage était une de ces choses ennuyeuses dans minecraft que je détestais tant, mais maintenant il a tellement d'attrait !",
+                    "author": "ThatwitchyPlayr"
+                },
+                "3": {
+                    "text": "Les trésors spécifiques aux biomes sont incroyables ! Cela me donne une raison d'explorer et de construire des bases dans différents biomes. Meilleur pack de minage de tous les temps !",
+                    "author": "prodbyeagle"
+                },
+                "4": {
+                    "text": "Les objets personnalisés et les progrès ajoutent tellement de profondeur au jeu. Chaque session de minage ressemble maintenant à une chasse au trésor !",
+                    "author": "Technoblade"
+                }
+            }
+        },
+        "statistics": {
+            "title": "Nos statistiques quotidiennes"
+        },
+        "compatibility": {
+            "title": "Compatibilité",
+            "table": {
+                "headers": {
+                    "software": "Logiciel",
+                    "compatible": "Compatible",
+                    "extra": "Extra"
+                },
+                "entries": {
+                    "realms": {
+                        "name": "Realms",
+                        "description": "Si vous avez le pack de données sur realms, vous remarquerez peut-être que les trésors du monde normal ne fonctionnent pas parfois. Cela est dû au fait que Realms renomme chaque dossier contenant \"World\" pour correspondre au nom du Realm, affectant les dossiers du pack de données. Le dossier du monde normal est renommé en over(NOM DU REALM). Nous espérons que Mojang corrigera cela dans une future mise à jour."
+                    },
+                    "spigot": {
+                        "name": "Spigot",
+                        "description": "Non recommandé pour plusieurs packs de données. En raison du blocage du placement NBT de Spigot, les conteneurs avec NBTs (comme les coffres avec du butin) ne contiendront pas de butin une fois placés. Pour d'autres problèmes, rejoignez notre Discord."
+                    },
+                    "papermc": {
+                        "name": "PaperMC",
+                        "description": "Aucune incohérence pour le moment. Cependant, s'il y en a, veuillez les signaler sur notre Discord."
+                    },
+                    "fabric": {
+                        "name": "Fabric",
+                        "description": "Personnellement recommandé pour les packs de données car il fonctionne très similairement à Vanilla. Signalez tout problème sur notre Discord."
+                    },
+                    "forge": {
+                        "name": "Forge",
+                        "description": "Tests limités effectués, mais aucun problème découvert jusqu'à présent."
+                    },
+                    "quilt": {
+                        "name": "Quilt",
+                        "description": "Similaire à Fabric. Tests limités, mais en raison de l'architecture similaire à Fabric, nous attendons une bonne compatibilité."
+                    },
+                    "other": {
+                        "name": "Autres",
+                        "description": "Pour tout autre problème de compatibilité lié aux plugins/mods, veuillez les signaler sur notre Discord pour une résolution possible dans les futures mises à jour."
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "navbar": {
+            "home": "Accueil",
+            "loot": "Butin",
+            "download": "Télécharger",
+            "title": "Mine Treasure",
+            "discord": "Discord"
+        },
+        "footer": {
+            "title": "Mine Treasure",
+            "description": "Découvrez des trésors cachés dans les vastes biomes de Minecraft.",
+            "resources": {
+                "title": "Ressources",
+                "download": "Télécharger le Datapack",
+                "github": "Dépôt GitHub"
+            },
+            "community": {
+                "title": "Communauté",
+                "discord": "Rejoindre Discord",
+                "issues": "Signaler un Problème"
+            }
+        }
+    },
+    "download": {
+        "title": "Télécharger Mine Treasure",
+        "subtitle": "Choisissez votre plateforme préférée pour télécharger Mine Treasure. Assurez-vous de lire les instructions d'installation pour votre plateforme spécifique.",
+        "modrinth": {
+            "title": "Modrinth",
+            "description": "Téléchargez depuis Modrinth, un dépôt de mods Minecraft géré par la communauté.",
+            "button": "Télécharger depuis Modrinth"
+        },
+        "installation": {
+            "title": "Instructions d'Installation",
+            "steps": [
+                {
+                    "title": "Télécharger le Datapack",
+                    "description": "Cliquez sur le bouton de téléchargement ci-dessus pour obtenir la dernière version depuis Modrinth."
+                },
+                {
+                    "title": "Localiser votre Dossier de Monde",
+                    "description": "Naviguez vers votre dossier de monde Minecraft :\n- Windows : %appdata%/.minecraft/saves/[nom du monde]\n- macOS : ~/Library/Application Support/minecraft/saves/[nom du monde]\n- Linux : ~/.minecraft/saves/[nom du monde]"
+                },
+                {
+                    "title": "Installer le Datapack",
+                    "description": "Trouvez le dossier \"datapacks\" dans votre dossier de monde. S'il n'existe pas, créez-le. Ensuite, glissez-déposez le fichier .zip téléchargé dans ce dossier."
+                },
+                {
+                    "title": "Charger le Datapack",
+                    "description": "Si vous installez ceci sur un monde existant, tapez /reload dans le jeu. Pour un nouveau monde, le datapack se chargera automatiquement lors de la création du monde."
+                },
+                {
+                    "title": "Vérifier l'Installation",
+                    "description": "Tapez /datapack list pour confirmer que \"Mine Treasure\" est listé et activé."
+                }
+            ]
+        },
+        "needHelp": {
+            "title": "Besoin d'Aide ?",
+            "description": "Des problèmes avec l'installation ou vous avez trouvé un bug ? Rejoignez notre communauté Discord pour obtenir de l'aide !",
+            "button": "Rejoindre Discord"
+        }
+    }
+}

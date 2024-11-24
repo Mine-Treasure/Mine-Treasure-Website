@@ -1,0 +1,162 @@
+{
+    "home": {
+        "hero": {
+            "title": "Make mining enjoyable again",
+            "description": "Ever gotten tired of mining endlessly with no goal in mind? No motivation to go strip-mining? No means to go on this repetitive task for ores? Well, this data pack aims to change exactly that.",
+            "readMore": "Read more...",
+            "startPlaying": "Start playing"
+        },
+        "why": {
+            "title": "Why this datapack?",
+            "features": {
+                "treasures": {
+                    "title": "Custom treasures",
+                    "description": "This data pack introduces a whole new way of approaching mining with a huge reward system. Treasure has a chance to spawn when mining a stone-related block. These treasures are divided into several different tiers: Common, Rare, Epic and Legendary."
+                },
+                "biomes": {
+                    "title": "Biome specific",
+                    "description": "There are biome-specific treasures depending on which biome the player is in, which also motivates different bases in different biomes."
+                },
+                "items": {
+                    "title": "Custom items",
+                    "description": "This data pack includes over 80+ loot tables with custom armor, custom weapons, custom food, custom advancements and custom utility items and randomized stats, making many items feel unique."
+                },
+                "advancements": {
+                    "title": "Advancements",
+                    "description": "There is a custom advancement system with 201 new advancements! This data pack introduces an insane addition of new achievements designed around the new custom features this data pack provides."
+                }
+            }
+        },
+        "reviews": {
+            "title": "What players say",
+            "testimonials": {
+                "1": {
+                    "text": "So much content, I can tell a lot of work went into this, very impressive!",
+                    "author": "Kefaku"
+                },
+                "2": {
+                    "text": "I love this pack so much. Mining is one of those grindy things in minecraft I used to hate so much but now it's got such an allure!",
+                    "author": "ThatwitchyPlayr"
+                },
+                "3": {
+                    "text": "The biome-specific treasures are amazing! It gives me a reason to explore and build bases in different biomes. Best mining pack ever!",
+                    "author": "prodbyeagle"
+                },
+                "4": {
+                    "text": "The custom items and advancements add so much depth to the game. Every mining session feels like a treasure hunt now!",
+                    "author": "Technoblade"
+                }
+            }
+        },
+        "statistics": {
+            "title": "Our daily statistics"
+        },
+        "compatibility": {
+            "title": "Compatibility",
+            "table": {
+                "headers": {
+                    "software": "Software",
+                    "compatible": "Compatible",
+                    "extra": "Extra"
+                },
+                "entries": {
+                    "realms": {
+                        "name": "Realms",
+                        "description": "If you have the data pack on realms you may notice that the overworld treasure are not working sometimes. This is due to Realms renaming every folder containing \"World\" to match the Realm's name, affecting data pack folders. The overworld folder gets renamed to over(REALMS NAME). We hope Mojang patches this in a future update."
+                    },
+                    "spigot": {
+                        "name": "Spigot",
+                        "description": "Not recommended for multiple data packs. Due to Spigot's NBT placement blocking, containers with NBTs (like chests with loot) won't contain loot when placed. For other issues, please join our Discord."
+                    },
+                    "papermc": {
+                        "name": "PaperMC",
+                        "description": "No inconsistencies as of yet. However, if there are, please report it on our Discord."
+                    },
+                    "fabric": {
+                        "name": "Fabric",
+                        "description": "Personally recommended for data packs as it performs very similar to Vanilla. Report any issues on our Discord."
+                    },
+                    "forge": {
+                        "name": "Forge",
+                        "description": "Limited testing done, but no issues discovered so far."
+                    },
+                    "quilt": {
+                        "name": "Quilt",
+                        "description": "Similar to Fabric. Limited testing, but due to Fabric-like architecture, we expect good compatibility."
+                    },
+                    "other": {
+                        "name": "Other",
+                        "description": "For any other plugin/mod-related compatibility issues, please report them on our Discord for potential resolution in future updates."
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "navbar": {
+            "home": "Home",
+            "loot": "Loot",
+            "download": "Download",
+            "discord": "Discord",
+            "title": "Mine Treasure"
+        },
+        "footer": {
+            "title": "Mine Treasure",
+            "description": "Discover hidden treasures across Minecraft's vast biomes.",
+            "resources": {
+                "title": "Resources",
+                "download": "Download Datapack",
+                "github": "GitHub Repository"
+            },
+            "community": {
+                "title": "Community",
+                "discord": "Join Discord",
+                "issues": "Report Issues"
+            },
+            "legal": {
+                "title": "Legal",
+                "terms": "Terms of Service",
+                "privacy": "Privacy Policy"
+            }
+        }
+    },
+    "download": {
+        "title": "Download Mine Treasure",
+        "subtitle": "Choose your preferred platform to download Mine Treasure. Make sure to read the installation instructions for your specific platform.",
+        "modrinth": {
+            "title": "Modrinth",
+            "description": "Download from Modrinth, a community-driven Minecraft mod repository.",
+            "button": "Download from Modrinth"
+        },
+        "installation": {
+            "title": "Installation Instructions",
+            "steps": [
+                {
+                    "title": "Download the Datapack",
+                    "description": "Click the download button above to get the latest version from Modrinth."
+                },
+                {
+                    "title": "Locate Your World Folder",
+                    "description": "Navigate to your Minecraft world folder:\n- Windows: %appdata%/.minecraft/saves/[world name]\n- macOS: ~/Library/Application Support/minecraft/saves/[world name]\n- Linux: ~/.minecraft/saves/[world name]"
+                },
+                {
+                    "title": "Install the Datapack",
+                    "description": "Find the \"datapacks\" folder in your world folder. If it doesn't exist, create it. Then, drag and drop the downloaded .zip file into this folder."
+                },
+                {
+                    "title": "Load the Datapack",
+                    "description": "If you're installing this on an existing world, type /reload in the game. For a new world, the datapack will load automatically when you create the world."
+                },
+                {
+                    "title": "Verify Installation",
+                    "description": "Type /datapack list to confirm that \"Mine Treasure\" is listed and enabled."
+                }
+            ]
+        },
+        "needHelp": {
+            "title": "Need Help?",
+            "description": "Having trouble with installation or encountered a bug? Join our Discord community for support!",
+            "button": "Join Discord"
+        }
+    }
+}

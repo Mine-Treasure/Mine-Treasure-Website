@@ -1,11 +1,28 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Download, Menu, X } from 'lucide-react';
+import NavLanguageSelector from './NavLanguageSelector';
+import { Language, useTranslation } from '@/lib/i18n';
 
 export default function Navbar() {
      const [isOpen, setIsOpen] = useState(false);
+     const [language, setLanguage] = useState<Language>('en');
+     const { t } = useTranslation(language);
+
+     useEffect(() => {
+          const savedLanguage = localStorage.getItem('language') as Language;
+          if (savedLanguage) {
+               setLanguage(savedLanguage);
+          }
+     }, []);
+
+     const handleLanguageChange = (newLanguage: Language) => {
+          setLanguage(newLanguage);
+          localStorage.setItem('language', newLanguage);
+          window.location.reload();
+     };
 
      return (
           <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-md border-b border-zinc-200 dark:border-zinc-800">
@@ -16,7 +33,7 @@ export default function Navbar() {
                               href="/"
                               className="font-semibold text-lg hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors"
                          >
-                              Mine Treasure
+                              {t('components.navbar.title')}
                          </Link>
 
                          <div className="hidden md:flex items-center space-x-8">
@@ -24,13 +41,13 @@ export default function Navbar() {
                                    href="/"
                                    className="text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white transition-colors"
                               >
-                                   Home
+                                   {t('components.navbar.home')}
                               </Link>
                               <Link
                                    href="/loot"
                                    className="text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white transition-colors"
                               >
-                                   Loot
+                                   {t('components.navbar.loot')}
                               </Link>
                               <Link
                                    href="https://discord.gg/ASB67acx2Y"
@@ -38,14 +55,18 @@ export default function Navbar() {
                                    rel="noopener noreferrer"
                                    className="text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white transition-colors"
                               >
-                                   Discord
+                                   {t('components.navbar.discord')}
                               </Link>
+                              <NavLanguageSelector
+                                   language={language}
+                                   onLanguageChange={handleLanguageChange}
+                              />
                               <Link
                                    href="/download"
                                    className="inline-flex items-center gap-2 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 px-4 py-2 rounded-lg hover:bg-zinc-700 dark:hover:bg-zinc-100 transition-colors"
                               >
                                    <Download className="h-4 w-4" />
-                                   Download
+                                   {t('components.navbar.download')}
                               </Link>
                          </div>
 
@@ -80,14 +101,14 @@ export default function Navbar() {
                               onClick={() => setIsOpen(false)}
                               className="flex items-center px-3 py-2 rounded-lg text-base font-medium text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
                          >
-                              Home
+                              {t('components.navbar.home')}
                          </Link>
                          <Link
                               href="/loot"
                               onClick={() => setIsOpen(false)}
                               className="flex items-center px-3 py-2 rounded-lg text-base font-medium text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
                          >
-                              Loot
+                              {t('components.navbar.loot')}
                          </Link>
                          <Link
                               href="https://discord.gg/ASB67acx2Y"
@@ -96,15 +117,21 @@ export default function Navbar() {
                               rel="noopener noreferrer"
                               className="flex items-center px-3 py-2 rounded-lg text-base font-medium text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
                          >
-                              Discord
+                              {t('components.navbar.discord')}
                          </Link>
+                         <div className="px-3 py-2">
+                              <NavLanguageSelector
+                                   language={language}
+                                   onLanguageChange={handleLanguageChange}
+                              />
+                         </div>
                          <Link
                               href="/download"
                               onClick={() => setIsOpen(false)}
-                              className="flex items-center justify-center gap-2 px-3 py-2 rounded-lg text-base font-medium bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 hover:bg-zinc-700 dark:hover:bg-zinc-100 transition-colors"
+                              className="flex items-center gap-2 px-3 py-2 rounded-lg text-base font-medium bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 hover:bg-zinc-700 dark:hover:bg-zinc-100 transition-colors"
                          >
                               <Download className="h-4 w-4" />
-                              Download
+                              {t('components.navbar.download')}
                          </Link>
                     </div>
                </div>
