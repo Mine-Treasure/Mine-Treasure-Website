@@ -22,8 +22,8 @@ export default function LootPage() {
      const [searchQuery, setSearchQuery] = useState('');
      const [selectedRarities, setSelectedRarities] = useState<string[]>([]);
      const [selectedBiomes, setSelectedBiomes] = useState<string[]>([]);
-     const [blockRange, setBlockRange] = useState(500000);
-     const [displayBlockCount, setDisplayBlockCount] = useState(500000);
+     const [blockRange, setBlockRange] = useState(0);
+     const [displayBlockCount, setDisplayBlockCount] = useState(0);
      const [showFilters, setShowFilters] = useState(false);
      const [selectedItem, setSelectedItem] = useState<MT_ITEM | null>(null);
      const [customItemsOnly, setCustomItemsOnly] = useState(false);
