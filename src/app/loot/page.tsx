@@ -142,10 +142,6 @@ export default function LootPage() {
                               onToggleViewAllItems={() => {
                                    const newValue = !viewAllItems;
                                    setViewAllItems(newValue);
-                                   if (newValue) {
-                                        setBlockRange(500000);
-                                        setDisplayBlockCount(500000);
-                                   }
                               }}
                          />
                     )}
