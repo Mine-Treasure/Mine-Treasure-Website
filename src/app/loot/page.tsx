@@ -6,7 +6,7 @@ import { useState, useMemo, useCallback } from 'react';
 import Navbar from '@/components/Navbar';
 import ItemModal from '@/components/ItemModal';
 import { Filter } from 'lucide-react';
-import treasureData from '@/data/data.json';
+import treasureData from '@/data/loot.json';
 import type { MT_ITEM } from '@/types/types';
 import LootHeader from './components/LootHeader';
 import SearchBar from './components/SearchBar';
