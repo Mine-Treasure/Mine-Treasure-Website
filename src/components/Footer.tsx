@@ -92,12 +92,29 @@ const Footer = () => {
                                     target="_blank"
                                     className="flex items-center gap-2 text-sm text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors"
                                 >
-                                    Support Website Author
+                                    Support Original Website Author
                                     <Image
                                         src="/images/kofi.webp"
                                         alt="Ko-fi"
                                         height={30}
                                         width={30}
+                                        className="rounded"
+                                        unoptimized
+                                    />
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    href="https://prodbyeagle.vercel.app/"
+                                    target="_blank"
+                                    className="flex items-center gap-2 text-sm text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors"
+                                >
+                                    <span className="eagle-text">Website Creator</span>
+                                    <Image
+                                        src="https://raw.githubusercontent.com/prodbyeagle/portfolio2/refs/heads/master/src/assets/eagleicon.webp"
+                                        alt="Ko-fi"
+                                        height={20}
+                                        width={20}
                                         className="rounded"
                                         unoptimized
                                     />
@@ -139,7 +156,7 @@ const Footer = () => {
                         {new Date().getFullYear()} Mine Treasure. All rights reserved.
                     </p>
                     <p className="text-sm text-zinc-600 dark:text-zinc-400 text-center">
-                        made by @prodbyeagle | Original Page by: @supercrafter100
+                        made by <span className="eagle-text">@prodbyeagle</span> | Original Page by: @supercrafter100
                     </p>
                 </div>
             </div>
