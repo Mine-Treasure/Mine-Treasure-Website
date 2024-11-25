@@ -31,7 +31,8 @@ export function filterItems({
                     const stoneMined = item.conditions.stoneMined;
                     if (stoneMined) {
                         const min = stoneMined.min || 0;
-                        if (min > blockRange) return acc;
+                        const max = stoneMined.max;
+                        if (min > blockRange || (max && blockRange > max)) return acc;
                     }
                 }
 

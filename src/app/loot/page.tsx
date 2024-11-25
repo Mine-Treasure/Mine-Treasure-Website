@@ -6,7 +6,7 @@ import { useState, useMemo, useCallback } from 'react';
 import Navbar from '@/components/Navbar';
 import ItemModal from '@/components/ItemModal';
 import { Filter } from 'lucide-react';
-import treasureData from '@/data/data.json';
+import treasureData from '@/data/loot.json';
 import type { MT_ITEM } from '@/types/types';
 import LootHeader from './components/LootHeader';
 import SearchBar from './components/SearchBar';
@@ -22,8 +22,8 @@ export default function LootPage() {
      const [searchQuery, setSearchQuery] = useState('');
      const [selectedRarities, setSelectedRarities] = useState<string[]>([]);
      const [selectedBiomes, setSelectedBiomes] = useState<string[]>([]);
-     const [blockRange, setBlockRange] = useState(500000);
-     const [displayBlockCount, setDisplayBlockCount] = useState(500000);
+     const [blockRange, setBlockRange] = useState(0);
+     const [displayBlockCount, setDisplayBlockCount] = useState(0);
      const [showFilters, setShowFilters] = useState(false);
      const [selectedItem, setSelectedItem] = useState<MT_ITEM | null>(null);
      const [customItemsOnly, setCustomItemsOnly] = useState(false);
@@ -142,10 +142,6 @@ export default function LootPage() {
                               onToggleViewAllItems={() => {
                                    const newValue = !viewAllItems;
                                    setViewAllItems(newValue);
-                                   if (newValue) {
-                                        setBlockRange(500000);
-                                        setDisplayBlockCount(500000);
-                                   }
                               }}
                          />
                     )}

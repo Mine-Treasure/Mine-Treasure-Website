@@ -1,0 +1,175 @@
+{
+    "home": {
+        "hero": {
+            "title": "Haz que la minería sea divertida otra vez",
+            "description": "¿Alguna vez te has cansado de minar sin fin sin un objetivo en mente? ¿Sin motivación para hacer minería en franjas? ¿Sin ganas de realizar esta tarea repetitiva por minerales? Bueno, este paquete de datos pretende cambiar exactamente eso.",
+            "readMore": "Leer más...",
+            "startPlaying": "Empezar a jugar"
+        },
+        "why": {
+            "title": "¿Por qué este paquete de datos?",
+            "features": {
+                "treasures": {
+                    "title": "Tesoros personalizados",
+                    "description": "Este paquete de datos introduce una forma completamente nueva de abordar la minería con un enorme sistema de recompensas. Los tesoros tienen la posibilidad de aparecer al minar un bloque relacionado con la piedra. Estos tesoros se dividen en varios niveles diferentes: Común, Raro, Épico y Legendario."
+                },
+                "biomes": {
+                    "title": "Específico por bioma",
+                    "description": "Hay tesoros específicos según el bioma en el que se encuentra el jugador, lo que también motiva la construcción de bases en diferentes biomas."
+                },
+                "items": {
+                    "title": "Objetos personalizados",
+                    "description": "Este paquete de datos incluye más de 80 tablas de botín con armaduras personalizadas, armas personalizadas, comida personalizada, logros personalizados y objetos de utilidad personalizados con estadísticas aleatorias, haciendo que muchos objetos se sientan únicos."
+                },
+                "advancements": {
+                    "title": "Logros",
+                    "description": "¡Hay un sistema de logros personalizado con 201 nuevos logros! Este paquete de datos introduce una increíble adición de nuevos logros diseñados alrededor de las nuevas características personalizadas que proporciona este paquete de datos."
+                }
+            }
+        },
+        "reviews": {
+            "title": "Lo que dicen los jugadores",
+            "testimonials": {
+                "1": {
+                    "text": "¡Tanto contenido, se nota que le han dedicado mucho trabajo, muy impresionante!",
+                    "author": "Kefaku"
+                },
+                "2": {
+                    "text": "¡Me encanta tanto este paquete! La minería era una de esas cosas tediosas en minecraft que solía odiar tanto, ¡pero ahora tiene tanto atractivo!",
+                    "author": "ThatwitchyPlayr"
+                },
+                "3": {
+                    "text": "¡Los tesoros específicos por bioma son increíbles! Me da una razón para explorar y construir bases en diferentes biomas. ¡El mejor paquete de minería de todos los tiempos!",
+                    "author": "prodbyeagle"
+                },
+                "4": {
+                    "text": "¡Los objetos personalizados y los logros añaden tanta profundidad al juego. Cada sesión de minería se siente ahora como una búsqueda del tesoro!",
+                    "author": "Technoblade"
+                }
+            }
+        },
+        "statistics": {
+            "title": "Nuestras estadísticas diarias"
+        },
+        "compatibility": {
+            "title": "Compatibilidad",
+            "table": {
+                "headers": {
+                    "software": "Software",
+                    "compatible": "Compatible",
+                    "extra": "Extra"
+                },
+                "entries": {
+                    "realms": {
+                        "name": "Realms",
+                        "description": "Si tienes el paquete de datos en realms, puede que notes que los tesoros del mundo normal a veces no funcionan. Esto se debe a que Realms renombra cada carpeta que contiene \"World\" para que coincida con el nombre del Realm, afectando a las carpetas del paquete de datos. La carpeta del mundo normal se renombra a over(NOMBRE DEL REALM). Esperamos que Mojang arregle esto en una actualización futura."
+                    },
+                    "spigot": {
+                        "name": "Spigot",
+                        "description": "No recomendado para múltiples paquetes de datos. Debido al bloqueo de colocación NBT de Spigot, los contenedores con NBTs (como cofres con botín) no contendrán botín cuando se coloquen. Para otros problemas, únete a nuestro Discord."
+                    },
+                    "papermc": {
+                        "name": "PaperMC",
+                        "description": "Sin inconsistencias hasta ahora. Sin embargo, si las hay, por favor repórtalas en nuestro Discord."
+                    },
+                    "fabric": {
+                        "name": "Fabric",
+                        "description": "Personalmente recomendado para paquetes de datos ya que funciona muy similar a Vanilla. Reporta cualquier problema en nuestro Discord."
+                    },
+                    "forge": {
+                        "name": "Forge",
+                        "description": "Pruebas limitadas realizadas, pero sin problemas descubiertos hasta ahora."
+                    },
+                    "quilt": {
+                        "name": "Quilt",
+                        "description": "Similar a Fabric. Pruebas limitadas, pero debido a la arquitectura similar a Fabric, esperamos buena compatibilidad."
+                    },
+                    "other": {
+                        "name": "Otros",
+                        "description": "Para cualquier otro problema de compatibilidad relacionado con plugins/mods, por favor repórtalos en nuestro Discord para una posible resolución en futuras actualizaciones."
+                    }
+                }
+            }
+        }
+    },
+    "news": {
+        "title": "Noticias y Actualizaciones",
+        "description": "Mantente al día con las últimas versiones y cambios de Mine Treasure",
+        "loading": "Cargando...",
+        "noUpdates": "No hay actualizaciones disponibles",
+        "downloads": "Descargas",
+        "backToVersions": "Volver a las Versiones",
+        "version": {
+            "gameVersions": "Versión del Juego",
+            "loaders": "Cargadores",
+            "releaseDate": "Fecha de Lanzamiento",
+            "download": "Descargar",
+            "joinDiscord": "Unirse a Discord",
+            "supportedPlatforms": "Plataformas Compatibles",
+            "changelog": "Novedades"
+        }
+    },
+    "components": {
+        "navbar": {
+            "home": "Inicio",
+            "loot": "Botín",
+            "download": "Descargar",
+            "title": "Mine Treasure",
+            "discord": "Discord",
+            "news": "Noticias"
+        },
+        "footer": {
+            "title": "Mine Treasure",
+            "description": "Descubre tesoros ocultos en los vastos biomas de Minecraft.",
+            "resources": {
+                "title": "Recursos",
+                "download": "Descargar Datapack",
+                "github": "Repositorio GitHub"
+            },
+            "community": {
+                "title": "Comunidad",
+                "discord": "Unirse a Discord",
+                "issues": "Reportar Problemas"
+            }
+        }
+    },
+    "download": {
+        "title": "Descargar Mine Treasure",
+        "subtitle": "Elige tu plataforma preferida para descargar Mine Treasure. Asegúrate de leer las instrucciones de instalación para tu plataforma específica.",
+        "modrinth": {
+            "title": "Modrinth",
+            "description": "Descarga desde Modrinth, un repositorio de mods de Minecraft impulsado por la comunidad.",
+            "button": "Descargar desde Modrinth"
+        },
+        "installation": {
+            "title": "Instrucciones de Instalación",
+            "steps": [
+                {
+                    "title": "Descargar el Datapack",
+                    "description": "Haz clic en el botón de descarga arriba para obtener la última versión desde Modrinth."
+                },
+                {
+                    "title": "Localizar tu Carpeta del Mundo",
+                    "description": "Navega a la carpeta de tu mundo de Minecraft:\n- Windows: %appdata%/.minecraft/saves/[nombre del mundo]\n- macOS: ~/Library/Application Support/minecraft/saves/[nombre del mundo]\n- Linux: ~/.minecraft/saves/[nombre del mundo]"
+                },
+                {
+                    "title": "Instalar el Datapack",
+                    "description": "Busca la carpeta \"datapacks\" en la carpeta de tu mundo. Si no existe, créala. Luego, arrastra y suelta el archivo .zip descargado en esta carpeta."
+                },
+                {
+                    "title": "Cargar el Datapack",
+                    "description": "Si estás instalando esto en un mundo existente, escribe /reload en el juego. Para un mundo nuevo, el datapack se cargará automáticamente cuando crees el mundo."
+                },
+                {
+                    "title": "Verificar la Instalación",
+                    "description": "Escribe /datapack list para confirmar que \"Mine Treasure\" está listado y habilitado."
+                }
+            ]
+        },
+        "needHelp": {
+            "title": "¿Necesitas Ayuda?",
+            "description": "¿Tienes problemas con la instalación o encontraste un error? ¡Únete a nuestra comunidad de Discord para obtener ayuda!",
+            "button": "Unirse a Discord"
+        }
+    }
+}
