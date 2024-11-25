@@ -92,13 +92,31 @@
             }
         }
     },
+    "news": {
+        "title": "Notizie e Aggiornamenti",
+        "description": "Resta aggiornato sulle ultime versioni e modifiche di Mine Treasure",
+        "loading": "Caricamento...",
+        "noUpdates": "Nessun aggiornamento disponibile",
+        "downloads": "Download",
+        "backToVersions": "Torna alle Versioni",
+        "version": {
+            "gameVersions": "Versione del Gioco",
+            "loaders": "Caricatori",
+            "releaseDate": "Data di Rilascio",
+            "download": "Scarica",
+            "joinDiscord": "Unisciti a Discord",
+            "supportedPlatforms": "Piattaforme Supportate",
+            "changelog": "Novità"
+        }
+    },
     "components": {
         "navbar": {
             "home": "Home",
             "loot": "Bottino",
             "download": "Scarica",
             "discord": "Discord",
-            "title": "Mine Treasure"
+            "title": "Mine Treasure",
+            "news": "Notizie"
         },
         "footer": {
             "title": "Mine Treasure",

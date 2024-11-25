@@ -92,10 +92,28 @@
             }
         }
     },
+    "news": {
+        "title": "News & Updates",
+        "description": "Stay up to date with the latest Mine Treasure versions and changes",
+        "loading": "Loading...",
+        "noUpdates": "No updates available",
+        "downloads": "Downloads",
+        "backToVersions": "Back to Versions",
+        "version": {
+            "gameVersions": "Game Version",
+            "loaders": "Loaders",
+            "releaseDate": "Release Date",
+            "download": "Download",
+            "joinDiscord": "Join Discord",
+            "supportedPlatforms": "Supported Platforms",
+            "changelog": "What's New"
+        }
+    },
     "components": {
         "navbar": {
             "home": "Home",
             "loot": "Loot",
+            "news": "News",
             "download": "Download",
             "discord": "Discord",
             "title": "Mine Treasure"

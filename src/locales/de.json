@@ -1,7 +1,7 @@
 {
     "home": {
         "hero": {
-            "title": "Mache das Strip-Mining wieder spaßig",
+            "title": "Mache das Mining wieder spaßig",
             "description": "Bist du es leid, endlos ohne Ziel zu graben? Keine Motivation zum Strip-Mining? Keine Lust auf diese sich wiederholende Aufgabe für Erze? Nun, dieses Datapack zielt darauf ab, genau das zu ändern.",
             "readMore": "Weiterlesen...",
             "startPlaying": "Jetzt spielen"
@@ -92,6 +92,23 @@
             }
         }
     },
+    "news": {
+        "title": "Neuigkeiten & Updates",
+        "description": "Erfahre mehr über die neuesten Versionen und Änderungen von Mine Treasure",
+        "loading": "Lädt...",
+        "noUpdates": "Keine Updates verfügbar",
+        "downloads": "Downloads",
+        "backToVersions": "Zurück zur Versionsübersicht",
+        "version": {
+            "gameVersions": "Spielversion",
+            "loaders": "Loader",
+            "releaseDate": "Veröffentlichungsdatum",
+            "download": "Herunterladen",
+            "joinDiscord": "Discord Beitreten",
+            "supportedPlatforms": "Unterstützte Plattformen",
+            "changelog": "Was ist Neu"
+        }
+    },
     "download": {
         "title": "Mine Treasure Herunterladen",
         "subtitle": "Wähle deine bevorzugte Plattform zum Herunterladen von Mine Treasure. Lies dir die Installationsanleitung für deine spezifische Plattform durch.",
@@ -137,7 +154,8 @@
             "loot": "Loot",
             "download": "Herunterladen",
             "title": "Mine Treasure",
-            "discord": "Discord"
+            "discord": "Discord",
+            "news": "Neuigkeiten"
         },
         "footer": {
             "title": "Mine Treasure",
