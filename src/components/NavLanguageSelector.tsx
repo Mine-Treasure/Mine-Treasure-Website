@@ -1,8 +1,9 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Language, languages } from '@/lib/i18n';
+import { Language, languages, languageIcons } from '@/lib/i18n';
 import { ChevronDown } from 'lucide-react';
+import Image from 'next/image';
 
 interface NavLanguageSelectorProps {
   language: Language;
@@ -29,10 +30,19 @@ export default function NavLanguageSelector({ language, onLanguageChange, isMobi
     <div className={`language-selector relative ${isMobile ? 'w-full' : ''}`}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`flex items-center gap-1 px-4 py-2 text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white transition-all duration-200 rounded-md hover:bg-zinc-100 dark:hover:bg-zinc-800 ${isMobile ? 'w-full justify-between text-base' : 'text-md'
+        className={`flex items-center gap-2 px-4 py-2 text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white transition-all duration-200 rounded-md hover:bg-zinc-100 dark:hover:bg-zinc-800 ${isMobile ? 'w-full justify-between text-base' : 'text-md'
           }`}
       >
-        <span className="text-base font-medium">{languages[language]}</span>
+        <div className="flex items-center gap-2">
+          <Image
+            src={languageIcons[language]}
+            alt={`${languages[language]} flag`}
+            width={20}
+            height={15}
+            className="object-cover rounded-sm"
+          />
+          <span className="text-base font-medium">{languages[language]}</span>
+        </div>
         <ChevronDown
           className={`w-4 h-4 transition-transform duration-300 ${isOpen ? 'transform rotate-180' : ''}`}
         />
@@ -55,13 +65,16 @@ export default function NavLanguageSelector({ language, onLanguageChange, isMobi
               onLanguageChange(key as Language);
               setIsOpen(false);
             }}
-            className={`w-full px-4 py-2 text-left flex items-center gap-2 ${isMobile ? 'text-base' : 'text-sm'
-              } ${key === language
-                ? 'bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-white font-medium'
-                : 'text-zinc-600 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-800/50 hover:text-zinc-900 dark:hover:text-white'
-              } transition-colors duration-150`}
+            className="flex items-center gap-2 w-full px-4 py-2 text-left text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors duration-200"
           >
-            <span>{value}</span>
+            <Image
+              src={languageIcons[key as Language]}
+              alt={`${value} flag`}
+              width={20}
+              height={15}
+              className="object-cover rounded-sm"
+            />
+            <span className="text-base">{value}</span>
           </button>
         ))}
         <div className="px-4 py-2 text-xs text-zinc-500 dark:text-zinc-400 border-t border-zinc-200 dark:border-zinc-800">

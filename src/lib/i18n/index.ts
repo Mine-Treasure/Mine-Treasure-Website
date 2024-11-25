@@ -12,13 +12,24 @@ export type Language = 'en' | 'de' | 'es' | 'fr' | 'it' | 'pl' | 'pt';
 
 /** Map of language codes to their display names */
 export const languages: Record<Language, string> = {
-    en: '🇬🇧 English',
-    de: '🇩🇪 Deutsch',
-    es: '🇪🇸 Español',
-    fr: '🇫🇷 Français',
-    it: '🇮🇹 Italiano',
-    pl: '🇵🇱 Polski',
-    pt: '🇵🇹 Português'
+    en: 'English',
+    de: 'Deutsch',
+    es: 'Español',
+    fr: 'Français',
+    it: 'Italiano',
+    pl: 'Polski',
+    pt: 'Português'
+};
+
+/** Map of language codes to their flag icons */
+export const languageIcons: Record<Language, string> = {
+    en: '/images/lang/en.png',
+    de: '/images/lang/de.png',
+    es: '/images/lang/es.png',
+    fr: '/images/lang/fr.png',
+    it: '/images/lang/it.png',
+    pl: '/images/lang/pl.png',
+    pt: '/images/lang/pt.png'
 };
 
 /** Object containing all translation dictionaries */
