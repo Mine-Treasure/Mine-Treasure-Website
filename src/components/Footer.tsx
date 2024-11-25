@@ -5,6 +5,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import type { GitHubData } from '@/types/types';
 import { Language, useTranslation } from '@/lib/i18n';
+import { getLocalStorage } from '@/utils/localStorage';
 
 const Footer = () => {
     const [data, setData] = useState<GitHubData | null>(null);
@@ -13,7 +14,7 @@ const Footer = () => {
     const { t } = useTranslation(language);
 
     useEffect(() => {
-        const savedLanguage = localStorage.getItem('language') as Language;
+        const savedLanguage = getLocalStorage('language', 'en') as Language;
         if (savedLanguage) {
             setLanguage(savedLanguage);
         }

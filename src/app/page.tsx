@@ -2,16 +2,25 @@
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useRef } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import Review from '@/components/Review';
 import StatisticsChart from '@/components/StatisticsChart';
 import { ArrowRight, AlertCircle, CheckCircle2, HelpCircle } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import { Language, useTranslation } from '@/lib/i18n';
+import { getLocalStorage } from '@/utils/localStorage';
 
 export default function Home() {
   const whySectionRef = useRef<HTMLDivElement>(null);
-  const { t } = useTranslation((localStorage.getItem('language') as Language) || 'en');
+  const [language, setLanguage] = useState<Language>('en');
+  const { t } = useTranslation(language);
+
+  useEffect(() => {
+    const savedLanguage = getLocalStorage('language', 'en') as Language;
+    if (savedLanguage) {
+      setLanguage(savedLanguage);
+    }
+  }, []);
 
   const scrollTo = (ref: React.RefObject<HTMLElement>) => {
     ref.current?.scrollIntoView({ behavior: 'smooth' });

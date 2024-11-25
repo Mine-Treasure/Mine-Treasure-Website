@@ -1,10 +1,13 @@
 'use client';
+
 import { useState, useEffect } from 'react';
-import Navbar from '@/components/Navbar';
-import { useTranslation, Language } from '@/lib/i18n';
-import { formatDistance } from 'date-fns';
-import { Download, Clock, ArrowRight, Package } from 'lucide-react';
 import Link from 'next/link';
+import { Clock } from 'lucide-react';
+import { formatDistance } from 'date-fns';
+import Navbar from '@/components/Navbar';
+import { Language, useTranslation } from '@/lib/i18n';
+import { getLocalStorage } from '@/utils/localStorage';
+import { Download, ArrowRight, Package } from 'lucide-react';
 
 interface Version {
   id: string;
@@ -24,7 +27,7 @@ export default function NewsPage() {
   const { t } = useTranslation(language);
 
   useEffect(() => {
-    const savedLanguage = localStorage.getItem('language') as Language;
+    const savedLanguage = getLocalStorage('language', 'en') as Language;
     if (savedLanguage) {
       setLanguage(savedLanguage);
     }

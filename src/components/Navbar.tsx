@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Download, Menu, X } from 'lucide-react';
 import NavLanguageSelector from './NavLanguageSelector';
 import { Language, useTranslation } from '@/lib/i18n';
+import { getLocalStorage, setLocalStorage } from '@/utils/localStorage';
 
 export default function Navbar() {
      const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +13,7 @@ export default function Navbar() {
      const { t } = useTranslation(language);
 
      useEffect(() => {
-          const savedLanguage = localStorage.getItem('language') as Language;
+          const savedLanguage = getLocalStorage('language', 'en') as Language;
           if (savedLanguage) {
                setLanguage(savedLanguage);
           }
@@ -20,7 +21,7 @@ export default function Navbar() {
 
      const handleLanguageChange = (newLanguage: Language) => {
           setLanguage(newLanguage);
-          localStorage.setItem('language', newLanguage);
+          setLocalStorage('language', newLanguage);
           window.location.reload();
      };
 

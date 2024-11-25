@@ -6,6 +6,7 @@ import { useTranslation, Language } from '@/lib/i18n';
 import { formatDistance } from 'date-fns';
 import { Download, Clock, ArrowRight, Package } from 'lucide-react';
 import Link from 'next/link';
+import { getLocalStorage } from '@/utils/localStorage';
 
 interface Version {
   id: string;
@@ -21,7 +22,6 @@ interface Version {
     filename: string;
   }[];
 }
-
 export default function VersionPage() {
   const params = useParams();
   const [version, setVersion] = useState<Version | null>(null);
@@ -30,7 +30,7 @@ export default function VersionPage() {
   const { t } = useTranslation(language);
 
   useEffect(() => {
-    const savedLanguage = localStorage.getItem('language') as Language;
+    const savedLanguage = getLocalStorage('language', 'en') as Language;
     if (savedLanguage) {
       setLanguage(savedLanguage);
     }

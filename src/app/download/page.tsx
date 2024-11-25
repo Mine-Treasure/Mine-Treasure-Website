@@ -6,6 +6,7 @@ import { Download, ExternalLink } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Link from 'next/link';
 import { Language, useTranslation } from '@/lib/i18n';
+import { getLocalStorage } from '@/utils/localStorage';
 
 interface InstallationStep {
      title: string;
@@ -16,11 +17,10 @@ export default function DownloadPage() {
      const [language, setLanguage] = useState<Language>('en');
      const { t } = useTranslation(language);
 
-     // Load saved language preference
      useEffect(() => {
-          const savedLang = localStorage.getItem('language') as Language;
-          if (savedLang) {
-               setLanguage(savedLang);
+          const savedLanguage = getLocalStorage('language', 'en') as Language;
+          if (savedLanguage) {
+               setLanguage(savedLanguage);
           }
      }, []);
 
