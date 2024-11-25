@@ -9,7 +9,7 @@ const Review = ({ text, username }: ReviewProps) => {
                 <Image 
                     width={30} 
                     height={30} 
-                    src={`http://cravatar.eu/helmavatar/${username}.png`} 
+                    src={`https://mc-heads.net/avatar/${username}.png`} 
                     alt={username} 
                     className="rounded-full" 
                     unoptimized

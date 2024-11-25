@@ -12,7 +12,6 @@ export async function GET() {
         };
         return NextResponse.json(data);
     } catch (error) {
-        // Return fallback data instead of error
         return NextResponse.json({
             repo_owner: 'developer',
             repo_name: 'Mine-Treasure',

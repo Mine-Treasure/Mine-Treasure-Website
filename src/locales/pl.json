@@ -1,0 +1,180 @@
+{
+    "home": {
+        "hero": {
+            "title": "Spraw, by kopanie znów było przyjemne",
+            "description": "Czy kiedykolwiek znudziło Ci się bezmyślne kopanie bez celu? Brak motywacji do kopania metodą odkrywkową? Brak chęci do wykonywania tego powtarzalnego zadania w poszukiwaniu rud? Cóż, ten pakiet danych ma na celu zmienić właśnie to.",
+            "readMore": "Czytaj więcej...",
+            "startPlaying": "Zacznij grać"
+        },
+        "why": {
+            "title": "Dlaczego ten datapack?",
+            "features": {
+                "treasures": {
+                    "title": "Niestandardowe skarby",
+                    "description": "Ten pakiet danych wprowadza zupełnie nowy sposób podejścia do kopania z ogromnym systemem nagród. Skarby mają szansę pojawić się podczas kopania bloków związanych z kamieniem. Te skarby są podzielone na kilka różnych poziomów: Powszechne, Rzadkie, Epickie i Legendarne."
+                },
+                "biomes": {
+                    "title": "Specyficzne dla biomów",
+                    "description": "Istnieją skarby specyficzne dla biomów, w zależności od tego, w którym biomie znajduje się gracz, co również motywuje do budowania różnych baz w różnych biomach."
+                },
+                "items": {
+                    "title": "Niestandardowe przedmioty",
+                    "description": "Ten pakiet danych zawiera ponad 80+ tabel łupów z niestandardowymi zbrojami, niestandardową bronią, niestandardowym jedzeniem, niestandardowymi osiągnięciami i niestandardowymi przedmiotami użytkowymi oraz losowymi statystykami, sprawiając, że wiele przedmiotów wydaje się unikalnymi."
+                },
+                "advancements": {
+                    "title": "Osiągnięcia",
+                    "description": "Istnieje niestandardowy system osiągnięć z 201 nowymi osiągnięciami! Ten pakiet danych wprowadza szaloną ilość nowych osiągnięć zaprojektowanych wokół nowych niestandardowych funkcji, które zapewnia ten pakiet danych."
+                }
+            }
+        },
+        "reviews": {
+            "title": "Co mówią gracze",
+            "testimonials": {
+                "1": {
+                    "text": "Tyle treści, widać, że włożono w to dużo pracy, bardzo imponujące!",
+                    "author": "Kefaku"
+                },
+                "2": {
+                    "text": "Uwielbiam ten pakiet. Kopanie było jedną z tych żmudnych rzeczy w Minecrafcie, której tak bardzo nienawidziłem, ale teraz ma taki urok!",
+                    "author": "ThatwitchyPlayr"
+                },
+                "3": {
+                    "text": "Skarby specyficzne dla biomów są niesamowite! Daje mi to powód do eksploracji i budowania baz w różnych biomach. Najlepszy pakiet do kopania w historii!",
+                    "author": "prodbyeagle"
+                },
+                "4": {
+                    "text": "Niestandardowe przedmioty i osiągnięcia dodają grze tyle głębi. Każda sesja kopania czuje się teraz jak polowanie na skarby!",
+                    "author": "Technoblade"
+                }
+            }
+        },
+        "statistics": {
+            "title": "Nasze codzienne statystyki"
+        },
+        "compatibility": {
+            "title": "Kompatybilność",
+            "table": {
+                "headers": {
+                    "software": "Oprogramowanie",
+                    "compatible": "Kompatybilne",
+                    "extra": "Dodatkowe informacje"
+                },
+                "entries": {
+                    "realms": {
+                        "name": "Realms",
+                        "description": "Jeśli masz pakiet danych na Realms, możesz zauważyć, że skarby w świecie nadrzędnym czasami nie działają. Wynika to z tego, że Realms zmienia nazwę każdego folderu zawierającego \"World\" na nazwę Realmu, co wpływa na foldery pakietu danych. Folder overworld zostaje przemianowany na over(NAZWA REALMU). Mamy nadzieję, że Mojang naprawi to w przyszłej aktualizacji."
+                    },
+                    "spigot": {
+                        "name": "Spigot",
+                        "description": "Niezalecane dla wielu pakietów danych. Ze względu na blokowanie umieszczania NBT przez Spigot, pojemniki z NBT (jak skrzynie z łupami) nie będą zawierać łupów po umieszczeniu. W przypadku innych problemów dołącz do naszego Discorda."
+                    },
+                    "papermc": {
+                        "name": "PaperMC",
+                        "description": "Jak dotąd nie zaobserwowano niespójności. Jednak jeśli takie wystąpią, prosimy o zgłoszenie ich na naszym Discordzie."
+                    },
+                    "fabric": {
+                        "name": "Fabric",
+                        "description": "Osobiście polecane dla pakietów danych, ponieważ działa bardzo podobnie do Vanilla. Zgłoś wszelkie problemy na naszym Discordzie."
+                    },
+                    "forge": {
+                        "name": "Forge",
+                        "description": "Przeprowadzono ograniczone testy, ale dotychczas nie odkryto żadnych problemów."
+                    },
+                    "quilt": {
+                        "name": "Quilt",
+                        "description": "Podobnie jak Fabric. Ograniczone testy, ale ze względu na architekturę podobną do Fabric, spodziewamy się dobrej kompatybilności."
+                    },
+                    "other": {
+                        "name": "Inne",
+                        "description": "W przypadku jakichkolwiek innych problemów z kompatybilnością związanych z pluginami/modami, prosimy o zgłaszanie ich na naszym Discordzie w celu potencjalnego rozwiązania w przyszłych aktualizacjach."
+                    }
+                }
+            }
+        }
+    },
+    "news": {
+        "title": "Aktualności i Aktualizacje",
+        "description": "Bądź na bieżąco z najnowszymi wersjami i zmianami w Mine Treasure",
+        "loading": "Ładowanie...",
+        "noUpdates": "Brak dostępnych aktualizacji",
+        "downloads": "Pobrania",
+        "backToVersions": "Powrót do Wersji",
+        "version": {
+            "gameVersions": "Wersja Gry",
+            "loaders": "Ładowarki",
+            "releaseDate": "Data Wydania",
+            "download": "Pobierz",
+            "joinDiscord": "Dołącz do Discord",
+            "supportedPlatforms": "Wspierane Platformy",
+            "changelog": "Co Nowego"
+        }
+    },
+    "components": {
+        "navbar": {
+            "home": "Strona główna",
+            "loot": "Łupy",
+            "download": "Pobierz",
+            "discord": "Discord",
+            "title": "Mine Treasure",
+            "news": "Aktualności"
+        },
+        "footer": {
+            "title": "Mine Treasure",
+            "description": "Odkryj ukryte skarby w rozległych biomach Minecrafta.",
+            "resources": {
+                "title": "Zasoby",
+                "download": "Pobierz Datapack",
+                "github": "Repozytorium GitHub"
+            },
+            "community": {
+                "title": "Społeczność",
+                "discord": "Dołącz do Discorda",
+                "issues": "Zgłoś problemy"
+            },
+            "legal": {
+                "title": "Prawne",
+                "terms": "Warunki korzystania z usługi",
+                "privacy": "Polityka prywatności"
+            }
+        }
+    },
+    "download": {
+        "title": "Pobierz Mine Treasure",
+        "subtitle": "Wybierz preferowaną platformę do pobrania Mine Treasure. Pamiętaj, aby przeczytać instrukcje instalacji dla swojej konkretnej platformy.",
+        "modrinth": {
+            "title": "Modrinth",
+            "description": "Pobierz z Modrinth, repozytorium modów Minecraft prowadzonego przez społeczność.",
+            "button": "Pobierz z Modrinth"
+        },
+        "installation": {
+            "title": "Instrukcje instalacji",
+            "steps": [
+                {
+                    "title": "Pobierz Datapack",
+                    "description": "Kliknij przycisk pobierania powyżej, aby pobrać najnowszą wersję z Modrinth."
+                },
+                {
+                    "title": "Zlokalizuj folder świata",
+                    "description": "Przejdź do folderu świata Minecraft:\n- Windows: %appdata%/.minecraft/saves/[nazwa świata]\n- macOS: ~/Library/Application Support/minecraft/saves/[nazwa świata]\n- Linux: ~/.minecraft/saves/[nazwa świata]"
+                },
+                {
+                    "title": "Zainstaluj Datapack",
+                    "description": "Znajdź folder \"datapacks\" w folderze świata. Jeśli nie istnieje, utwórz go. Następnie przeciągnij i upuść pobrany plik .zip do tego folderu."
+                },
+                {
+                    "title": "Załaduj Datapack",
+                    "description": "Jeśli instalujesz to na istniejącym świecie, wpisz /reload w grze. Dla nowego świata, datapack załaduje się automatycznie podczas tworzenia świata."
+                },
+                {
+                    "title": "Zweryfikuj instalację",
+                    "description": "Wpisz /datapack list, aby potwierdzić, że \"Mine Treasure\" jest wymieniony i włączony."
+                }
+            ]
+        },
+        "needHelp": {
+            "title": "Potrzebujesz pomocy?",
+            "description": "Masz problemy z instalacją lub napotkałeś błąd? Dołącz do naszej społeczności na Discordzie, aby uzyskać wsparcie!",
+            "button": "Dołącz do Discorda"
+        }
+    }
+}

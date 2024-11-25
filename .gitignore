@@ -38,3 +38,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Datapack files (just in case we need them)
+/public/data
+
+.vercel

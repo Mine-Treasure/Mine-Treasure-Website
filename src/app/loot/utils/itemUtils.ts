@@ -1,7 +1,12 @@
 import type { MT_ITEM } from '@/types/types';
 
 export const getItemImage = (item: MT_ITEM): string => {
-    return `/items/${item.type}.png`;
+    if (item.components && item.components['minecraft:profile']) {
+        return `https://mc-heads.net/head/${item.components['minecraft:profile']}`;
+    }
+
+    const itemType = item.type.toLowerCase();
+    return `/items/${itemType}.png`;
 };
 
 export const getBlockRangeText = (item: MT_ITEM): string | null => {

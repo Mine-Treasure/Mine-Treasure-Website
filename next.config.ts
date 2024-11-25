@@ -6,10 +6,10 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'http',
-        hostname: 'cravatar.eu',
+        protocol: 'https',
+        hostname: 'mc-heads.net',
         port: '',
-        pathname: '/helmavatar/**',
+        pathname: '/avatar/**',
       },
     ],
   },

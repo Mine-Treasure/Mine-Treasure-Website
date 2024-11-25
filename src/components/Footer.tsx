@@ -4,10 +4,21 @@ import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import type { GitHubData } from '@/types/types';
+import { Language, useTranslation } from '@/lib/i18n';
+import { getLocalStorage } from '@/utils/localStorage';
 
 const Footer = () => {
     const [data, setData] = useState<GitHubData | null>(null);
     const [loaded, setLoaded] = useState(false);
+    const [language, setLanguage] = useState<Language>('en');
+    const { t } = useTranslation(language);
+
+    useEffect(() => {
+        const savedLanguage = getLocalStorage('language', 'en') as Language;
+        if (savedLanguage) {
+            setLanguage(savedLanguage);
+        }
+    }, []);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -30,37 +41,35 @@ const Footer = () => {
             <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     <div className="space-y-4">
-                        <h3 className="text-sm font-semibold text-zinc-900 dark:text-white">Mine Treasure</h3>
+                        <h3 className="text-sm font-semibold text-zinc-900 dark:text-white">
+                            {t('components.footer.title')}
+                        </h3>
                         <p className="text-sm text-zinc-600 dark:text-zinc-400">
-                            Discover hidden treasures across Minecraft&apos;s vast biomes.
+                            {t('components.footer.description')}
                         </p>
                     </div>
 
                     <div>
-                        <h3 className="text-sm font-semibold text-zinc-900 dark:text-white mb-4">Resources</h3>
+                        <h3 className="text-sm font-semibold text-zinc-900 dark:text-white mb-4">
+                            {t('components.footer.resources.title')}
+                        </h3>
                         <ul className="space-y-3">
                             <li>
                                 <a
                                     href="/download"
                                     className="text-sm text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors"
                                 >
-                                    Download Datapack
+                                    {t('components.footer.resources.download')}
                                 </a>
                             </li>
                             <li>
                                 <a
-                                    href="https://github.com/mine-treasure/mine-treasure"
+                                    href="https://github.com/Mine-Treasure/mine-treasure"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="text-sm text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors"
                                 >
-                                    Datapack Source
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="https://github.com/Mine-Treasure/Mine-Treasure-Website"
-                                    className="text-sm text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors"
-                                >
-                                    Website Source
+                                    {t('components.footer.resources.github')}
                                 </a>
                             </li>
                         </ul>
@@ -92,12 +101,29 @@ const Footer = () => {
                                     target="_blank"
                                     className="flex items-center gap-2 text-sm text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors"
                                 >
-                                    Support Website Author
+                                    Support Original Website Author
                                     <Image
                                         src="/images/kofi.webp"
                                         alt="Ko-fi"
                                         height={30}
                                         width={30}
+                                        className="rounded"
+                                        unoptimized
+                                    />
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    href="https://prodbyeagle.vercel.app/"
+                                    target="_blank"
+                                    className="flex items-center gap-2 text-sm text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors"
+                                >
+                                    <span className="eagle-text">Website Creator</span>
+                                    <Image
+                                        src="https://raw.githubusercontent.com/prodbyeagle/portfolio2/refs/heads/master/src/assets/eagleicon.webp"
+                                        alt="Ko-fi"
+                                        height={20}
+                                        width={20}
                                         className="rounded"
                                         unoptimized
                                     />
@@ -139,7 +165,7 @@ const Footer = () => {
                         {new Date().getFullYear()} Mine Treasure. All rights reserved.
                     </p>
                     <p className="text-sm text-zinc-600 dark:text-zinc-400 text-center">
-                        made by @prodbyeagle | Original Page by: @supercrafter100
+                        made by <span className="eagle-text">@prodbyeagle</span> | Original Page by: @supercrafter100
                     </p>
                 </div>
             </div>
