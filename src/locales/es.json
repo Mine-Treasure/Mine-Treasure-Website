@@ -171,5 +171,66 @@
             "description": "¿Tienes problemas con la instalación o encontraste un error? ¡Únete a nuestra comunidad de Discord para obtener ayuda!",
             "button": "Unirse a Discord"
         }
+    },
+    "help": {
+        "title": "Comandos y Ayuda",
+        "description": "Aprende sobre todos los comandos y características disponibles",
+        "commands": {
+            "stats": {
+                "command": "/trigger mt_stats",
+                "description": "Ver tus estadísticas de minería y tesoros",
+                "details": {
+                    "title": "Resumen de Estadísticas",
+                    "description": "Sigue tu progreso de minería y descubrimientos de tesoros",
+                    "features": [
+                        "Ver total de bloques minados",
+                        "Ver tesoros encontrados por rareza",
+                        "Seguir estadísticas de sesión de minería"
+                    ],
+                    "screenshot": "/images/help/stats.png"
+                }
+            },
+            "settings": {
+                "command": "/function mt:settings",
+                "description": "Acceder al menú de configuración del datapack",
+                "details": {
+                    "title": "Menú de Configuración",
+                    "description": "Configura varios aspectos de Mine Treasure",
+                    "options": [
+                        {
+                            "name": "Notificaciones de Tesoros",
+                            "description": "Activar/desactivar mensajes emergentes al encontrar tesoros"
+                        },
+                        {
+                            "name": "Tasas de Aparición",
+                            "description": "Ajustar tasas de aparición de tesoros para cada rareza"
+                        },
+                        {
+                            "name": "Configuración de Biomas",
+                            "description": "Configurar apariciones de tesoros específicos de biomas"
+                        }
+                    ],
+                    "screenshot": "/images/help/settings.png"
+                }
+            },
+            "uninstall": {
+                "command": "/function mt:uninstall",
+                "description": "Eliminar completamente el datapack de tu mundo",
+                "details": {
+                    "title": "Desinstalación",
+                    "description": "Este comando hará lo siguiente:",
+                    "steps": [
+                        "Eliminar todos los objetivos del marcador",
+                        "Borrar todos los datos almacenados",
+                        "Eliminar ajustes de configuración"
+                    ],
+                    "warning": "Esta acción no se puede deshacer. Asegúrate de hacer una copia de seguridad de tu mundo antes de desinstalar."
+                }
+            }
+        },
+        "note": {
+            "title": "Nota sobre las Tasas",
+            "description": "Al establecer las tasas de aparición, los valores deben aumentarse por 10. Por ejemplo, para obtener una probabilidad de 1/100, usa 1000 como valor."
+        }
     }
 }
