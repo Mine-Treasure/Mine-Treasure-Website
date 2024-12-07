@@ -1,4 +1,4 @@
-import { Grid3X3, List, Columns3 } from 'lucide-react';
+import { Grid3X3, Columns3 } from 'lucide-react';
 import type { ViewButtonProps, ViewModeSelectorProps } from '@/types/types';
 
 export default function ViewModeSelector({ viewMode, onViewModeChange }: ViewModeSelectorProps) {
@@ -17,13 +17,6 @@ export default function ViewModeSelector({ viewMode, onViewModeChange }: ViewMod
                 onClick={() => onViewModeChange('grid')}
                 icon={<Grid3X3 className="h-5 w-5" />}
                 title="Grid View"
-            />
-            <ViewButton
-                mode="list"
-                currentMode={viewMode}
-                onClick={() => onViewModeChange('list')}
-                icon={<List className="h-5 w-5" />}
-                title="List View"
             />
         </div>
     );
