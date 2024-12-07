@@ -5,6 +5,7 @@ import { RARITIES } from '../../utils/filterUtils';
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
 import { getBiomeIcon } from '../../utils/biomeIcons';
+import biomeData from '@/data/biomes.json';
 
 const formatBiomeName = (biome: string) => {
     return biome
@@ -46,7 +47,7 @@ export default function ListView({
     }, []);
 
     return (
-        <div className="space-y-6">
+        <div className="space-y-2">
             {Object.entries(data).map(([biome, rarities]) => {
                 const hasItems = Object.values(rarities).some(items => items.length > 0);
                 if (!hasItems) return null;
@@ -54,6 +55,7 @@ export default function ListView({
                 const isCollapsed = collapsedBiomes[biome];
                 const formattedBiomeName = formatBiomeName(biome);
                 const BiomeIcon = getBiomeIcon(biome);
+                const availableBiomes = biomeData[biome as keyof typeof biomeData] || [];
 
                 return (
                     <div key={biome} id={biome} className="space-y-2">
@@ -71,10 +73,13 @@ export default function ListView({
                             >
                                 #
                             </button>
+                            <div className="text-base text-zinc-400 italic">
+                                <p>{availableBiomes.join(', ')}</p>
+                            </div>
                         </div>
 
                         {!isCollapsed && (
-                            <div className="space-y-4">
+                            <div className="space-y-2">
                                 {RARITIES.map(rarity => {
                                     const items = rarities[rarity] || [];
                                     if (items.length === 0) return null;

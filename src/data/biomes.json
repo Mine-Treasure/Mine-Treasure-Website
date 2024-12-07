@@ -1,109 +1,108 @@
 {
-     "badlands_treasure": [
-          "badlands",
-          "eroded badlands",
-          "wooded badlands"
+     "badlands": [
+          "Badlands",
+          "Eroded Badlands",
+          "Wooded Badlands"
      ],
-     "basalt_treasure": [
-          "basalt deltas"
+     "basalt": [
+          "Basalt Deltas"
      ],
-     "crimson_treasure": [
-          "crimson forest"
+     "crimson": [
+          "Crimson Forest"
      ],
-     "dark_forest_treasure": [
-          "dark forest"
+     "dark_forest": [
+          "Dark Forest"
      ],
-     "deep_dark_treasure": [
-          "deep dark"
+     "deep_dark": [
+          "Deep Dark"
      ],
-     "default_treasure": [
-          "birch forest",
-          "old growth birch forest",
-          "plains",
-          "forest",
-          "stony shore",
-          "beach",
-          "river"
+     "default": [
+          "Birch Forest",
+          "Old Growth Birch Forest",
+          "Plains",
+          "Forest",
+          "Stony Shore",
+          "Beach",
+          "River"
      ],
-     "desert_treasure": [
-          "desert"
+     "desert": [
+          "Desert"
      ],
-     "dripstone_treasure": [
-          "dripstone caves"
+     "dripstone": [
+          "Dripstone Caves"
      ],
-     "end_treasure": [
-          "dimension: the end"
+     "end": [
+          "The End"
      ],
-     "flower_treasure": [
-          "flower forest",
-          "sunflower plains",
-          "meadow",
-          "sunflower plains"
+     "flower": [
+          "Flower Forest",
+          "Sunflower Plains",
+          "Meadow"
      ],
-     "ice_treasure": [
-          "snowy beach",
-          "snowy plains",
-          "ice spikes",
-          "frozen river"
+     "ice": [
+          "Snowy Beach",
+          "Snowy Plains",
+          "Ice Spikes",
+          "Frozen River"
      ],
-     "jungle_treasure": [
-          "bamboo jungle",
-          "jungle",
-          "sparse jungle"
+     "jungle": [
+          "Bamboo Jungle",
+          "Jungle",
+          "Sparse Jungle"
      ],
-     "lush_caves_treasure": [
-          "lush caves"
+     "lush_caves": [
+          "Lush Caves"
      ],
-     "mountain_treasure": [
-          "meadow",
-          "frozen peaks",
-          "jagged peaks",
-          "stony peaks",
-          "snowy slopes",
-          "cherry grove",
-          "grove"
+     "mountain": [
+          "Meadow",
+          "Frozen Peaks",
+          "Jagged Peaks",
+          "Stony Peaks",
+          "Snowy Slopes",
+          "Cherry Grove",
+          "Grove"
      ],
-     "mushroom_treasure": [
-          "mushroom fields"
+     "mushroom": [
+          "Mushroom Fields"
      ],
-     "nether_treasure": [
-          "nether wastes"
+     "nether": [
+          "Nether Wastes"
      ],
-     "ocean_treasure": [
-          "deep frozen ocean",
-          "deep cold ocean",
-          "deep ocean",
-          "deep lukewarm ocean",
-          "frozen ocean",
-          "ocean",
-          "cold ocean",
-          "lukewarm ocean",
-          "warm ocean"
+     "ocean": [
+          "Deep Frozen Ocean",
+          "Deep Cold Ocean",
+          "Deep Ocean",
+          "Deep Lukewarm Ocean",
+          "Frozen Ocean",
+          "Ocean",
+          "Cold Ocean",
+          "Lukewarm Ocean",
+          "Warm Ocean"
      ],
-     "savanna_treasure": [
-          "savanna",
-          "savanna plateau",
-          "windswept savanna"
+     "savanna": [
+          "Savanna",
+          "Savanna Plateau",
+          "Windswept Savanna"
      ],
-     "soul_valley_treasure": [
-          "soul sand valley"
+     "soul_valley": [
+          "Soul Sand Valley"
      ],
-     "swamp_treasure": [
-          "swamp",
-          "mangrove swamp"
+     "swamp": [
+          "Swamp",
+          "Mangrove Swamp"
      ],
-     "taiga_treasure": [
-          "taiga",
-          "snowy taiga",
-          "old growth pine taiga",
-          "old growth spruce taiga"
+     "taiga": [
+          "Taiga",
+          "Snowy Taiga",
+          "Old Growth Pine Taiga",
+          "Old Growth Spruce Taiga"
      ],
-     "warped_treasure": [
-          "warped forest"
+     "warped": [
+          "Warped Forest"
      ],
-     "wind_treasure": [
-          "windswept hills",
-          "windswept forest",
-          "windswept gravelly hills"
+     "wind": [
+          "Windswept Hills",
+          "Windswept Forest",
+          "Windswept Gravelly Hills"
      ]
 }

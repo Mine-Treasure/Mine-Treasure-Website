@@ -4,6 +4,7 @@ import { RARITIES } from '../../utils/filterUtils';
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
 import { getBiomeIcon } from '../../utils/biomeIcons';
+import biomeData from '@/data/biomes.json';
 
 const formatBiomeName = (biome: string) => {
     return biome
@@ -48,19 +49,26 @@ export default function StandardView({
 
                 const formattedBiomeName = formatBiomeName(biome);
                 const BiomeIcon = getBiomeIcon(biome);
+                const availableBiomes = biomeData[biome as keyof typeof biomeData] || [];
 
                 return (
                     <div key={biome} id={biome} className="space-y-4">
                         <div className="flex items-center gap-2 bg-zinc-800 p-4 rounded-xl">
-                            <BiomeIcon />
-                            <h2 className="text-xl font-bold">{formattedBiomeName}</h2>
-                            <button
-                                onClick={(e) => handleHashClick(biome, e)}
-                                className="flex items-center justify-center w-8 h-8 text-gray-400 hover:text-white focus:text-white ml-2 rounded-lg hover:bg-zinc-700 transition-all duration-200 transform hover:scale-110"
-                                title="Copy link to section"
-                            >
-                                #
-                            </button>
+                            <div className="flex items-center gap-2">
+                                <BiomeIcon />
+                                <h2 className="text-xl font-bold">{formattedBiomeName}</h2>
+                                <button
+                                    onClick={(e) => handleHashClick(biome, e)}
+                                    className="flex items-center justify-center w-8 h-8 text-gray-400 hover:text-white focus:text-white ml-2 rounded-lg hover:bg-zinc-700 transition-all duration-200 transform hover:scale-110"
+                                    title="Copy link to section"
+                                >
+                                    #
+                                </button>
+                            </div>
+                            <div className="flex-grow"></div>
+                            <div className="text-base text-zinc-400 italic">
+                                <p>{availableBiomes.join(', ')}</p>
+                            </div>
                         </div>
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                             {RARITIES.map(rarity => {
