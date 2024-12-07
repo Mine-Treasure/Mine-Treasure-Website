@@ -3,8 +3,6 @@ import { Info } from 'lucide-react';
 import type { ItemCardProps } from '@/types/types';
 import { getBlockRangeText, hasModalData } from '../../utils/itemUtils';
 
-
-
 export default function ItemCard({ item, getItemImage, onClick }: ItemCardProps) {
     const showModal = hasModalData(item);
     const blockRange = getBlockRangeText(item);
