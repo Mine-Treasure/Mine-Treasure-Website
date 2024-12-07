@@ -26,7 +26,7 @@ export default function HelpPage() {
     <main>
       <Navbar />
 
-      <div className="pt-24 min-h-screen bg-white dark:bg-zinc-900">
+      <div className="pt-32 min-h-screen bg-white dark:bg-zinc-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h1 className="text-4xl font-bold mb-4">{t('help.title')}</h1>
@@ -49,8 +49,8 @@ export default function HelpPage() {
 
           <div className="space-y-4">
             {Object.entries(t('help.commands')).map(([key, command]: [string, any]) => (
-              <div 
-                key={key} 
+              <div
+                key={key}
                 className="bg-zinc-50 dark:bg-zinc-800/50 rounded-xl"
               >
                 <button
