@@ -28,7 +28,7 @@ export default function DownloadPage() {
           <main>
                <Navbar />
 
-               <div className="pt-24 min-h-screen bg-white dark:bg-zinc-900">
+               <div className="pt-32 min-h-screen bg-white dark:bg-zinc-900">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                          <div className="text-center mb-16">
                               <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-emerald-400 to-emerald-800 text-transparent bg-clip-text">
