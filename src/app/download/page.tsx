@@ -31,7 +31,7 @@ export default function DownloadPage() {
                <div className="pt-32 min-h-screen bg-white dark:bg-zinc-900">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                          <div className="text-center mb-16">
-                              <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-emerald-400 to-emerald-800 text-transparent bg-clip-text">
+                              <h1 className="text-4xl font-bold mb-4 text-zinc-900 dark:text-white">
                                    {t('download.title')}
                               </h1>
                               <p className="text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
@@ -49,7 +49,7 @@ export default function DownloadPage() {
                                              {t('download.modrinth.description')}
                                         </p>
                                         <Link
-                                             href="https://modrinth.com/datapack/mine-treasure"
+                                             href="https://modrinth.com/datapack/mine-treasure/versions"
                                              target="_blank"
                                              rel="noopener noreferrer"
                                              className="inline-flex items-center px-6 py-3 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white transition-all duration-200 group"
