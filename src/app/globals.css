@@ -85,3 +85,63 @@
   );
   mask-size: 200%;
 }
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    backdrop-filter: blur(0);
+  }
+  to {
+    opacity: 1;
+    backdrop-filter: blur(8px);
+  }
+}
+
+@keyframes modalContentFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes modalFadeOut {
+  from {
+    opacity: 1;
+    backdrop-filter: blur(8px);
+  }
+  to {
+    opacity: 0;
+    backdrop-filter: blur(0);
+  }
+}
+
+@keyframes modalContentFadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}
+
+.modal-overlay {
+  animation: modalFadeIn 0.3s ease-out forwards;
+}
+
+.modal-overlay.closing {
+  animation: modalFadeOut 0.2s ease-in forwards;
+}
+
+.modal-content {
+  animation: modalContentFadeIn 0.3s ease-out forwards;
+}
+
+.modal-content.closing {
+  animation: modalContentFadeOut 0.2s ease-in forwards;
+}

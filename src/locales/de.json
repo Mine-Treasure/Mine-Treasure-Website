@@ -167,5 +167,66 @@
                 "issues": "Probleme melden"
             }
         }
+    },
+    "help": {
+        "title": "Befehle & Hilfe",
+        "description": "Erfahre mehr über alle verfügbaren Befehle und Funktionen",
+        "commands": {
+            "stats": {
+                "command": "/trigger mt_stats",
+                "description": "Zeige deine Mining- und Schatzstatistiken an",
+                "details": {
+                    "title": "Statistik-Übersicht",
+                    "description": "Verfolge deinen Mining-Fortschritt und Schatzentdeckungen",
+                    "features": [
+                        "Gesamtzahl der abgebauten Blöcke anzeigen",
+                        "Gefundene Schätze nach Seltenheit sehen",
+                        "Mining-Sitzungsstatistiken verfolgen"
+                    ],
+                    "screenshot": "/images/help/stats.png"
+                }
+            },
+            "settings": {
+                "command": "/function mt:settings",
+                "description": "Zugriff auf das Datapack-Einstellungsmenü",
+                "details": {
+                    "title": "Einstellungsmenü",
+                    "description": "Konfiguriere verschiedene Aspekte von Mine Treasure",
+                    "options": [
+                        {
+                            "name": "Schatzbenachrichtigungen",
+                            "description": "Popup-Nachrichten beim Finden von Schätzen ein-/ausschalten"
+                        },
+                        {
+                            "name": "Spawnraten",
+                            "description": "Schatzspawnraten für jede Seltenheit anpassen"
+                        },
+                        {
+                            "name": "Biom-Einstellungen",
+                            "description": "Biom-spezifische Schatzspawns konfigurieren"
+                        }
+                    ],
+                    "screenshot": "/images/help/settings.png"
+                }
+            },
+            "uninstall": {
+                "command": "/function mt:uninstall",
+                "description": "Entferne das Datapack vollständig aus deiner Welt",
+                "details": {
+                    "title": "Deinstallation",
+                    "description": "Dieser Befehl wird:",
+                    "steps": [
+                        "Alle Scoreboard-Ziele entfernen",
+                        "Alle gespeicherten Daten löschen",
+                        "Konfigurationseinstellungen löschen"
+                    ],
+                    "warning": "Diese Aktion kann nicht rückgängig gemacht werden. Stelle sicher, dass du ein Backup deiner Welt erstellst, bevor du deinstallierst."
+                }
+            }
+        },
+        "note": {
+            "title": "Hinweis zu Raten",
+            "description": "Bei der Einstellung von Spawnraten müssen die Werte um das 10-fache erhöht werden. Um beispielsweise eine Chance von 1/100 zu erhalten, verwende 1000 als Wert."
+        }
     }
 }

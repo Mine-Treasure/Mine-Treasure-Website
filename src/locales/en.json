@@ -110,6 +110,7 @@
             "home": "Home",
             "loot": "Loot",
             "news": "News",
+            "help": "Help",
             "download": "Download",
             "discord": "Discord",
             "title": "Mine Treasure"
@@ -171,6 +172,67 @@
             "title": "Need Help?",
             "description": "Having trouble with installation or encountered a bug? Join our Discord community for support!",
             "button": "Join Discord"
+        }
+    },
+    "help": {
+        "title": "Commands & Help",
+        "description": "Learn about all available commands and features",
+        "commands": {
+            "stats": {
+                "command": "/trigger mt_stats",
+                "description": "View your mining and treasure statistics",
+                "details": {
+                    "title": "Statistics Overview",
+                    "description": "Track your mining progress and treasure discoveries",
+                    "features": [
+                        "View total blocks mined",
+                        "See treasures found by rarity",
+                        "Track mining session stats"
+                    ],
+                    "screenshot": "/images/help/stats.png"
+                }
+            },
+            "settings": {
+                "command": "/function mt:settings",
+                "description": "Access datapack settings menu",
+                "details": {
+                    "title": "Settings Menu",
+                    "description": "Configure various aspects of Mine Treasure",
+                    "options": [
+                        {
+                            "name": "Treasure Notifications",
+                            "description": "Toggle popup messages when finding treasure"
+                        },
+                        {
+                            "name": "Spawn Rates",
+                            "description": "Adjust treasure spawn rates for each rarity"
+                        },
+                        {
+                            "name": "Biome Settings",
+                            "description": "Configure biome-specific treasure spawns"
+                        }
+                    ],
+                    "screenshot": "/images/help/settings.png"
+                }
+            },
+            "uninstall": {
+                "command": "/function mt:uninstall",
+                "description": "Completely remove the datapack from your world",
+                "details": {
+                    "title": "Uninstallation",
+                    "description": "This command will:",
+                    "steps": [
+                        "Remove all scoreboard objectives",
+                        "Clear all stored data",
+                        "Delete configuration settings"
+                    ],
+                    "warning": "This action cannot be undone. Make sure to backup your world before uninstalling."
+                }
+            }
+        },
+        "note": {
+            "title": "Note about Rates",
+            "description": "When setting spawn rates, the values need to be increased by 10x. For example, to get a 1/100 chance, use 1000 as the value."
         }
     }
 }

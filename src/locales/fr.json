@@ -167,5 +167,66 @@
             "description": "Des problèmes avec l'installation ou vous avez trouvé un bug ? Rejoignez notre communauté Discord pour obtenir de l'aide !",
             "button": "Rejoindre Discord"
         }
+    },
+    "help": {
+        "title": "Commandes & Aide",
+        "description": "Découvrez toutes les commandes et fonctionnalités disponibles",
+        "commands": {
+            "stats": {
+                "command": "/trigger mt_stats",
+                "description": "Voir vos statistiques de minage et de trésors",
+                "details": {
+                    "title": "Aperçu des statistiques",
+                    "description": "Suivez votre progression de minage et vos découvertes de trésors",
+                    "features": [
+                        "Voir le total de blocs minés",
+                        "Voir les trésors trouvés par rareté",
+                        "Suivre les statistiques de session de minage"
+                    ],
+                    "screenshot": "/images/help/stats.png"
+                }
+            },
+            "settings": {
+                "command": "/function mt:settings",
+                "description": "Accéder au menu des paramètres du datapack",
+                "details": {
+                    "title": "Menu des paramètres",
+                    "description": "Configurez divers aspects de Mine Treasure",
+                    "options": [
+                        {
+                            "name": "Notifications de trésor",
+                            "description": "Activer/désactiver les messages popup lors de la découverte d'un trésor"
+                        },
+                        {
+                            "name": "Taux d'apparition",
+                            "description": "Ajuster les taux d'apparition des trésors pour chaque rareté"
+                        },
+                        {
+                            "name": "Paramètres de biome",
+                            "description": "Configurer l'apparition de trésors spécifiques aux biomes"
+                        }
+                    ],
+                    "screenshot": "/images/help/settings.png"
+                }
+            },
+            "uninstall": {
+                "command": "/function mt:uninstall",
+                "description": "Supprimer complètement le datapack de votre monde",
+                "details": {
+                    "title": "Désinstallation",
+                    "description": "Cette commande va :",
+                    "steps": [
+                        "Supprimer tous les objectifs du tableau de bord",
+                        "Effacer toutes les données stockées",
+                        "Supprimer les paramètres de configuration"
+                    ],
+                    "warning": "Cette action ne peut pas être annulée. Assurez-vous de sauvegarder votre monde avant de désinstaller."
+                }
+            }
+        },
+        "note": {
+            "title": "Note sur les taux",
+            "description": "Lors du réglage des taux d'apparition, les valeurs doivent être multipliées par 10. Par exemple, pour obtenir une chance de 1/100, utilisez 1000 comme valeur."
+        }
     }
 }

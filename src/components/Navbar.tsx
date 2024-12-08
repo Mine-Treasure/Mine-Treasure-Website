@@ -57,6 +57,12 @@ export default function Navbar() {
                                    {t('components.navbar.news')}
                               </Link>
                               <Link
+                                   href="/help"
+                                   className="text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white transition-colors"
+                              >
+                                   {t('components.navbar.help')}
+                              </Link>
+                              <Link
                                    href="https://discord.gg/ASB67acx2Y"
                                    target="_blank"
                                    rel="noopener noreferrer"
