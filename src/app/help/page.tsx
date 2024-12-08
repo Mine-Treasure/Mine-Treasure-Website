@@ -47,6 +47,18 @@ export default function HelpPage() {
             </div>
           </div>
 
+          <div className="bg-gradient-to-r from-red-50 to-red-100/50 dark:from-red-700/20 dark:to-red-600/10 border border-red-200 dark:border-red-500/20 backdrop-blur-sm p-8 rounded-xl mb-8">
+            <div className="flex items-start gap-4">
+              <div className="p-2.5 bg-amber-100 dark:bg-red-500/20 rounded-lg">
+                <AlertCircle className="w-6 h-6 text-red-600 dark:text-red-400" />
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold text-red-800 dark:text-red-400 mb-2">Page is still in development.</h3>
+                <p className="text-red-700 dark:text-red-300/90 leading-relaxed">Be aware of changes in the future.</p>
+              </div>
+            </div>
+          </div>
+
           <div className="space-y-4">
             {Object.entries(t('help.commands')).map(([key, command]: [string, any]) => (
               <div
