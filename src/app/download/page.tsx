@@ -87,6 +87,22 @@ export default function DownloadPage() {
                                         </div>
                                    </div>
                               </div>
+
+                              <div className="text-center mt-24">
+                                   <h2 className="text-2xl font-semibold mb-4">{t('download.needHelp.title')}</h2>
+                                   <p className="text-zinc-600 dark:text-zinc-400 mb-6">
+                                        {t('download.needHelp.description')}
+                                   </p>
+                                   <Link
+                                        href="https://discord.gg/ASB67acx2Y"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center px-6 py-3 rounded-lg bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 hover:bg-zinc-700 dark:hover:bg-zinc-100 transition-colors"
+                                   >
+                                        {t('download.needHelp.button')}
+                                        <ExternalLink className="ml-2 h-4 w-4" />
+                                   </Link>
+                              </div>
                          </div>
                     </div>
                </div>
