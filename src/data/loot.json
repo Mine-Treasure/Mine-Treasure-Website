@@ -1080,7 +1080,7 @@
                 "enchantments": []
             },
             {
-                "type": "music_disc_11",
+                "type": "command_block",
                 "conditions": {},
                 "enchantments": [],
                 "name": "Ruined Portal Hack",
@@ -1346,7 +1346,7 @@
                 "enchantments": []
             },
             {
-                "type": "music_disc_11",
+                "type": "command_block",
                 "conditions": {},
                 "enchantments": [],
                 "name": "Giant Ruined Portal Hack",
@@ -2162,7 +2162,7 @@
                 }
             },
             {
-                "type": "music_disc_11",
+                "type": "command_block",
                 "conditions": {},
                 "enchantments": [],
                 "name": "Super Strider Hack",
@@ -2704,7 +2704,7 @@
                 "enchantments": []
             },
             {
-                "type": "music_disc_11",
+                "type": "command_block",
                 "conditions": {
                     "stoneMined": {
                         "min": 500000
@@ -2828,7 +2828,7 @@
                 "enchantments": []
             },
             {
-                "type": "music_disc_11",
+                "type": "command_block",
                 "conditions": {},
                 "enchantments": [],
                 "name": "Blacksmith Hack",
@@ -2864,7 +2864,7 @@
                 }
             },
             {
-                "type": "music_disc_11",
+                "type": "command_block",
                 "conditions": {},
                 "enchantments": [],
                 "name": "Pillager Outpost Hack",
@@ -3208,7 +3208,7 @@
                 }
             },
             {
-                "type": "music_disc_11",
+                "type": "command_block",
                 "conditions": {
                     "stoneMined": {
                         "min": 399999
@@ -3378,7 +3378,7 @@
                 }
             },
             {
-                "type": "music_disc_11",
+                "type": "command_block",
                 "conditions": {},
                 "enchantments": [],
                 "name": "Blacksmith Hack",
@@ -7570,7 +7570,7 @@
                 "enchantments": []
             },
             {
-                "type": "music_disc_11",
+                "type": "command_block",
                 "conditions": {
                     "stoneMined": {
                         "min": 350000
@@ -7724,7 +7724,7 @@
                 ]
             },
             {
-                "type": "music_disc_11",
+                "type": "command_block",
                 "conditions": {},
                 "enchantments": [],
                 "name": "Overworld Teleport",
@@ -8108,7 +8108,7 @@
                 "enchantments": []
             },
             {
-                "type": "music_disc_11",
+                "type": "command_block",
                 "conditions": {
                     "stoneMined": {
                         "max": 499999
@@ -8215,7 +8215,7 @@
                 "enchantments": []
             },
             {
-                "type": "music_disc_11",
+                "type": "command_block",
                 "conditions": {},
                 "enchantments": [],
                 "name": "Overworld Teleport",
@@ -11388,7 +11388,7 @@
                 "enchantments": []
             },
             {
-                "type": "music_disc_11",
+                "type": "command_block",
                 "conditions": {
                     "stoneMined": {
                         "min": 500000
@@ -13191,7 +13191,7 @@
                 }
             },
             {
-                "type": "music_disc_11",
+                "type": "command_block",
                 "conditions": {
                     "stoneMined": {
                         "min": 350000
@@ -13273,7 +13273,7 @@
                 "name": "Strength Stew"
             },
             {
-                "type": "music_disc_11",
+                "type": "command_block",
                 "conditions": {
                     "stoneMined": {
                         "min": 350000
@@ -13314,7 +13314,7 @@
                 }
             },
             {
-                "type": "music_disc_11",
+                "type": "command_block",
                 "conditions": {
                     "stoneMined": {
                         "min": 400000
@@ -13605,7 +13605,7 @@
                 }
             },
             {
-                "type": "music_disc_11",
+                "type": "command_block",
                 "conditions": {
                     "stoneMined": {
                         "min": 310000
@@ -13709,7 +13709,7 @@
                 "name": "Health Boost Stew"
             },
             {
-                "type": "music_disc_11",
+                "type": "command_block",
                 "conditions": {
                     "stoneMined": {
                         "min": 350000
@@ -15596,7 +15596,7 @@
                 "enchantments": []
             },
             {
-                "type": "music_disc_11",
+                "type": "command_block",
                 "conditions": {
                     "stoneMined": {
                         "min": 500000
@@ -15852,7 +15852,7 @@
                 "enchantWithLevel": 12
             },
             {
-                "type": "music_disc_11",
+                "type": "command_block",
                 "conditions": {
                     "stoneMined": {
                         "max": 499999
@@ -15888,7 +15888,7 @@
                 }
             },
             {
-                "type": "music_disc_11",
+                "type": "command_block",
                 "conditions": {},
                 "enchantments": [],
                 "name": "Horse Hack",
@@ -16031,7 +16031,7 @@
                 "enchantments": []
             },
             {
-                "type": "music_disc_11",
+                "type": "command_block",
                 "conditions": {},
                 "enchantments": [],
                 "name": "Dirty Roller Hack",
@@ -16234,7 +16234,7 @@
                 }
             },
             {
-                "type": "music_disc_11",
+                "type": "command_block",
                 "conditions": {},
                 "enchantments": [],
                 "name": "Pegasus Hack",
@@ -16500,7 +16500,7 @@
                 "enchantments": []
             },
             {
-                "type": "music_disc_11",
+                "type": "command_block",
                 "conditions": {},
                 "enchantments": [],
                 "name": "Horse Hack",
