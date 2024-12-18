@@ -11,9 +11,13 @@ export const getItemImage = (item: MT_ITEM): string => {
 
 export const getBlockRangeText = (item: MT_ITEM): string | null => {
     if (!item.conditions.stoneMined) return null;
-    const min = item.conditions.stoneMined.min || 0;
-    const max = item.conditions.stoneMined.max;
-    return max ? `${min.toLocaleString()} - ${max.toLocaleString()} blocks` : `${min.toLocaleString()}+ blocks`;
+
+    const min = Math.max((item.conditions.stoneMined.min || 0) - 300_000, 0);
+    const max = item.conditions.stoneMined.max ? Math.max(item.conditions.stoneMined.max - 300_000, 0) : null;
+
+    return max !== null
+        ? `${min.toLocaleString()} - ${max.toLocaleString()} blocks`
+        : `${min.toLocaleString()}+ blocks`;
 };
 
 export const hasModalData = (item: MT_ITEM): boolean => {
