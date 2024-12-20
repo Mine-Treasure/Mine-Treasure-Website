@@ -866,7 +866,10 @@
                 "conditions": {},
                 "enchantments": [],
                 "name": "Mineshaft Loot Chest",
-                "lore": ["Holds the Mineshaft ", "loot table. "]
+                "lore": [
+                    "Holds the Mineshaft ",
+                    "loot table. "
+                ]
             }
         ]
     },
@@ -1207,7 +1210,11 @@
                 ],
                 "unbreakable": true,
                 "name": "Nether Driller",
-                "lore": [" ", "Ability:", "Insta-mines nether-related blocks "],
+                "lore": [
+                    " ",
+                    "Ability:",
+                    "Insta-mines nether-related blocks "
+                ],
                 "components": {
                     "minecraft:repair_cost": 99999,
                     "minecraft:unbreakable": {},
@@ -1776,7 +1783,10 @@
                 },
                 "enchantments": [],
                 "name": "Blood Soup",
-                "lore": ["Gives Strength III for ", "20 seconds"],
+                "lore": [
+                    "Gives Strength III for ",
+                    "20 seconds"
+                ],
                 "components": {
                     "minecraft:enchantment_glint_override": true,
                     "minecraft:max_stack_size": 5,
@@ -2166,7 +2176,10 @@
                 "conditions": {},
                 "enchantments": [],
                 "name": "Super Strider Hack",
-                "lore": ["  ", "Spawns the Super Strider. "],
+                "lore": [
+                    "  ",
+                    "Spawns the Super Strider. "
+                ],
                 "components": {
                     "!minecraft:jukebox_playable": {},
                     "minecraft:item_model": "command_block",
@@ -2203,7 +2216,10 @@
                 "conditions": {},
                 "enchantments": [],
                 "name": "Blood Soup",
-                "lore": ["Gives Strength III for ", "20 seconds"],
+                "lore": [
+                    "Gives Strength III for ",
+                    "20 seconds"
+                ],
                 "components": {
                     "minecraft:enchantment_glint_override": true,
                     "minecraft:max_stack_size": 5,
@@ -2412,7 +2428,10 @@
                 },
                 "enchantments": [],
                 "name": "Blood Soup",
-                "lore": ["Gives Strength III for ", "20 seconds"],
+                "lore": [
+                    "Gives Strength III for ",
+                    "20 seconds"
+                ],
                 "components": {
                     "minecraft:enchantment_glint_override": true,
                     "minecraft:max_stack_size": 5,
@@ -2711,8 +2730,11 @@
                     }
                 },
                 "enchantments": [],
-                "name": "Vilager Hack",
-                "lore": ["  ", "Spawns a Villager "],
+                "name": "Villager Hack",
+                "lore": [
+                    "  ",
+                    "Spawns a Villager "
+                ],
                 "components": {
                     "!minecraft:jukebox_playable": {},
                     "minecraft:item_model": "command_block",
@@ -2932,7 +2954,9 @@
                 },
                 "enchantments": [],
                 "name": "Pillager Spawn Egg",
-                "lore": ["Hint: use this on a spawner."],
+                "lore": [
+                    "Hint: use this on a spawner."
+                ],
                 "components": {
                     "minecraft:custom_name": "{\"text\":\"Pillager Spawn Egg\",\"color\":\"gold\",\"italic\":false}",
                     "minecraft:lore": [
@@ -3187,7 +3211,11 @@
                 ],
                 "unbreakable": true,
                 "name": "Dark Forest Chestplate",
-                "lore": [" ", "Ability:", "Axes deal 25% more damage."],
+                "lore": [
+                    " ",
+                    "Ability:",
+                    "Axes deal 25% more damage."
+                ],
                 "components": {
                     "minecraft:repair_cost": 99999,
                     "minecraft:unbreakable": {},
@@ -3689,7 +3717,10 @@
                 },
                 "enchantments": [],
                 "name": "Dark Meat",
-                "lore": ["Gives Strength II", "and Speed II or 4s "],
+                "lore": [
+                    "Gives Strength II",
+                    "and Speed II or 4s "
+                ],
                 "components": {
                     "minecraft:enchantment_glint_override": true,
                     "minecraft:max_stack_size": 99,
@@ -3947,7 +3978,10 @@
                 },
                 "enchantments": [],
                 "name": "Dark Meat",
-                "lore": ["Gives Strength II", "and Speed II or 4s "],
+                "lore": [
+                    "Gives Strength II",
+                    "and Speed II or 4s "
+                ],
                 "components": {
                     "minecraft:enchantment_glint_override": true,
                     "minecraft:max_stack_size": 99,
@@ -4300,7 +4334,10 @@
                 },
                 "enchantments": [],
                 "name": "Warden Shrieker",
-                "lore": ["A Shrieker that can  ", "spawn the warden. "],
+                "lore": [
+                    "A Shrieker that can  ",
+                    "spawn the warden. "
+                ],
                 "components": {
                     "minecraft:block_state": {
                         "can_summon": "true"
@@ -4342,7 +4379,10 @@
                 },
                 "enchantments": [],
                 "name": "Dark Meat",
-                "lore": ["Gives Strength II", "and Speed II or 4s "],
+                "lore": [
+                    "Gives Strength II",
+                    "and Speed II or 4s "
+                ],
                 "components": {
                     "minecraft:enchantment_glint_override": true,
                     "minecraft:max_stack_size": 99,
@@ -5489,7 +5529,9 @@
                 },
                 "enchantments": [],
                 "name": "Actual Chicken Egg",
-                "lore": ["Hint: use this on a spawner."],
+                "lore": [
+                    "Hint: use this on a spawner."
+                ],
                 "components": {
                     "minecraft:custom_name": "{\"text\":\"Actual Chicken Egg\",\"color\":\"gold\",\"italic\":false}",
                     "minecraft:lore": [
@@ -5897,7 +5939,10 @@
                 "conditions": {},
                 "enchantments": [],
                 "name": "Desert Temple Loot",
-                "lore": ["Contains the Desert ", "Temple loot table. "]
+                "lore": [
+                    "Contains the Desert ",
+                    "Temple loot table. "
+                ]
             },
             {
                 "type": "tinted_glass",
@@ -6974,7 +7019,9 @@
                 },
                 "enchantments": [],
                 "name": "Drowned Spawn Egg",
-                "lore": ["Hint: use this on a spawner."],
+                "lore": [
+                    "Hint: use this on a spawner."
+                ],
                 "components": {
                     "minecraft:custom_name": "{\"text\":\"Drowned Spawn Egg\",\"color\":\"gold\",\"italic\":false}",
                     "minecraft:lore": [
@@ -7255,7 +7302,11 @@
                 ],
                 "unbreakable": true,
                 "name": "Stone Driller",
-                "lore": [" ", "Ability:", "Insta-mines dirt and other blocks "],
+                "lore": [
+                    " ",
+                    "Ability:",
+                    "Insta-mines dirt and other blocks "
+                ],
                 "components": {
                     "minecraft:repair_cost": 99999,
                     "minecraft:unbreakable": {},
@@ -9903,7 +9954,11 @@
                 ],
                 "unbreakable": true,
                 "name": "Stray Bow",
-                "lore": ["", "Ability:", "Arrows apply Slowness II."],
+                "lore": [
+                    "",
+                    "Ability:",
+                    "Arrows apply Slowness II."
+                ],
                 "components": {
                     "minecraft:unbreakable": {},
                     "minecraft:repair_cost": 9999,
@@ -10740,7 +10795,12 @@
                 "skullHash": "ba6e3ad823f96d4a80a14556d8c9c7632163bbd2a876c0118b458925d87a5513",
                 "components": {
                     "minecraft:profile": {
-                        "id": [1648193673, 1096304930, -1387458717, 923627530],
+                        "id": [
+                            1648193673,
+                            1096304930,
+                            -1387458717,
+                            923627530
+                        ],
                         "properties": [
                             {
                                 "name": "textures",
@@ -11233,7 +11293,9 @@
                     }
                 },
                 "enchantments": [],
-                "lore": ["A dispenser full of arrows. "]
+                "lore": [
+                    "A dispenser full of arrows. "
+                ]
             },
             {
                 "type": "goat_horn",
@@ -11244,7 +11306,11 @@
                 },
                 "enchantments": [],
                 "name": "Leaf Blower",
-                "lore": [" ", "Ability:", "Insta-mines wood, leaves and vines"],
+                "lore": [
+                    " ",
+                    "Ability:",
+                    "Insta-mines wood, leaves and vines"
+                ],
                 "components": {
                     "minecraft:repair_cost": 99999,
                     "minecraft:instrument": "minecraft:sing_goat_horn",
@@ -11396,7 +11462,10 @@
                 },
                 "enchantments": [],
                 "name": "Panda Hack",
-                "lore": ["  ", "Spawns a Panda"],
+                "lore": [
+                    "  ",
+                    "Spawns a Panda"
+                ],
                 "components": {
                     "!minecraft:jukebox_playable": {},
                     "minecraft:item_model": "command_block",
@@ -11729,7 +11798,10 @@
                 "conditions": {},
                 "enchantments": [],
                 "name": "Shrink Potion",
-                "lore": ["Shrink (04:00)", "Works on players only "],
+                "lore": [
+                    "Shrink (04:00)",
+                    "Works on players only "
+                ],
                 "components": {
                     "minecraft:max_stack_size": 5,
                     "minecraft:hide_additional_tooltip": {},
@@ -12029,7 +12101,10 @@
                 "conditions": {},
                 "enchantments": [],
                 "name": "Shrink Potion",
-                "lore": ["Shrink (08:00)", "Works on players only "],
+                "lore": [
+                    "Shrink (08:00)",
+                    "Works on players only "
+                ],
                 "components": {
                     "minecraft:max_stack_size": 5,
                     "minecraft:hide_additional_tooltip": {},
@@ -12220,7 +12295,9 @@
                 },
                 "enchantments": [],
                 "name": "Squid Spawn Egg",
-                "lore": ["Hint: use this on a spawner."],
+                "lore": [
+                    "Hint: use this on a spawner."
+                ],
                 "components": {
                     "minecraft:custom_name": "{\"text\":\"Squid Spawn Egg\",\"color\":\"gold\",\"italic\":false}",
                     "minecraft:lore": [
@@ -12458,7 +12535,9 @@
                 },
                 "enchantments": [],
                 "name": "Iron Golem Spawn Egg",
-                "lore": ["Hint: use this on a spawner."],
+                "lore": [
+                    "Hint: use this on a spawner."
+                ],
                 "components": {
                     "minecraft:custom_name": "{\"text\":\"Iron Golem Spawn Egg\",\"color\":\"gold\",\"italic\":false}",
                     "minecraft:lore": [
@@ -12507,7 +12586,10 @@
                 "conditions": {},
                 "enchantments": [],
                 "name": "Goat Potion",
-                "lore": ["Step Height (08:00)", "Works on players only "],
+                "lore": [
+                    "Step Height (08:00)",
+                    "Works on players only "
+                ],
                 "components": {
                     "minecraft:max_stack_size": 5,
                     "minecraft:hide_additional_tooltip": {},
@@ -12754,7 +12836,9 @@
                 },
                 "enchantments": [],
                 "name": "Iron Golem Spawn Egg",
-                "lore": ["Hint: use this on a spawner."],
+                "lore": [
+                    "Hint: use this on a spawner."
+                ],
                 "components": {
                     "minecraft:custom_name": "{\"text\":\"Iron Golem Spawn Egg\",\"color\":\"gold\",\"italic\":false}",
                     "minecraft:lore": [
@@ -12913,7 +12997,10 @@
                 "conditions": {},
                 "enchantments": [],
                 "name": "Goat Potion",
-                "lore": ["Step Height (08:00)", "Works on players only "],
+                "lore": [
+                    "Step Height (08:00)",
+                    "Works on players only "
+                ],
                 "components": {
                     "minecraft:max_stack_size": 5,
                     "minecraft:hide_additional_tooltip": {},
@@ -13171,7 +13258,10 @@
                 "conditions": {},
                 "enchantments": [],
                 "name": "Enlarge Potion",
-                "lore": ["Enlarge (04:00)", "Works on players only "],
+                "lore": [
+                    "Enlarge (04:00)",
+                    "Works on players only "
+                ],
                 "components": {
                     "minecraft:max_stack_size": 5,
                     "minecraft:hide_additional_tooltip": {},
@@ -13240,7 +13330,9 @@
                 },
                 "enchantments": [],
                 "name": "Mooshroom Spawn Egg",
-                "lore": ["Hint: use this on a spawner."],
+                "lore": [
+                    "Hint: use this on a spawner."
+                ],
                 "components": {
                     "minecraft:custom_name": "{\"text\":\"Mooshroom Spawn Egg\",\"color\":\"gold\",\"italic\":false}",
                     "minecraft:lore": [
@@ -13585,7 +13677,10 @@
                 "conditions": {},
                 "enchantments": [],
                 "name": "Enlarge Potion",
-                "lore": ["Enlarge (08:00)", "Works on players only "],
+                "lore": [
+                    "Enlarge (08:00)",
+                    "Works on players only "
+                ],
                 "components": {
                     "minecraft:max_stack_size": 5,
                     "minecraft:hide_additional_tooltip": {},
@@ -13784,7 +13879,9 @@
                 },
                 "enchantments": [],
                 "name": "Mooshroom Spawn Egg",
-                "lore": ["Hint: use this on a spawner."],
+                "lore": [
+                    "Hint: use this on a spawner."
+                ],
                 "components": {
                     "minecraft:custom_name": "{\"text\":\"Mooshroom Spawn Egg\",\"color\":\"gold\",\"italic\":false}",
                     "minecraft:lore": [
@@ -14119,7 +14216,9 @@
                 },
                 "enchantments": [],
                 "name": "Blaze Spawn Egg",
-                "lore": ["Hint: use this on a spawner."],
+                "lore": [
+                    "Hint: use this on a spawner."
+                ],
                 "components": {
                     "minecraft:custom_name": "{\"text\":\"Blaze Spawn Egg\",\"color\":\"gold\",\"italic\":false}",
                     "minecraft:lore": [
@@ -14142,7 +14241,9 @@
                 "conditions": {},
                 "enchantments": [],
                 "name": "Full Respawn Anchor",
-                "lore": ["Is already fully charged."],
+                "lore": [
+                    "Is already fully charged."
+                ],
                 "components": {
                     "minecraft:block_state": {
                         "id": "respawn_anchor",
@@ -14408,7 +14509,9 @@
                 },
                 "enchantments": [],
                 "name": "Blaze Spawn Egg",
-                "lore": ["Hint: use this on a spawner."],
+                "lore": [
+                    "Hint: use this on a spawner."
+                ],
                 "components": {
                     "minecraft:custom_name": "{\"text\":\"Blaze Spawn Egg\",\"color\":\"gold\",\"italic\":false}",
                     "minecraft:lore": [
@@ -14532,7 +14635,9 @@
                 "conditions": {},
                 "enchantments": [],
                 "name": "Full Respawn Anchor",
-                "lore": ["Is already fully charged."],
+                "lore": [
+                    "Is already fully charged."
+                ],
                 "components": {
                     "minecraft:block_state": {
                         "id": "respawn_anchor",
@@ -14733,7 +14838,9 @@
                 },
                 "enchantments": [],
                 "name": "Full Respawn Anchor",
-                "lore": ["Is already fully charged."],
+                "lore": [
+                    "Is already fully charged."
+                ],
                 "components": {
                     "minecraft:block_state": {
                         "id": "respawn_anchor",
@@ -15002,7 +15109,9 @@
                 },
                 "enchantments": [],
                 "name": "Guardian Spawn Egg",
-                "lore": ["Hint: use this on a spawner."],
+                "lore": [
+                    "Hint: use this on a spawner."
+                ],
                 "components": {
                     "minecraft:custom_name": "{\"text\":\"Guardian Spawn Egg\",\"color\":\"gold\",\"italic\":false}",
                     "minecraft:lore": [
@@ -15307,7 +15416,9 @@
                 },
                 "enchantments": [],
                 "name": "Guardian Spawn Egg",
-                "lore": ["Hint: use this on a spawner."],
+                "lore": [
+                    "Hint: use this on a spawner."
+                ],
                 "components": {
                     "minecraft:custom_name": "{\"text\":\"Guardian Spawn Egg\",\"color\":\"gold\",\"italic\":false}",
                     "minecraft:lore": [
@@ -15604,7 +15715,10 @@
                 },
                 "enchantments": [],
                 "name": "Dolphin Hack",
-                "lore": ["  ", "Spawns a Dolphin"],
+                "lore": [
+                    "  ",
+                    "Spawns a Dolphin"
+                ],
                 "components": {
                     "!minecraft:jukebox_playable": {},
                     "minecraft:item_model": "command_block",
@@ -15860,7 +15974,10 @@
                 },
                 "enchantments": [],
                 "name": "Donkey Hack",
-                "lore": ["  ", "Spawns a speedy donkey. "],
+                "lore": [
+                    "  ",
+                    "Spawns a speedy donkey. "
+                ],
                 "components": {
                     "!minecraft:jukebox_playable": {},
                     "minecraft:item_model": "command_block",
@@ -15892,7 +16009,10 @@
                 "conditions": {},
                 "enchantments": [],
                 "name": "Horse Hack",
-                "lore": ["  ", "Spawns a decent horse. "],
+                "lore": [
+                    "  ",
+                    "Spawns a decent horse. "
+                ],
                 "components": {
                     "!minecraft:jukebox_playable": {},
                     "minecraft:item_model": "command_block",
@@ -16035,7 +16155,10 @@
                 "conditions": {},
                 "enchantments": [],
                 "name": "Dirty Roller Hack",
-                "lore": ["  ", "Calls upon a really fast pig. "],
+                "lore": [
+                    "  ",
+                    "Calls upon a really fast pig. "
+                ],
                 "components": {
                     "!minecraft:jukebox_playable": {},
                     "minecraft:item_model": "command_block",
@@ -16238,7 +16361,10 @@
                 "conditions": {},
                 "enchantments": [],
                 "name": "Pegasus Hack",
-                "lore": ["  ", "Spawns the mighty Pegasus. "],
+                "lore": [
+                    "  ",
+                    "Spawns the mighty Pegasus. "
+                ],
                 "components": {
                     "!minecraft:jukebox_playable": {},
                     "minecraft:item_model": "command_block",
@@ -16486,7 +16612,9 @@
                 },
                 "enchantments": [],
                 "name": "Rabbit Spawn Egg",
-                "lore": ["Hint: use this on a spawner."],
+                "lore": [
+                    "Hint: use this on a spawner."
+                ],
                 "components": {
                     "minecraft:custom_name": "{\"text\":\"Rabbit Spawn Egg\",\"color\":\"gold\",\"italic\":false}",
                     "minecraft:lore": [
@@ -16504,7 +16632,10 @@
                 "conditions": {},
                 "enchantments": [],
                 "name": "Horse Hack",
-                "lore": ["  ", "Spawns a decent horse. "],
+                "lore": [
+                    "  ",
+                    "Spawns a decent horse. "
+                ],
                 "components": {
                     "!minecraft:jukebox_playable": {},
                     "minecraft:item_model": "command_block",
@@ -16646,7 +16777,9 @@
                 },
                 "enchantments": [],
                 "name": "Skeleton Spawn Egg",
-                "lore": ["Hint: use this on a spawner."],
+                "lore": [
+                    "Hint: use this on a spawner."
+                ],
                 "components": {
                     "minecraft:custom_name": "{\"text\":\"Skeleton Spawn Egg\",\"color\":\"gold\",\"italic\":false}",
                     "minecraft:lore": [
@@ -16759,7 +16892,10 @@
                 "conditions": {},
                 "enchantments": [],
                 "name": "Reach Potion",
-                "lore": ["Reach (08:00)", "Works on players only "],
+                "lore": [
+                    "Reach (08:00)",
+                    "Works on players only "
+                ],
                 "components": {
                     "minecraft:max_stack_size": 5,
                     "minecraft:hide_additional_tooltip": {},
@@ -16787,7 +16923,9 @@
                 },
                 "enchantments": [],
                 "name": "Wither Skeleton Spawn Egg",
-                "lore": ["Hint: use this on a spawner."],
+                "lore": [
+                    "Hint: use this on a spawner."
+                ],
                 "components": {
                     "minecraft:custom_name": "{\"text\":\"Wither Skeleton Spawn Egg\",\"color\":\"gold\",\"italic\":false}",
                     "minecraft:lore": [
@@ -16994,7 +17132,10 @@
                 "conditions": {},
                 "enchantments": [],
                 "name": "Reach Potion",
-                "lore": ["Reach (08:00)", "Works on players only "],
+                "lore": [
+                    "Reach (08:00)",
+                    "Works on players only "
+                ],
                 "components": {
                     "minecraft:max_stack_size": 5,
                     "minecraft:hide_additional_tooltip": {},
@@ -17022,7 +17163,9 @@
                 },
                 "enchantments": [],
                 "name": "Wither Skeleton Spawn Egg",
-                "lore": ["Hint: use this on a spawner."],
+                "lore": [
+                    "Hint: use this on a spawner."
+                ],
                 "components": {
                     "minecraft:custom_name": "{\"text\":\"Wither Skeleton Spawn Egg\",\"color\":\"gold\",\"italic\":false}",
                     "minecraft:lore": [
@@ -17250,7 +17393,10 @@
                 "conditions": {},
                 "enchantments": [],
                 "name": "Reach Potion",
-                "lore": ["Reach (04:00)", "Works on players only "],
+                "lore": [
+                    "Reach (04:00)",
+                    "Works on players only "
+                ],
                 "components": {
                     "minecraft:max_stack_size": 5,
                     "minecraft:hide_additional_tooltip": {},
@@ -17301,7 +17447,9 @@
                 },
                 "enchantments": [],
                 "name": "Skeleton Spawn Egg",
-                "lore": ["Hint: use this on a spawner."],
+                "lore": [
+                    "Hint: use this on a spawner."
+                ],
                 "components": {
                     "minecraft:custom_name": "{\"text\":\"Skeleton Spawn Egg\",\"color\":\"gold\",\"italic\":false}",
                     "minecraft:lore": [
@@ -18486,7 +18634,9 @@
                 },
                 "enchantments": [],
                 "name": "Slime Spawn Egg",
-                "lore": ["Hint: use this on a spawner."],
+                "lore": [
+                    "Hint: use this on a spawner."
+                ],
                 "components": {
                     "minecraft:custom_name": "{\"text\":\"Slime Spawn Egg\",\"color\":\"gold\",\"italic\":false}",
                     "minecraft:lore": [
@@ -19007,7 +19157,11 @@
                 ],
                 "unbreakable": true,
                 "name": "Taiga Pants",
-                "lore": [" ", "Ability:", "Replenishes hunger as you walk."],
+                "lore": [
+                    " ",
+                    "Ability:",
+                    "Replenishes hunger as you walk."
+                ],
                 "components": {
                     "minecraft:repair_cost": 99999,
                     "minecraft:unbreakable": {},
@@ -19045,7 +19199,9 @@
                 },
                 "enchantments": [],
                 "name": "Witch Egg",
-                "lore": ["Hint: use this on a spawner."],
+                "lore": [
+                    "Hint: use this on a spawner."
+                ],
                 "components": {
                     "minecraft:custom_name": "{\"text\":\"Witch Egg\",\"color\":\"gold\",\"italic\":false}",
                     "minecraft:lore": [
@@ -20434,7 +20590,10 @@
                 "conditions": {},
                 "enchantments": [],
                 "name": "Lightness Potion",
-                "lore": ["Lightness (04:00)", "Works on players only "],
+                "lore": [
+                    "Lightness (04:00)",
+                    "Works on players only "
+                ],
                 "components": {
                     "minecraft:max_stack_size": 5,
                     "minecraft:hide_additional_tooltip": {},
@@ -20686,7 +20845,10 @@
                 "conditions": {},
                 "enchantments": [],
                 "name": "Lightness Potion",
-                "lore": ["Lightness (08:00)", "Works on players only "],
+                "lore": [
+                    "Lightness (08:00)",
+                    "Works on players only "
+                ],
                 "components": {
                     "minecraft:max_stack_size": 5,
                     "minecraft:hide_additional_tooltip": {},
@@ -21035,7 +21197,9 @@
                 },
                 "enchantments": [],
                 "name": "Phantom Spawn Egg",
-                "lore": ["Hint: use this on a spawner."],
+                "lore": [
+                    "Hint: use this on a spawner."
+                ],
                 "components": {
                     "minecraft:custom_name": "{\"text\":\"Phantom Spawn Egg\",\"color\":\"gold\",\"italic\":false}",
                     "minecraft:lore": [
