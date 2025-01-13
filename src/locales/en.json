@@ -232,7 +232,7 @@
         },
         "note": {
             "title": "Note about Rates",
-            "description": "When setting spawn rates, the values need to be increased by 10x. For example, to get a 1/100 chance, use 1000 as the value."
+            "description": "When setting spawn rates, the values need to be increased by 100x. For example, to get a 1/100 chance, use 10000 as the value."
         }
     }
 }

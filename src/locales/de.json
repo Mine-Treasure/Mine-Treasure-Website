@@ -226,7 +226,7 @@
         },
         "note": {
             "title": "Hinweis zu Raten",
-            "description": "Bei der Einstellung von Spawnraten müssen die Werte um das 10-fache erhöht werden. Um beispielsweise eine Chance von 1/100 zu erhalten, verwende 1000 als Wert."
+            "description": "Bei der Einstellung von Spawnraten müssen die Werte um das 100-fache erhöht werden. Um beispielsweise eine Chance von 1/100 zu erhalten, verwende 10000 als Wert."
         }
     }
 }

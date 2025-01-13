@@ -226,7 +226,7 @@
         },
         "note": {
             "title": "Nota sobre las Tasas",
-            "description": "Al establecer las tasas de aparición, los valores deben aumentarse por 10. Por ejemplo, para obtener una probabilidad de 1/100, usa 1000 como valor."
+            "description": "Al establecer las tasas de aparición, los valores deben aumentarse por 100. Por ejemplo, para obtener una probabilidad de 1/100, usa 10000 como valor."
         }
     }
 }

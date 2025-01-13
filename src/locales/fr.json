@@ -226,7 +226,7 @@
         },
         "note": {
             "title": "Note sur les taux",
-            "description": "Lors du réglage des taux d'apparition, les valeurs doivent être multipliées par 10. Par exemple, pour obtenir une chance de 1/100, utilisez 1000 comme valeur."
+            "description": "Lors du réglage des taux d'apparition, les valeurs doivent être multipliées par 100. Par exemple, pour obtenir une chance de 1/100, utilisez 10000 comme valeur."
         }
     }
 }
