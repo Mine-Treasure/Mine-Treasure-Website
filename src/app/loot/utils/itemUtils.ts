@@ -12,8 +12,10 @@ export const getItemImage = (item: MT_ITEM): string => {
 export const getBlockRangeText = (item: MT_ITEM): string | null => {
     if (!item.conditions.stoneMined) return null;
 
-    const min = Math.max((item.conditions.stoneMined.min || 0) - 300_000, 0);
-    const max = item.conditions.stoneMined.max ? Math.max(item.conditions.stoneMined.max - 300_000, 0) : null;
+    const min = Math.max((item.conditions.stoneMined.min || 0) - 100_000, 0);
+    const max = item.conditions.stoneMined.max
+        ? Math.max(item.conditions.stoneMined.max - 100_000, 0)
+        : null;
 
     return max !== null
         ? `${min.toLocaleString()} - ${max.toLocaleString()} blocks`

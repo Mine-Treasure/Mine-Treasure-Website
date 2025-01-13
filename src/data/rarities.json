@@ -1,248 +1,275 @@
 {
-     "amethyst_block": {
-          "common": 15,
-          "rare": 15,
-          "epic": 15,
-          "legendary": 15
-     },
-     "andesite": {
-          "common": 7,
-          "rare": 16,
-          "epic": 7,
-          "legendary": 11
-     },
-     "basalt": {
-          "common": 11,
-          "rare": 11,
-          "epic": 11,
-          "legendary": 11
-     },
-     "blackstone": {
-          "common": 11,
-          "rare": 11,
-          "epic": 11,
-          "legendary": 11
-     },
-     "brown_terracotta": {
-          "common": 11,
-          "rare": 11,
-          "epic": 11,
-          "legendary": 11
-     },
-     "calcite": {
-          "common": 11,
-          "rare": 11,
-          "epic": 11,
-          "legendary": 11
-     },
-     "coal_ore": {
-          "common": 17,
-          "rare": 17,
-          "epic": 17,
-          "legendary": 17
-     },
-     "copper_ore": {
-          "common": 17,
-          "rare": 17,
-          "epic": 17,
-          "legendary": 17
-     },
-     "deepslate": {
-          "common": 14,
-          "rare": 14,
-          "epic": 14,
-          "legendary": 14
-     },
-     "diamond_ore": {
-          "common": 24,
-          "rare": 24,
-          "epic": 24,
-          "legendary": 24
-     },
-     "diorite": {
-          "common": 16,
-          "rare": 7,
-          "epic": 7,
-          "legendary": 11
-     },
-     "dripstone_block": {
-          "common": 11,
-          "rare": 11,
-          "epic": 11,
-          "legendary": 11
-     },
-     "deepslate_coal_ore": {
-          "common": 19,
-          "rare": 19,
-          "epic": 19,
-          "legendary": 19
-     },
-     "deepslate_copper_ore": {
-          "common": 19,
-          "rare": 19,
-          "epic": 19,
-          "legendary": 19
-     },
-     "deepslate_diamond_ore": {
-          "common": 24,
-          "rare": 24,
-          "epic": 24,
-          "legendary": 24
-     },
-     "deepslate_emerald_ore": {
-          "common": 19,
-          "rare": 19,
-          "epic": 19,
-          "legendary": 19
-     },
-     "deepslate_gold_ore": {
-          "common": 19,
-          "rare": 19,
-          "epic": 19,
-          "legendary": 19
-     },
-     "deepslate_iron_ore": {
-          "common": 19,
-          "rare": 19,
-          "epic": 19,
-          "legendary": 19
-     },
-     "deepslate_lapis_ore": {
-          "common": 19,
-          "rare": 19,
-          "epic": 19,
-          "legendary": 19
-     },
-     "deepslate_redstone_ore": {
-          "common": 19,
-          "rare": 19,
-          "epic": 19,
-          "legendary": 19
-     },
-     "emerald_ore": {
-          "common": 17,
-          "rare": 17,
-          "epic": 17,
-          "legendary": 17
-     },
-     "end_stone": {
-          "common": 14,
-          "rare": 14,
-          "epic": 14,
-          "legendary": 14
-     },
-     "gold_ore": {
-          "common": 17,
-          "rare": 17,
-          "epic": 17,
-          "legendary": 17
-     },
-     "granite": {
-          "common": 7,
-          "rare": 7,
-          "epic": 16,
-          "legendary": 11
-     },
-     "iron_ore": {
-          "common": 17,
-          "rare": 17,
-          "epic": 17,
-          "legendary": 17
-     },
-     "lapis_ore": {
-          "common": 17,
-          "rare": 17,
-          "epic": 17,
-          "legendary": 17
-     },
-     "light_gray_terracotta": {
-          "common": 11,
-          "rare": 11,
-          "epic": 11,
-          "legendary": 11
-     },
-     "magma_block": {
-          "common": 11,
-          "rare": 16,
-          "epic": 11,
-          "legendary": 11
-     },
-     "netherrack": {
-          "common": 9,
-          "rare": 9,
-          "epic": 9,
-          "legendary": 9
-     },
-     "nether_gold_ore": {
-          "common": 17,
-          "rare": 17,
-          "epic": 17,
-          "legendary": 17
-     },
-     "nether_quartz_ore": {
-          "common": 17,
-          "rare": 17,
-          "epic": 17,
-          "legendary": 17
-     },
-     "orange_terracotta": {
-          "common": 11,
-          "rare": 11,
-          "epic": 11,
-          "legendary": 11
-     },
-     "redstone_ore": {
-          "common": 17,
-          "rare": 17,
-          "epic": 17,
-          "legendary": 17
-     },
-     "red_terracotta": {
-          "common": 11,
-          "rare": 11,
-          "epic": 11,
-          "legendary": 11
-     },
-     "sandstone": {
-          "common": 9,
-          "rare": 9,
-          "epic": 9,
-          "legendary": 9
-     },
-     "smooth_basalt": {
-          "common": 11,
-          "rare": 11,
-          "epic": 11,
-          "legendary": 11
-     },
-     "stone": {
-          "common": 11,
-          "rare": 11,
-          "epic": 11,
-          "legendary": 11
-     },
-     "terracotta": {
-          "common": 11,
-          "rare": 11,
-          "epic": 11,
-          "legendary": 11
-     },
-     "tuff": {
-          "common": 11,
-          "rare": 11,
-          "epic": 11,
-          "legendary": 11
-     },
-     "white_terracotta": {
-          "common": 11,
-          "rare": 11,
-          "epic": 11,
-          "legendary": 11
-     },
-     "yellow_terracotta": {
-          "common": 11,
-          "rare": 11,
-          "epic": 11,
-          "legendary": 11
-     }
+    "amethyst_block": {
+        "common": 0.00001,
+        "rare": 0.00001,
+        "epic": 0.00001,
+        "legendary": 0.00001,
+        "mythical": 0.00001
+    },
+    "andesite": {
+        "common": 0.000008,
+        "rare": 0.000015,
+        "epic": 0.000008,
+        "legendary": 0.000008,
+        "mythical": 0.000008
+    },
+    "basalt": {
+        "common": 0.00001,
+        "rare": 0.00001,
+        "epic": 0.00001,
+        "legendary": 0.00001,
+        "mythical": 0.00001
+    },
+    "blackstone": {
+        "common": 0.00001,
+        "rare": 0.00001,
+        "epic": 0.00001,
+        "legendary": 0.00001,
+        "mythical": 0.00001
+    },
+    "brown_terracotta": {
+        "common": 0.00001,
+        "rare": 0.00001,
+        "epic": 0.00001,
+        "legendary": 0.00001,
+        "mythical": 0.00001
+    },
+    "calcite": {
+        "common": 0.0000075,
+        "rare": 0.0000075,
+        "epic": 0.0000075,
+        "legendary": 0.0000075,
+        "mythical": 0.0000075
+    },
+    "deepslate": {
+        "common": 0.000014,
+        "rare": 0.000014,
+        "epic": 0.000014,
+        "legendary": 0.000014,
+        "mythical": 0.000014
+    },
+    "deepslate_coal_ore": {
+        "common": 0.000016,
+        "rare": 0.000016,
+        "epic": 0.000016,
+        "legendary": 0.000016,
+        "mythical": 0.000016
+    },
+    "deepslate_copper_ore": {
+        "common": 0.000016,
+        "rare": 0.000016,
+        "epic": 0.000016,
+        "legendary": 0.000016,
+        "mythical": 0.000016
+    },
+    "deepslate_diamond_ore": {
+        "common": 0.00002,
+        "rare": 0.00002,
+        "epic": 0.00002,
+        "legendary": 0.00002,
+        "mythical": 0.00002
+    },
+    "deepslate_emerald_ore": {
+        "common": 0.00002,
+        "rare": 0.00002,
+        "epic": 0.00002,
+        "legendary": 0.00002,
+        "mythical": 0.00002
+    },
+    "deepslate_gold_ore": {
+        "common": 0.000016,
+        "rare": 0.000016,
+        "epic": 0.000016,
+        "legendary": 0.000016,
+        "mythical": 0.000016
+    },
+    "deepslate_iron_ore": {
+        "common": 0.000016,
+        "rare": 0.000016,
+        "epic": 0.000016,
+        "legendary": 0.000016,
+        "mythical": 0.000016
+    },
+    "deepslate_lapis_ore": {
+        "common": 0.000016,
+        "rare": 0.000016,
+        "epic": 0.000016,
+        "legendary": 0.000016,
+        "mythical": 0.000016
+    },
+    "deepslate_redstone_ore": {
+        "common": 0.000016,
+        "rare": 0.000016,
+        "epic": 0.000016,
+        "legendary": 0.000016,
+        "mythical": 0.000016
+    },
+    "diamond_ore": {
+        "common": 0.00002,
+        "rare": 0.00002,
+        "epic": 0.00002,
+        "legendary": 0.00002,
+        "mythical": 0.00002
+    },
+    "diorite": {
+        "common": 0.000015,
+        "rare": 0.000008,
+        "epic": 0.000008,
+        "legendary": 0.000008,
+        "mythical": 0.000008
+    },
+    "dripstone_block": {
+        "common": 0.00001,
+        "rare": 0.00001,
+        "epic": 0.00001,
+        "legendary": 0.00001,
+        "mythical": 0.00001
+    },
+    "emerald_ore": {
+        "common": 0.00002,
+        "rare": 0.00002,
+        "epic": 0.00002,
+        "legendary": 0.00002,
+        "mythical": 0.00002
+    },
+    "end_stone": {
+        "common": 0.000014,
+        "rare": 0.000014,
+        "epic": 0.000014,
+        "legendary": 0.000014,
+        "mythical": 0.000014
+    },
+    "gold_ore": {
+        "common": 0.000014,
+        "rare": 0.000014,
+        "epic": 0.000014,
+        "legendary": 0.000014,
+        "mythical": 0.000014
+    },
+    "granite": {
+        "common": 0.000008,
+        "rare": 0.000008,
+        "epic": 0.000015,
+        "legendary": 0.000008,
+        "mythical": 0.000008
+    },
+    "iron_ore": {
+        "common": 0.000014,
+        "rare": 0.000014,
+        "epic": 0.000014,
+        "legendary": 0.000014,
+        "mythical": 0.000014
+    },
+    "lapis_ore": {
+        "common": 0.000014,
+        "rare": 0.000014,
+        "epic": 0.000014,
+        "legendary": 0.000014,
+        "mythical": 0.000014
+    },
+    "light_gray_terracotta": {
+        "common": 0.00001,
+        "rare": 0.00001,
+        "epic": 0.00001,
+        "legendary": 0.00001,
+        "mythical": 0.00001
+    },
+    "magma_block": {
+        "common": 0.000008,
+        "rare": 0.000015,
+        "epic": 0.000008,
+        "legendary": 0.000008,
+        "mythical": 0.000008
+    },
+    "netherrack": {
+        "common": 0.0000075,
+        "rare": 0.0000075,
+        "epic": 0.0000075,
+        "legendary": 0.0000075,
+        "mythical": 0.0000075
+    },
+    "nether_gold_ore": {
+        "common": 0.000014,
+        "rare": 0.000014,
+        "epic": 0.000014,
+        "legendary": 0.000014,
+        "mythical": 0.000014
+    },
+    "nether_quartz_ore": {
+        "common": 0.000014,
+        "rare": 0.000014,
+        "epic": 0.000014,
+        "legendary": 0.000014,
+        "mythical": 0.000014
+    },
+    "orange_terracotta": {
+        "common": 0.00001,
+        "rare": 0.00001,
+        "epic": 0.00001,
+        "legendary": 0.00001,
+        "mythical": 0.00001
+    },
+    "redstone_ore": {
+        "common": 0.000014,
+        "rare": 0.000014,
+        "epic": 0.000014,
+        "legendary": 0.000014,
+        "mythical": 0.000014
+    },
+    "red_terracotta": {
+        "common": 0.00001,
+        "rare": 0.00001,
+        "epic": 0.00001,
+        "legendary": 0.00001,
+        "mythical": 0.00001
+    },
+    "sandstone": {
+        "common": 0.0000075,
+        "rare": 0.0000075,
+        "epic": 0.0000075,
+        "legendary": 0.0000075,
+        "mythical": 0.0000075
+    },
+    "smooth_basalt": {
+        "common": 0.00001,
+        "rare": 0.00001,
+        "epic": 0.00001,
+        "legendary": 0.00001,
+        "mythical": 0.00001
+    },
+    "stone": {
+        "common": 0.00001,
+        "rare": 0.00001,
+        "epic": 0.00001,
+        "legendary": 0.00001,
+        "mythical": 0.00001
+    },
+    "terracotta": {
+        "common": 0.00001,
+        "rare": 0.00001,
+        "epic": 0.00001,
+        "legendary": 0.00001,
+        "mythical": 0.00001
+    },
+    "tuff": {
+        "common": 0.00001,
+        "rare": 0.00001,
+        "epic": 0.00001,
+        "legendary": 0.00001,
+        "mythical": 0.00001
+    },
+    "white_terracotta": {
+        "common": 0.00001,
+        "rare": 0.00001,
+        "epic": 0.00001,
+        "legendary": 0.00001,
+        "mythical": 0.00001
+    },
+    "yellow_terracotta": {
+        "common": 0.00001,
+        "rare": 0.00001,
+        "epic": 0.00001,
+        "legendary": 0.00001,
+        "mythical": 0.00001
+    }
 }

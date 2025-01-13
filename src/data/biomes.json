@@ -1,108 +1,60 @@
 {
-     "badlands": [
-          "Badlands",
-          "Eroded Badlands",
-          "Wooded Badlands"
-     ],
-     "basalt": [
-          "Basalt Deltas"
-     ],
-     "crimson": [
-          "Crimson Forest"
-     ],
-     "dark_forest": [
-          "Dark Forest"
-     ],
-     "deep_dark": [
-          "Deep Dark"
-     ],
-     "default": [
-          "Birch Forest",
-          "Old Growth Birch Forest",
-          "Plains",
-          "Forest",
-          "Stony Shore",
-          "Beach",
-          "River"
-     ],
-     "desert": [
-          "Desert"
-     ],
-     "dripstone": [
-          "Dripstone Caves"
-     ],
-     "end": [
-          "The End"
-     ],
-     "flower": [
-          "Flower Forest",
-          "Sunflower Plains",
-          "Meadow"
-     ],
-     "ice": [
-          "Snowy Beach",
-          "Snowy Plains",
-          "Ice Spikes",
-          "Frozen River"
-     ],
-     "jungle": [
-          "Bamboo Jungle",
-          "Jungle",
-          "Sparse Jungle"
-     ],
-     "lush_caves": [
-          "Lush Caves"
-     ],
-     "mountain": [
-          "Meadow",
-          "Frozen Peaks",
-          "Jagged Peaks",
-          "Stony Peaks",
-          "Snowy Slopes",
-          "Cherry Grove",
-          "Grove"
-     ],
-     "mushroom": [
-          "Mushroom Fields"
-     ],
-     "nether": [
-          "Nether Wastes"
-     ],
-     "ocean": [
-          "Deep Frozen Ocean",
-          "Deep Cold Ocean",
-          "Deep Ocean",
-          "Deep Lukewarm Ocean",
-          "Frozen Ocean",
-          "Ocean",
-          "Cold Ocean",
-          "Lukewarm Ocean",
-          "Warm Ocean"
-     ],
-     "savanna": [
-          "Savanna",
-          "Savanna Plateau",
-          "Windswept Savanna"
-     ],
-     "soul_valley": [
-          "Soul Sand Valley"
-     ],
-     "swamp": [
-          "Swamp",
-          "Mangrove Swamp"
-     ],
-     "taiga": [
-          "Taiga",
-          "Snowy Taiga",
-          "Old Growth Pine Taiga",
-          "Old Growth Spruce Taiga"
-     ],
-     "warped": [
-          "Warped Forest"
-     ],
-     "wind": [
-          "Windswept Hills",
-          "Windswept Forest",
-          "Windswept Gravelly Hills"
-     ]
+    "badlands": ["badlands", "eroded badlands", "wooded badlands"],
+    "basalt": ["basalt deltas"],
+    "crimson": ["crimson forest"],
+    "dark_forest": ["dark forest"],
+    "deep_dark": ["deep dark"],
+    "default": [
+        "birch forest",
+        "old growth birch forest",
+        "plains",
+        "forest",
+        "stony shore",
+        "beach",
+        "river"
+    ],
+    "desert": ["desert"],
+    "dripstone": ["dripstone caves"],
+    "end": ["dimension: the end"],
+    "flower": [
+        "flower forest",
+        "sunflower plains",
+        "meadow",
+        "cherry grove",
+        "sunflower plains"
+    ],
+    "ice": ["snowy beach", "snowy plains", "ice spikes", "frozen river"],
+    "jungle": ["bamboo jungle", "jungle", "sparse jungle"],
+    "lush_caves": ["lush caves"],
+    "mountain": [
+        "frozen peaks",
+        "jagged peaks",
+        "stony peaks",
+        "snowy slopes",
+        "grove"
+    ],
+    "mushroom": ["mushroom fields"],
+    "nether": ["nether wastes"],
+    "ocean": [
+        "deep frozen ocean",
+        "deep cold ocean",
+        "deep ocean",
+        "deep lukewarm ocean",
+        "frozen ocean",
+        "ocean",
+        "cold ocean",
+        "lukewarm ocean",
+        "warm ocean"
+    ],
+    "savanna": ["savanna", "savanna plateau", "windswept savanna"],
+    "soul_valley": ["soul sand valley"],
+    "swamp": ["swamp", "mangrove swamp"],
+    "taiga": [
+        "taiga",
+        "snowy taiga",
+        "old growth pine taiga",
+        "old growth spruce taiga"
+    ],
+    "warped": ["warped forest"],
+    "wind": ["windswept hills", "windswept forest", "windswept gravelly hills"]
 }
