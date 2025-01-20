@@ -9,9 +9,9 @@ export default function ItemModal({ item, onClose, getItemImage }: ItemModalProp
      const getBlockRange = () => {
           if (!item.conditions.stoneMined) return null;
 
-          const min = Math.max((item.conditions.stoneMined.min || 0) - 300_000, 0);
+          const min = Math.max((item.conditions.stoneMined.min || 0) - 100_000, 0);
           const max = item.conditions.stoneMined.max
-               ? Math.max(item.conditions.stoneMined.max - 300_000, 0)
+               ? Math.max(item.conditions.stoneMined.max - 100_000, 0)
                : null;
 
           return { min, max };
