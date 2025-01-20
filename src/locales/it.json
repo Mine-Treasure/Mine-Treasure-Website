@@ -58,7 +58,7 @@
                 "entries": {
                     "realms": {
                         "name": "Realms",
-                        "description": "Se hai il datapack su Realms potresti notare che i tesori del mondo normale a volte non funzionano. Questo è dovuto al fatto che Realms rinomina ogni cartella contenente \"World\" per far corrispondere il nome del Realm, influenzando le cartelle del datapack. La cartella del mondo normale viene rinominata in over(NOME DEL REALM). Speriamo che Mojang risolva questo problema in un futuro aggiornamento."
+                        "description": "Due to the lack of support for experimental features, realms unfortunately does not support Mine Treasure at this time."
                     },
                     "spigot": {
                         "name": "Spigot",

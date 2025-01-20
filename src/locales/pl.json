@@ -58,7 +58,7 @@
                 "entries": {
                     "realms": {
                         "name": "Realms",
-                        "description": "Jeśli masz pakiet danych na Realms, możesz zauważyć, że skarby w świecie nadrzędnym czasami nie działają. Wynika to z tego, że Realms zmienia nazwę każdego folderu zawierającego \"World\" na nazwę Realmu, co wpływa na foldery pakietu danych. Folder overworld zostaje przemianowany na over(NAZWA REALMU). Mamy nadzieję, że Mojang naprawi to w przyszłej aktualizacji."
+                        "description": "Due to the lack of support for experimental features, realms unfortunately does not support Mine Treasure at this time."
                     },
                     "spigot": {
                         "name": "Spigot",

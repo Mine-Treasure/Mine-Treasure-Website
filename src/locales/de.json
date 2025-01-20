@@ -58,7 +58,7 @@
                 "entries": {
                     "realms": {
                         "name": "Realms",
-                        "description": "Wenn du das Datapack in Realms hast, kann es sein, dass die Schätze in der normalen Welt manchmal nicht funktionieren. Dies liegt daran, dass Realms jeden Ordner, der 'World' enthält, umbenennt, um ihn an den Namen des Realms anzupassen, was die Datapack-Ordner beeinflusst. Der normale Welt-Ordner wird in over(REALM-NAME) umbenannt. Wir hoffen, dass Mojang dies in einem zukünftigen Update behebt."
+                        "description": "Due to the lack of support for experimental features, realms unfortunately does not support Mine Treasure at this time."
                     },
                     "spigot": {
                         "name": "Spigot",

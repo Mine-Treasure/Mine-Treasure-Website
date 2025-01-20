@@ -58,7 +58,7 @@
                 "entries": {
                     "realms": {
                         "name": "Realms",
-                        "description": "Si vous avez le pack de données sur realms, vous remarquerez peut-être que les trésors du monde normal ne fonctionnent pas parfois. Cela est dû au fait que Realms renomme chaque dossier contenant \"World\" pour correspondre au nom du Realm, affectant les dossiers du pack de données. Le dossier du monde normal est renommé en over(NOM DU REALM). Nous espérons que Mojang corrigera cela dans une future mise à jour."
+                        "description": "Due to the lack of support for experimental features, realms unfortunately does not support Mine Treasure at this time."
                     },
                     "spigot": {
                         "name": "Spigot",

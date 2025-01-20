@@ -58,7 +58,7 @@
                 "entries": {
                     "realms": {
                         "name": "Realms",
-                        "description": "If you have the data pack on realms you may notice that the overworld treasure are not working sometimes. This is due to Realms renaming every folder containing \"World\" to match the Realm's name, affecting data pack folders. The overworld folder gets renamed to over(REALMS NAME). We hope Mojang patches this in a future update."
+                        "description": "Due to the lack of support for experimental features, realms unfortunately does not support Mine Treasure at this time."
                     },
                     "spigot": {
                         "name": "Spigot",

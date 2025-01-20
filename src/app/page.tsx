@@ -9,6 +9,7 @@ import {
     AlertCircle,
     CheckCircle2,
     HelpCircle,
+    CircleX,
 } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import { Language, useTranslation } from '@/lib/i18n';
@@ -219,14 +220,24 @@ export default function Home() {
                                                 {entry.name}
                                             </td>
                                             <td className='p-4'>
-                                                {key === 'realms' ||
-                                                key === 'spigot' ? (
+                                                {key === 'realms' && (
+                                                    <CircleX className='text-red-400 h-5 w-5' />
+                                                )}
+                                                {key === 'spigot' && (
                                                     <AlertCircle className='text-yellow-400 h-5 w-5' />
-                                                ) : key === 'papermc' ||
-                                                  key === 'fabric' ||
-                                                  key === 'forge' ? (
+                                                )}
+                                                {(key === 'papermc' ||
+                                                    key === 'fabric' ||
+                                                    key === 'forge') && (
                                                     <CheckCircle2 className='text-green-400 h-5 w-5' />
-                                                ) : (
+                                                )}
+                                                {![
+                                                    'realms',
+                                                    'spigot',
+                                                    'papermc',
+                                                    'fabric',
+                                                    'forge',
+                                                ].includes(key) && (
                                                     <HelpCircle className='text-blue-400 h-5 w-5' />
                                                 )}
                                             </td>

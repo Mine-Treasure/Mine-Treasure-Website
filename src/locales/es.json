@@ -58,7 +58,7 @@
                 "entries": {
                     "realms": {
                         "name": "Realms",
-                        "description": "Si tienes el paquete de datos en realms, puede que notes que los tesoros del mundo normal a veces no funcionan. Esto se debe a que Realms renombra cada carpeta que contiene \"World\" para que coincida con el nombre del Realm, afectando a las carpetas del paquete de datos. La carpeta del mundo normal se renombra a over(NOMBRE DEL REALM). Esperamos que Mojang arregle esto en una actualización futura."
+                        "description": "Due to the lack of support for experimental features, realms unfortunately does not support Mine Treasure at this time."
                     },
                     "spigot": {
                         "name": "Spigot",

@@ -58,7 +58,7 @@
                 "entries": {
                     "realms": {
                         "name": "Realms",
-                        "description": "Se você tem o pacote de dados no Realms, pode notar que os tesouros do mundo superior às vezes não funcionam. Isso ocorre porque o Realms renomeia todas as pastas contendo \"World\" para corresponder ao nome do Realm, afetando as pastas do pacote de dados. A pasta do mundo superior é renomeada para over(NOME DO REALM). Esperamos que a Mojang corrija isso em uma atualização futura."
+                        "description": "Due to the lack of support for experimental features, realms unfortunately does not support Mine Treasure at this time."
                     },
                     "spigot": {
                         "name": "Spigot",
