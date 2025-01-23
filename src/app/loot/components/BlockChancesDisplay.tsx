@@ -14,7 +14,7 @@ const rarityColors = {
 } as const;
 
 export default function BlockChancesDisplay() {
-    const { blockChances, rarityValues, setRarityValues } = useBlockChances(3);
+    const { blockChances, rarityValues, setRarityValues } = useBlockChances(4);
 
     return (
         <div className='space-y-4'>
