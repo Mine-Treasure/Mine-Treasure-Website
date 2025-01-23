@@ -107,12 +107,11 @@ export default function GridView({
                                                 <div className={`transform transition-transform duration-200 ${isRarityCollapsed ? '' : 'rotate-90'}`}>
                                                     <ChevronRight className="w-4 h-4 text-zinc-500 dark:text-zinc-400" />
                                                 </div>
-                                                <h3 className={`text-lg font-semibold capitalize transition-colors duration-200 ${
-                                                    rarity === 'common' ? 'text-zinc-600 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-zinc-300' :
+                                                <h3 className={`text-lg font-semibold capitalize transition-colors duration-200 ${rarity === 'common' ? 'text-zinc-600 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-zinc-300' :
                                                     rarity === 'rare' ? 'text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300' :
-                                                    rarity === 'epic' ? 'text-purple-500 hover:text-purple-600 dark:text-purple-400 dark:hover:text-purple-300' :
-                                                    'text-yellow-500 hover:text-yellow-600 dark:text-yellow-400 dark:hover:text-yellow-300'
-                                                }`}>
+                                                        rarity === 'epic' ? 'text-purple-500 hover:text-purple-600 dark:text-purple-400 dark:hover:text-purple-300' :
+                                                            'text-yellow-500 hover:text-yellow-600 dark:text-yellow-400 dark:hover:text-yellow-300'
+                                                    }`}>
                                                     {rarity} ({items.length})
                                                 </h3>
                                             </div>
