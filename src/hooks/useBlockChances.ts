@@ -16,7 +16,7 @@ export const useBlockChances = (decimalPlaces: number = 2) => {
             const calculatePercent = (value: number, total: number) => {
                 return (
                     Math.round(
-                        value * total * 100 * Math.pow(10, decimalPlaces)
+                        value * total * 1000 * Math.pow(10, decimalPlaces)
                     ) / Math.pow(10, decimalPlaces)
                 );
             };
