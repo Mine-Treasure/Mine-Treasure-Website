@@ -27,7 +27,7 @@ export default function LootPage() {
      const [showFilters, setShowFilters] = useState(false);
      const [selectedItem, setSelectedItem] = useState<MT_ITEM | null>(null);
      const [customItemsOnly, setCustomItemsOnly] = useState(false);
-     const [viewAllItems, setViewAllItems] = useState(false);
+     const [viewAllItems, setViewAllItems] = useState(true);
      const [viewMode, setViewMode] = useState<'standard' | 'grid' | 'list'>('standard');
      const [collapsedRarities, setCollapsedRarities] = useState<Record<string, Record<string, boolean>>>({});
      const [collapsedBiomes, setCollapsedBiomes] = useState<Record<string, boolean>>({});
