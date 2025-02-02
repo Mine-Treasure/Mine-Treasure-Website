@@ -51,22 +51,7 @@ export type MT_ENCHANTMENT = {
     max: number;
 };
 
-/**
- * Represents the chances of a treasure dropping.
- */
-export type MT_CHANCE = {
-    common: number;
-    rare: number;
-    epic: number;
-    legendary: number;
-};
 
-/**
- * Represents the chances of a treasure dropping, keyed by biome.
- */
-export type MT_CHANCES = {
-    [key: string]: MT_CHANCE;
-};
 
 /**
  * The data returned from the GitHub API.
